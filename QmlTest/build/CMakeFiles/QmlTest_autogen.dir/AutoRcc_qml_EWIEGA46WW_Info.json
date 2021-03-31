@@ -1,0 +1,19 @@
+{
+	"BUILD_DIR" : "/mnt/files/scripts/CircuitTesterPlans/QmlTest/build/QmlTest_autogen",
+	"CMAKE_BINARY_DIR" : "/mnt/files/scripts/CircuitTesterPlans/QmlTest/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/mnt/files/scripts/CircuitTesterPlans/QmlTest/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/mnt/files/scripts/CircuitTesterPlans/QmlTest",
+	"CMAKE_SOURCE_DIR" : "/mnt/files/scripts/CircuitTesterPlans/QmlTest",
+	"INCLUDE_DIR" : "/mnt/files/scripts/CircuitTesterPlans/QmlTest/build/QmlTest_autogen/include",
+	"INPUTS" : [ "/mnt/files/scripts/CircuitTesterPlans/QmlTest/main.qml" ],
+	"LOCK_FILE" : "/mnt/files/scripts/CircuitTesterPlans/QmlTest/build/CMakeFiles/QmlTest_autogen.dir/AutoRcc_qml_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "qml" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_qml.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib/qt5/bin/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/mnt/files/scripts/CircuitTesterPlans/QmlTest/build/CMakeFiles/QmlTest_autogen.dir/AutoRcc_qml_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/mnt/files/scripts/CircuitTesterPlans/QmlTest/qml.qrc",
+	"VERBOSITY" : 0
+}

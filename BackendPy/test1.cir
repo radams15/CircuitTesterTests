@@ -1,0 +1,4 @@
+R R1    vcc     v_out   1k
+R       v_out   gnd     1kOhm
+
+vcc = 2.5v

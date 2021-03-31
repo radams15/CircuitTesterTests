@@ -1,0 +1,36 @@
+{
+	"BUILD_DIR" : "/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/DiagramEditor_autogen",
+	"CMAKE_BINARY_DIR" : "/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/rhys/scripts/CircuitTesterPlans/DiagramEditor",
+	"CMAKE_SOURCE_DIR" : "/home/rhys/scripts/CircuitTesterPlans/DiagramEditor",
+	"INCLUDE_DIR" : "/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/DiagramEditor_autogen/include",
+	"INPUTS" : 
+	[
+		"/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/images/italic.png",
+		"/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/images/floodfill.png",
+		"/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/images/underline.png",
+		"/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/images/background2.png",
+		"/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/images/textpointer.png",
+		"/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/images/sendtoback.png",
+		"/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/images/pointer.png",
+		"/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/images/background1.png",
+		"/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/images/linecolor.png",
+		"/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/images/bringtofront.png",
+		"/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/images/background4.png",
+		"/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/images/delete.png",
+		"/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/images/linepointer.png",
+		"/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/images/bold.png",
+		"/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/images/background3.png"
+	],
+	"LOCK_FILE" : "/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/CMakeFiles/DiagramEditor_autogen.dir/AutoRcc_diagramscene_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "diagramscene" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_diagramscene.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib/qt5/bin/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/CMakeFiles/DiagramEditor_autogen.dir/AutoRcc_diagramscene_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/diagramscene.qrc",
+	"VERBOSITY" : 0
+}

@@ -1,0 +1,1 @@
+/usr/lib64/ccache/c++  -g   CMakeFiles/CSD.dir/CSD_autogen/mocs_compilation.cpp.o CMakeFiles/CSD.dir/main.cpp.o CMakeFiles/CSD.dir/mainwindow.cpp.o CMakeFiles/CSD.dir/customwindow.cpp.o CMakeFiles/CSD.dir/customtitlebar.cpp.o  -o CSD  /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.14.2 /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.14.2 /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.14.2 

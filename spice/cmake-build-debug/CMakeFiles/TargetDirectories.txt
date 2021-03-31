@@ -1,0 +1,3 @@
+/home/rhys/scripts/CircuitTester/spice/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/rhys/scripts/CircuitTester/spice/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/rhys/scripts/CircuitTester/spice/cmake-build-debug/CMakeFiles/spice.dir

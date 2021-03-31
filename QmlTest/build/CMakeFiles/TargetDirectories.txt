@@ -1,0 +1,4 @@
+/mnt/files/scripts/CircuitTesterPlans/QmlTest/build/CMakeFiles/rebuild_cache.dir
+/mnt/files/scripts/CircuitTesterPlans/QmlTest/build/CMakeFiles/edit_cache.dir
+/mnt/files/scripts/CircuitTesterPlans/QmlTest/build/CMakeFiles/QmlTest.dir
+/mnt/files/scripts/CircuitTesterPlans/QmlTest/build/CMakeFiles/QmlTest_autogen.dir

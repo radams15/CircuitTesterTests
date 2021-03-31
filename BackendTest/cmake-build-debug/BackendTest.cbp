@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="BackendTest"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/rhys/scripts/CircuitTesterPlans/BackendTest/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/BackendTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/BackendTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/BackendTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/BackendTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/rhys/scripts/CircuitTesterPlans/BackendTest/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/BackendTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/BackendTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/BackendTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/BackendTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/rhys/scripts/CircuitTesterPlans/BackendTest/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/BackendTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/BackendTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/BackendTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/BackendTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BackendTest">
+				<Option output="/home/rhys/scripts/CircuitTesterPlans/BackendTest/cmake-build-debug/BackendTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/rhys/scripts/CircuitTesterPlans/BackendTest/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/BackendTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 BackendTest"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/BackendTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/BackendTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/BackendTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BackendTest/fast">
+				<Option output="/home/rhys/scripts/CircuitTesterPlans/BackendTest/cmake-build-debug/BackendTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/rhys/scripts/CircuitTesterPlans/BackendTest/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/BackendTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 BackendTest/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/BackendTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/BackendTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/BackendTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/BackendTest/src/components/Component.h">
+			<Option target="BackendTest"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/BackendTest/src/components/PowerData.h">
+			<Option target="BackendTest"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/BackendTest/src/components/Resistor.cpp">
+			<Option target="BackendTest"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/BackendTest/src/components/Resistor.h">
+			<Option target="BackendTest"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/BackendTest/src/components/components.h">
+			<Option target="BackendTest"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/BackendTest/src/main.cpp">
+			<Option target="BackendTest"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/BackendTest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

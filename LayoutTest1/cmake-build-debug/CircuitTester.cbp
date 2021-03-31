@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="CircuitTester"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\lib64\;CMake Files\..\..\..\..\..\usr\lib64\cmake\;CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5\;CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Widgets\;CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\;CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Core\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CircuitTester">
+				<Option output="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug/CircuitTester" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add directory="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug"/>
+					<Add directory="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1"/>
+					<Add directory="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug/CircuitTester_autogen/include"/>
+					<Add directory="/usr/include/qt5"/>
+					<Add directory="/usr/include/qt5/QtWidgets"/>
+					<Add directory="/usr/include/qt5/QtGui"/>
+					<Add directory="/usr/include/qt5/QtCore"/>
+					<Add directory="/usr/lib64/qt5/mkspecs/linux-g++"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug/Makefile&quot;  VERBOSE=1 CircuitTester"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CircuitTester/fast">
+				<Option output="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug/CircuitTester" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add directory="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug"/>
+					<Add directory="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1"/>
+					<Add directory="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug/CircuitTester_autogen/include"/>
+					<Add directory="/usr/include/qt5"/>
+					<Add directory="/usr/include/qt5/QtWidgets"/>
+					<Add directory="/usr/include/qt5/QtGui"/>
+					<Add directory="/usr/include/qt5/QtCore"/>
+					<Add directory="/usr/lib64/qt5/mkspecs/linux-g++"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug/Makefile&quot;  VERBOSE=1 CircuitTester/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CircuitTester_autogen">
+				<Option working_dir="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug/Makefile&quot;  VERBOSE=1 CircuitTester_autogen"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug/CircuitTester_autogen/EWIEGA46WW/qrc_resources.cpp">
+			<Option target="CircuitTester"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug/CircuitTester_autogen/EWIEGA46WW/qrc_resources.cpp.rule">
+			<Option target="CircuitTester"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug/CircuitTester_autogen/mocs_compilation.cpp">
+			<Option target="CircuitTester"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/resources.qrc">
+			<Option target="CircuitTester"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/src/Component.cpp">
+			<Option target="CircuitTester"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/src/Component.h">
+			<Option target="CircuitTester"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/src/Components/Resistor.cpp">
+			<Option target="CircuitTester"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/src/Components/Resistor.h">
+			<Option target="CircuitTester"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/src/GraphicsScene.cpp">
+			<Option target="CircuitTester"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/src/GraphicsScene.h">
+			<Option target="CircuitTester"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/src/arrow.cpp">
+			<Option target="CircuitTester"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/src/arrow.h">
+			<Option target="CircuitTester"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/src/main.cpp">
+			<Option target="CircuitTester"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/src/mainwindow.cpp">
+			<Option target="CircuitTester"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/src/mainwindow.h">
+			<Option target="CircuitTester"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/resources.qrc">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5/Qt5Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5/Qt5ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5/Qt5ModuleLocation.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5GuiConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QComposePlatformInputContextPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QEglFSEmulatorIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QEglFSIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QEglFSKmsEglDeviceIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QEglFSKmsGbmIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QEglFSX11IntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QEvdevKeyboardPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QEvdevMousePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QEvdevTabletPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QEvdevTouchScreenPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QGtk3ThemePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QIbusPlatformInputContextPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QJp2Plugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QLibInputPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QLinuxFbIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QMinimalEglIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QMngPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QSvgIconPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QSvgPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QVirtualKeyboardPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QVncIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QXcbEglIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QXcbGlxIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QXdgDesktopPortalThemePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Core/Qt5CoreConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Core/Qt5CoreConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Core/Qt5CoreConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterPlans/LayoutTest1/../../../../../usr/lib64/cmake/Qt5Core/Qt5CoreMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib64\cmake\Qt5Core\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rhys/scripts/CircuitTester/spice/Component.h
+string
+-
+vector
+-
+
+/home/rhys/scripts/CircuitTester/spice/Components/Resistor.h
+../Component.h
+/home/rhys/scripts/CircuitTester/spice/Component.h
+
+/home/rhys/scripts/CircuitTester/spice/Spice.cpp
+Spice.h
+/home/rhys/scripts/CircuitTester/spice/Spice.h
+Components/Resistor.h
+/home/rhys/scripts/CircuitTester/spice/Components/Resistor.h
+fstream
+-
+sstream
+-
+iostream
+-
+
+/home/rhys/scripts/CircuitTester/spice/Spice.h
+string
+-
+vector
+-
+Component.h
+/home/rhys/scripts/CircuitTester/spice/Component.h
+

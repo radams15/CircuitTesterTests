@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rhys/scripts/CircuitTesterPlans/BackendTest/src/components/Component.h
+PowerData.h
+/home/rhys/scripts/CircuitTesterPlans/BackendTest/src/components/PowerData.h
+
+/home/rhys/scripts/CircuitTesterPlans/BackendTest/src/components/PowerData.h
+
+/home/rhys/scripts/CircuitTesterPlans/BackendTest/src/components/Resistor.cpp
+Resistor.h
+/home/rhys/scripts/CircuitTesterPlans/BackendTest/src/components/Resistor.h
+
+/home/rhys/scripts/CircuitTesterPlans/BackendTest/src/components/Resistor.h
+Component.h
+/home/rhys/scripts/CircuitTesterPlans/BackendTest/src/components/Component.h
+
+/home/rhys/scripts/CircuitTesterPlans/BackendTest/src/components/components.h
+Component.h
+/home/rhys/scripts/CircuitTesterPlans/BackendTest/src/components/Component.h
+Resistor.h
+/home/rhys/scripts/CircuitTesterPlans/BackendTest/src/components/Resistor.h
+
+/home/rhys/scripts/CircuitTesterPlans/BackendTest/src/main.cpp
+iostream
+-
+components/components.h
+/home/rhys/scripts/CircuitTesterPlans/BackendTest/src/components/components.h
+
