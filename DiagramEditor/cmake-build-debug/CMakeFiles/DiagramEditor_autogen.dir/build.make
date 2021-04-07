@@ -54,19 +54,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.7148.70/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.7717.62/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.7148.70/bin/cmake/linux/bin/cmake -E rm -f
+RM = /home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.7717.62/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rhys/scripts/CircuitTesterPlans/DiagramEditor
+CMAKE_SOURCE_DIR = /home/rhys/scripts/CircuitTesterTests/DiagramEditor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug
+CMAKE_BINARY_DIR = /home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug
 
 # Utility rule file for DiagramEditor_autogen.
 
@@ -74,8 +74,8 @@ CMAKE_BINARY_DIR = /home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-bui
 include CMakeFiles/DiagramEditor_autogen.dir/progress.make
 
 CMakeFiles/DiagramEditor_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target DiagramEditor"
-	/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.7148.70/bin/cmake/linux/bin/cmake -E cmake_autogen /home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/CMakeFiles/DiagramEditor_autogen.dir/AutogenInfo.json Debug
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target DiagramEditor"
+	/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.7717.62/bin/cmake/linux/bin/cmake -E cmake_autogen /home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug/CMakeFiles/DiagramEditor_autogen.dir/AutogenInfo.json Debug
 
 DiagramEditor_autogen: CMakeFiles/DiagramEditor_autogen
 DiagramEditor_autogen: CMakeFiles/DiagramEditor_autogen.dir/build.make
@@ -92,6 +92,6 @@ CMakeFiles/DiagramEditor_autogen.dir/clean:
 .PHONY : CMakeFiles/DiagramEditor_autogen.dir/clean
 
 CMakeFiles/DiagramEditor_autogen.dir/depend:
-	cd /home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rhys/scripts/CircuitTesterPlans/DiagramEditor /home/rhys/scripts/CircuitTesterPlans/DiagramEditor /home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug /home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug /home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/CMakeFiles/DiagramEditor_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rhys/scripts/CircuitTesterTests/DiagramEditor /home/rhys/scripts/CircuitTesterTests/DiagramEditor /home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug /home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug /home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug/CMakeFiles/DiagramEditor_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/DiagramEditor_autogen.dir/depend
 

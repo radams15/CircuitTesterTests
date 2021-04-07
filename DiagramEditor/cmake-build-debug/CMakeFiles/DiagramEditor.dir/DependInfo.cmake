@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/DiagramEditor_autogen/EWIEGA46WW/qrc_diagramscene.cpp" "/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/CMakeFiles/DiagramEditor.dir/DiagramEditor_autogen/EWIEGA46WW/qrc_diagramscene.cpp.o"
-  "/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/DiagramEditor_autogen/mocs_compilation.cpp" "/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/CMakeFiles/DiagramEditor.dir/DiagramEditor_autogen/mocs_compilation.cpp.o"
-  "/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/arrow.cpp" "/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/CMakeFiles/DiagramEditor.dir/arrow.cpp.o"
-  "/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/diagramitem.cpp" "/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/CMakeFiles/DiagramEditor.dir/diagramitem.cpp.o"
-  "/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/diagramscene.cpp" "/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/CMakeFiles/DiagramEditor.dir/diagramscene.cpp.o"
-  "/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/diagramtextitem.cpp" "/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/CMakeFiles/DiagramEditor.dir/diagramtextitem.cpp.o"
-  "/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/main.cpp" "/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/CMakeFiles/DiagramEditor.dir/main.cpp.o"
-  "/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/mainwindow.cpp" "/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/CMakeFiles/DiagramEditor.dir/mainwindow.cpp.o"
+  "/home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug/DiagramEditor_autogen/EWIEGA46WW/qrc_diagramscene.cpp" "/home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug/CMakeFiles/DiagramEditor.dir/DiagramEditor_autogen/EWIEGA46WW/qrc_diagramscene.cpp.o"
+  "/home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug/DiagramEditor_autogen/mocs_compilation.cpp" "/home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug/CMakeFiles/DiagramEditor.dir/DiagramEditor_autogen/mocs_compilation.cpp.o"
+  "/home/rhys/scripts/CircuitTesterTests/DiagramEditor/arrow.cpp" "/home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug/CMakeFiles/DiagramEditor.dir/arrow.cpp.o"
+  "/home/rhys/scripts/CircuitTesterTests/DiagramEditor/diagramitem.cpp" "/home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug/CMakeFiles/DiagramEditor.dir/diagramitem.cpp.o"
+  "/home/rhys/scripts/CircuitTesterTests/DiagramEditor/diagramscene.cpp" "/home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug/CMakeFiles/DiagramEditor.dir/diagramscene.cpp.o"
+  "/home/rhys/scripts/CircuitTesterTests/DiagramEditor/diagramtextitem.cpp" "/home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug/CMakeFiles/DiagramEditor.dir/diagramtextitem.cpp.o"
+  "/home/rhys/scripts/CircuitTesterTests/DiagramEditor/main.cpp" "/home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug/CMakeFiles/DiagramEditor.dir/main.cpp.o"
+  "/home/rhys/scripts/CircuitTesterTests/DiagramEditor/mainwindow.cpp" "/home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug/CMakeFiles/DiagramEditor.dir/mainwindow.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -27,11 +27,11 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "."
   "../"
   "DiagramEditor_autogen/include"
-  "/usr/include/x86_64-linux-gnu/qt5"
-  "/usr/include/x86_64-linux-gnu/qt5/QtWidgets"
-  "/usr/include/x86_64-linux-gnu/qt5/QtGui"
-  "/usr/include/x86_64-linux-gnu/qt5/QtCore"
-  "/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"
+  "/usr/include/qt5"
+  "/usr/include/qt5/QtWidgets"
+  "/usr/include/qt5/QtGui"
+  "/usr/include/qt5/QtCore"
+  "/usr/lib64/qt5/mkspecs/linux-g++"
   )
 
 # Targets to which this target links.

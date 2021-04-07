@@ -59,19 +59,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.7148.70/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.7717.62/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.7148.70/bin/cmake/linux/bin/cmake -E rm -f
+RM = /home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.7717.62/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rhys/scripts/CircuitTesterPlans/LayoutTest1
+CMAKE_SOURCE_DIR = /home/rhys/scripts/CircuitTesterTests/LayoutTest1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/rhys/scripts/CircuitTesterTests/LayoutTest1/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,7 +79,7 @@ CMAKE_BINARY_DIR = /home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.7148.70/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.7717.62/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -90,7 +90,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.7148.70/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.7717.62/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug/CMakeFiles /home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rhys/scripts/CircuitTesterTests/LayoutTest1/cmake-build-debug/CMakeFiles /home/rhys/scripts/CircuitTesterTests/LayoutTest1/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rhys/scripts/CircuitTesterPlans/LayoutTest1/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rhys/scripts/CircuitTesterTests/LayoutTest1/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -131,246 +131,246 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named CircuitTester
+# Target rules for targets named LayoutTest1
 
 # Build rule for target.
-CircuitTester: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CircuitTester
-.PHONY : CircuitTester
+LayoutTest1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LayoutTest1
+.PHONY : LayoutTest1
 
 # fast build rule for target.
-CircuitTester/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CircuitTester.dir/build.make CMakeFiles/CircuitTester.dir/build
-.PHONY : CircuitTester/fast
+LayoutTest1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LayoutTest1.dir/build.make CMakeFiles/LayoutTest1.dir/build
+.PHONY : LayoutTest1/fast
 
 #=============================================================================
-# Target rules for targets named CircuitTester_autogen
+# Target rules for targets named LayoutTest1_autogen
 
 # Build rule for target.
-CircuitTester_autogen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CircuitTester_autogen
-.PHONY : CircuitTester_autogen
+LayoutTest1_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LayoutTest1_autogen
+.PHONY : LayoutTest1_autogen
 
 # fast build rule for target.
-CircuitTester_autogen/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CircuitTester_autogen.dir/build.make CMakeFiles/CircuitTester_autogen.dir/build
-.PHONY : CircuitTester_autogen/fast
+LayoutTest1_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LayoutTest1_autogen.dir/build.make CMakeFiles/LayoutTest1_autogen.dir/build
+.PHONY : LayoutTest1_autogen/fast
 
-CircuitTester_autogen/EWIEGA46WW/qrc_resources.o: CircuitTester_autogen/EWIEGA46WW/qrc_resources.cpp.o
+Arrow.o: Arrow.cpp.o
 
-.PHONY : CircuitTester_autogen/EWIEGA46WW/qrc_resources.o
-
-# target to build an object file
-CircuitTester_autogen/EWIEGA46WW/qrc_resources.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CircuitTester.dir/build.make CMakeFiles/CircuitTester.dir/CircuitTester_autogen/EWIEGA46WW/qrc_resources.cpp.o
-.PHONY : CircuitTester_autogen/EWIEGA46WW/qrc_resources.cpp.o
-
-CircuitTester_autogen/EWIEGA46WW/qrc_resources.i: CircuitTester_autogen/EWIEGA46WW/qrc_resources.cpp.i
-
-.PHONY : CircuitTester_autogen/EWIEGA46WW/qrc_resources.i
-
-# target to preprocess a source file
-CircuitTester_autogen/EWIEGA46WW/qrc_resources.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CircuitTester.dir/build.make CMakeFiles/CircuitTester.dir/CircuitTester_autogen/EWIEGA46WW/qrc_resources.cpp.i
-.PHONY : CircuitTester_autogen/EWIEGA46WW/qrc_resources.cpp.i
-
-CircuitTester_autogen/EWIEGA46WW/qrc_resources.s: CircuitTester_autogen/EWIEGA46WW/qrc_resources.cpp.s
-
-.PHONY : CircuitTester_autogen/EWIEGA46WW/qrc_resources.s
-
-# target to generate assembly for a file
-CircuitTester_autogen/EWIEGA46WW/qrc_resources.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CircuitTester.dir/build.make CMakeFiles/CircuitTester.dir/CircuitTester_autogen/EWIEGA46WW/qrc_resources.cpp.s
-.PHONY : CircuitTester_autogen/EWIEGA46WW/qrc_resources.cpp.s
-
-CircuitTester_autogen/mocs_compilation.o: CircuitTester_autogen/mocs_compilation.cpp.o
-
-.PHONY : CircuitTester_autogen/mocs_compilation.o
+.PHONY : Arrow.o
 
 # target to build an object file
-CircuitTester_autogen/mocs_compilation.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CircuitTester.dir/build.make CMakeFiles/CircuitTester.dir/CircuitTester_autogen/mocs_compilation.cpp.o
-.PHONY : CircuitTester_autogen/mocs_compilation.cpp.o
+Arrow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LayoutTest1.dir/build.make CMakeFiles/LayoutTest1.dir/Arrow.cpp.o
+.PHONY : Arrow.cpp.o
 
-CircuitTester_autogen/mocs_compilation.i: CircuitTester_autogen/mocs_compilation.cpp.i
+Arrow.i: Arrow.cpp.i
 
-.PHONY : CircuitTester_autogen/mocs_compilation.i
+.PHONY : Arrow.i
 
 # target to preprocess a source file
-CircuitTester_autogen/mocs_compilation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CircuitTester.dir/build.make CMakeFiles/CircuitTester.dir/CircuitTester_autogen/mocs_compilation.cpp.i
-.PHONY : CircuitTester_autogen/mocs_compilation.cpp.i
+Arrow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LayoutTest1.dir/build.make CMakeFiles/LayoutTest1.dir/Arrow.cpp.i
+.PHONY : Arrow.cpp.i
 
-CircuitTester_autogen/mocs_compilation.s: CircuitTester_autogen/mocs_compilation.cpp.s
+Arrow.s: Arrow.cpp.s
 
-.PHONY : CircuitTester_autogen/mocs_compilation.s
+.PHONY : Arrow.s
 
 # target to generate assembly for a file
-CircuitTester_autogen/mocs_compilation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CircuitTester.dir/build.make CMakeFiles/CircuitTester.dir/CircuitTester_autogen/mocs_compilation.cpp.s
-.PHONY : CircuitTester_autogen/mocs_compilation.cpp.s
+Arrow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LayoutTest1.dir/build.make CMakeFiles/LayoutTest1.dir/Arrow.cpp.s
+.PHONY : Arrow.cpp.s
 
-src/Component.o: src/Component.cpp.o
+LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.o: LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.cpp.o
 
-.PHONY : src/Component.o
+.PHONY : LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.o
 
 # target to build an object file
-src/Component.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CircuitTester.dir/build.make CMakeFiles/CircuitTester.dir/src/Component.cpp.o
-.PHONY : src/Component.cpp.o
+LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LayoutTest1.dir/build.make CMakeFiles/LayoutTest1.dir/LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.cpp.o
+.PHONY : LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.cpp.o
 
-src/Component.i: src/Component.cpp.i
+LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.i: LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.cpp.i
 
-.PHONY : src/Component.i
+.PHONY : LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.i
 
 # target to preprocess a source file
-src/Component.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CircuitTester.dir/build.make CMakeFiles/CircuitTester.dir/src/Component.cpp.i
-.PHONY : src/Component.cpp.i
+LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LayoutTest1.dir/build.make CMakeFiles/LayoutTest1.dir/LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.cpp.i
+.PHONY : LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.cpp.i
 
-src/Component.s: src/Component.cpp.s
+LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.s: LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.cpp.s
 
-.PHONY : src/Component.s
+.PHONY : LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.s
 
 # target to generate assembly for a file
-src/Component.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CircuitTester.dir/build.make CMakeFiles/CircuitTester.dir/src/Component.cpp.s
-.PHONY : src/Component.cpp.s
+LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LayoutTest1.dir/build.make CMakeFiles/LayoutTest1.dir/LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.cpp.s
+.PHONY : LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.cpp.s
 
-src/Components/Resistor.o: src/Components/Resistor.cpp.o
+LayoutTest1_autogen/mocs_compilation.o: LayoutTest1_autogen/mocs_compilation.cpp.o
 
-.PHONY : src/Components/Resistor.o
+.PHONY : LayoutTest1_autogen/mocs_compilation.o
 
 # target to build an object file
-src/Components/Resistor.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CircuitTester.dir/build.make CMakeFiles/CircuitTester.dir/src/Components/Resistor.cpp.o
-.PHONY : src/Components/Resistor.cpp.o
+LayoutTest1_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LayoutTest1.dir/build.make CMakeFiles/LayoutTest1.dir/LayoutTest1_autogen/mocs_compilation.cpp.o
+.PHONY : LayoutTest1_autogen/mocs_compilation.cpp.o
 
-src/Components/Resistor.i: src/Components/Resistor.cpp.i
+LayoutTest1_autogen/mocs_compilation.i: LayoutTest1_autogen/mocs_compilation.cpp.i
 
-.PHONY : src/Components/Resistor.i
+.PHONY : LayoutTest1_autogen/mocs_compilation.i
 
 # target to preprocess a source file
-src/Components/Resistor.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CircuitTester.dir/build.make CMakeFiles/CircuitTester.dir/src/Components/Resistor.cpp.i
-.PHONY : src/Components/Resistor.cpp.i
+LayoutTest1_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LayoutTest1.dir/build.make CMakeFiles/LayoutTest1.dir/LayoutTest1_autogen/mocs_compilation.cpp.i
+.PHONY : LayoutTest1_autogen/mocs_compilation.cpp.i
 
-src/Components/Resistor.s: src/Components/Resistor.cpp.s
+LayoutTest1_autogen/mocs_compilation.s: LayoutTest1_autogen/mocs_compilation.cpp.s
 
-.PHONY : src/Components/Resistor.s
+.PHONY : LayoutTest1_autogen/mocs_compilation.s
 
 # target to generate assembly for a file
-src/Components/Resistor.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CircuitTester.dir/build.make CMakeFiles/CircuitTester.dir/src/Components/Resistor.cpp.s
-.PHONY : src/Components/Resistor.cpp.s
+LayoutTest1_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LayoutTest1.dir/build.make CMakeFiles/LayoutTest1.dir/LayoutTest1_autogen/mocs_compilation.cpp.s
+.PHONY : LayoutTest1_autogen/mocs_compilation.cpp.s
 
-src/GraphicsScene.o: src/GraphicsScene.cpp.o
+MainWindow.o: MainWindow.cpp.o
 
-.PHONY : src/GraphicsScene.o
+.PHONY : MainWindow.o
 
 # target to build an object file
-src/GraphicsScene.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CircuitTester.dir/build.make CMakeFiles/CircuitTester.dir/src/GraphicsScene.cpp.o
-.PHONY : src/GraphicsScene.cpp.o
+MainWindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LayoutTest1.dir/build.make CMakeFiles/LayoutTest1.dir/MainWindow.cpp.o
+.PHONY : MainWindow.cpp.o
 
-src/GraphicsScene.i: src/GraphicsScene.cpp.i
+MainWindow.i: MainWindow.cpp.i
 
-.PHONY : src/GraphicsScene.i
+.PHONY : MainWindow.i
 
 # target to preprocess a source file
-src/GraphicsScene.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CircuitTester.dir/build.make CMakeFiles/CircuitTester.dir/src/GraphicsScene.cpp.i
-.PHONY : src/GraphicsScene.cpp.i
+MainWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LayoutTest1.dir/build.make CMakeFiles/LayoutTest1.dir/MainWindow.cpp.i
+.PHONY : MainWindow.cpp.i
 
-src/GraphicsScene.s: src/GraphicsScene.cpp.s
+MainWindow.s: MainWindow.cpp.s
 
-.PHONY : src/GraphicsScene.s
+.PHONY : MainWindow.s
 
 # target to generate assembly for a file
-src/GraphicsScene.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CircuitTester.dir/build.make CMakeFiles/CircuitTester.dir/src/GraphicsScene.cpp.s
-.PHONY : src/GraphicsScene.cpp.s
+MainWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LayoutTest1.dir/build.make CMakeFiles/LayoutTest1.dir/MainWindow.cpp.s
+.PHONY : MainWindow.cpp.s
 
-src/arrow.o: src/arrow.cpp.o
+Scene.o: Scene.cpp.o
 
-.PHONY : src/arrow.o
+.PHONY : Scene.o
 
 # target to build an object file
-src/arrow.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CircuitTester.dir/build.make CMakeFiles/CircuitTester.dir/src/arrow.cpp.o
-.PHONY : src/arrow.cpp.o
+Scene.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LayoutTest1.dir/build.make CMakeFiles/LayoutTest1.dir/Scene.cpp.o
+.PHONY : Scene.cpp.o
 
-src/arrow.i: src/arrow.cpp.i
+Scene.i: Scene.cpp.i
 
-.PHONY : src/arrow.i
+.PHONY : Scene.i
 
 # target to preprocess a source file
-src/arrow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CircuitTester.dir/build.make CMakeFiles/CircuitTester.dir/src/arrow.cpp.i
-.PHONY : src/arrow.cpp.i
+Scene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LayoutTest1.dir/build.make CMakeFiles/LayoutTest1.dir/Scene.cpp.i
+.PHONY : Scene.cpp.i
 
-src/arrow.s: src/arrow.cpp.s
+Scene.s: Scene.cpp.s
 
-.PHONY : src/arrow.s
+.PHONY : Scene.s
 
 # target to generate assembly for a file
-src/arrow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CircuitTester.dir/build.make CMakeFiles/CircuitTester.dir/src/arrow.cpp.s
-.PHONY : src/arrow.cpp.s
+Scene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LayoutTest1.dir/build.make CMakeFiles/LayoutTest1.dir/Scene.cpp.s
+.PHONY : Scene.cpp.s
 
-src/main.o: src/main.cpp.o
+SceneItem.o: SceneItem.cpp.o
 
-.PHONY : src/main.o
+.PHONY : SceneItem.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CircuitTester.dir/build.make CMakeFiles/CircuitTester.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+SceneItem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LayoutTest1.dir/build.make CMakeFiles/LayoutTest1.dir/SceneItem.cpp.o
+.PHONY : SceneItem.cpp.o
 
-src/main.i: src/main.cpp.i
+SceneItem.i: SceneItem.cpp.i
 
-.PHONY : src/main.i
+.PHONY : SceneItem.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CircuitTester.dir/build.make CMakeFiles/CircuitTester.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+SceneItem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LayoutTest1.dir/build.make CMakeFiles/LayoutTest1.dir/SceneItem.cpp.i
+.PHONY : SceneItem.cpp.i
 
-src/main.s: src/main.cpp.s
+SceneItem.s: SceneItem.cpp.s
 
-.PHONY : src/main.s
+.PHONY : SceneItem.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CircuitTester.dir/build.make CMakeFiles/CircuitTester.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+SceneItem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LayoutTest1.dir/build.make CMakeFiles/LayoutTest1.dir/SceneItem.cpp.s
+.PHONY : SceneItem.cpp.s
 
-src/mainwindow.o: src/mainwindow.cpp.o
+SceneText.o: SceneText.cpp.o
 
-.PHONY : src/mainwindow.o
+.PHONY : SceneText.o
 
 # target to build an object file
-src/mainwindow.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CircuitTester.dir/build.make CMakeFiles/CircuitTester.dir/src/mainwindow.cpp.o
-.PHONY : src/mainwindow.cpp.o
+SceneText.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LayoutTest1.dir/build.make CMakeFiles/LayoutTest1.dir/SceneText.cpp.o
+.PHONY : SceneText.cpp.o
 
-src/mainwindow.i: src/mainwindow.cpp.i
+SceneText.i: SceneText.cpp.i
 
-.PHONY : src/mainwindow.i
+.PHONY : SceneText.i
 
 # target to preprocess a source file
-src/mainwindow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CircuitTester.dir/build.make CMakeFiles/CircuitTester.dir/src/mainwindow.cpp.i
-.PHONY : src/mainwindow.cpp.i
+SceneText.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LayoutTest1.dir/build.make CMakeFiles/LayoutTest1.dir/SceneText.cpp.i
+.PHONY : SceneText.cpp.i
 
-src/mainwindow.s: src/mainwindow.cpp.s
+SceneText.s: SceneText.cpp.s
 
-.PHONY : src/mainwindow.s
+.PHONY : SceneText.s
 
 # target to generate assembly for a file
-src/mainwindow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CircuitTester.dir/build.make CMakeFiles/CircuitTester.dir/src/mainwindow.cpp.s
-.PHONY : src/mainwindow.cpp.s
+SceneText.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LayoutTest1.dir/build.make CMakeFiles/LayoutTest1.dir/SceneText.cpp.s
+.PHONY : SceneText.cpp.s
+
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LayoutTest1.dir/build.make CMakeFiles/LayoutTest1.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LayoutTest1.dir/build.make CMakeFiles/LayoutTest1.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LayoutTest1.dir/build.make CMakeFiles/LayoutTest1.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -380,32 +380,32 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... CircuitTester_autogen"
-	@echo "... CircuitTester"
-	@echo "... CircuitTester_autogen/EWIEGA46WW/qrc_resources.o"
-	@echo "... CircuitTester_autogen/EWIEGA46WW/qrc_resources.i"
-	@echo "... CircuitTester_autogen/EWIEGA46WW/qrc_resources.s"
-	@echo "... CircuitTester_autogen/mocs_compilation.o"
-	@echo "... CircuitTester_autogen/mocs_compilation.i"
-	@echo "... CircuitTester_autogen/mocs_compilation.s"
-	@echo "... src/Component.o"
-	@echo "... src/Component.i"
-	@echo "... src/Component.s"
-	@echo "... src/Components/Resistor.o"
-	@echo "... src/Components/Resistor.i"
-	@echo "... src/Components/Resistor.s"
-	@echo "... src/GraphicsScene.o"
-	@echo "... src/GraphicsScene.i"
-	@echo "... src/GraphicsScene.s"
-	@echo "... src/arrow.o"
-	@echo "... src/arrow.i"
-	@echo "... src/arrow.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
-	@echo "... src/mainwindow.o"
-	@echo "... src/mainwindow.i"
-	@echo "... src/mainwindow.s"
+	@echo "... LayoutTest1_autogen"
+	@echo "... LayoutTest1"
+	@echo "... Arrow.o"
+	@echo "... Arrow.i"
+	@echo "... Arrow.s"
+	@echo "... LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.o"
+	@echo "... LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.i"
+	@echo "... LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.s"
+	@echo "... LayoutTest1_autogen/mocs_compilation.o"
+	@echo "... LayoutTest1_autogen/mocs_compilation.i"
+	@echo "... LayoutTest1_autogen/mocs_compilation.s"
+	@echo "... MainWindow.o"
+	@echo "... MainWindow.i"
+	@echo "... MainWindow.s"
+	@echo "... Scene.o"
+	@echo "... Scene.i"
+	@echo "... Scene.s"
+	@echo "... SceneItem.o"
+	@echo "... SceneItem.i"
+	@echo "... SceneItem.s"
+	@echo "... SceneText.o"
+	@echo "... SceneText.i"
+	@echo "... SceneText.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

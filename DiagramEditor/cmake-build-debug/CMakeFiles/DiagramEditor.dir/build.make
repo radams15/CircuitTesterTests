@@ -54,19 +54,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.7148.70/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.7717.62/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.7148.70/bin/cmake/linux/bin/cmake -E rm -f
+RM = /home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.7717.62/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rhys/scripts/CircuitTesterPlans/DiagramEditor
+CMAKE_SOURCE_DIR = /home/rhys/scripts/CircuitTesterTests/DiagramEditor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug
+CMAKE_BINARY_DIR = /home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/DiagramEditor.dir/depend.make
@@ -94,113 +94,113 @@ DiagramEditor_autogen/EWIEGA46WW/qrc_diagramscene.cpp: ../images/delete.png
 DiagramEditor_autogen/EWIEGA46WW/qrc_diagramscene.cpp: ../images/linepointer.png
 DiagramEditor_autogen/EWIEGA46WW/qrc_diagramscene.cpp: ../images/bold.png
 DiagramEditor_autogen/EWIEGA46WW/qrc_diagramscene.cpp: ../images/background3.png
-DiagramEditor_autogen/EWIEGA46WW/qrc_diagramscene.cpp: /usr/lib/qt5/bin/rcc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic RCC for diagramscene.qrc"
-	/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.7148.70/bin/cmake/linux/bin/cmake -E cmake_autorcc /home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/CMakeFiles/DiagramEditor_autogen.dir/AutoRcc_diagramscene_EWIEGA46WW_Info.json Debug
+DiagramEditor_autogen/EWIEGA46WW/qrc_diagramscene.cpp: /usr/lib64/qt5/bin/rcc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic RCC for diagramscene.qrc"
+	/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.7717.62/bin/cmake/linux/bin/cmake -E cmake_autorcc /home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug/CMakeFiles/DiagramEditor_autogen.dir/AutoRcc_diagramscene_EWIEGA46WW_Info.json Debug
 
 CMakeFiles/DiagramEditor.dir/DiagramEditor_autogen/mocs_compilation.cpp.o: CMakeFiles/DiagramEditor.dir/flags.make
 CMakeFiles/DiagramEditor.dir/DiagramEditor_autogen/mocs_compilation.cpp.o: DiagramEditor_autogen/mocs_compilation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DiagramEditor.dir/DiagramEditor_autogen/mocs_compilation.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DiagramEditor.dir/DiagramEditor_autogen/mocs_compilation.cpp.o -c /home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/DiagramEditor_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DiagramEditor.dir/DiagramEditor_autogen/mocs_compilation.cpp.o"
+	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DiagramEditor.dir/DiagramEditor_autogen/mocs_compilation.cpp.o -c /home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug/DiagramEditor_autogen/mocs_compilation.cpp
 
 CMakeFiles/DiagramEditor.dir/DiagramEditor_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DiagramEditor.dir/DiagramEditor_autogen/mocs_compilation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/DiagramEditor_autogen/mocs_compilation.cpp > CMakeFiles/DiagramEditor.dir/DiagramEditor_autogen/mocs_compilation.cpp.i
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug/DiagramEditor_autogen/mocs_compilation.cpp > CMakeFiles/DiagramEditor.dir/DiagramEditor_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/DiagramEditor.dir/DiagramEditor_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DiagramEditor.dir/DiagramEditor_autogen/mocs_compilation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/DiagramEditor_autogen/mocs_compilation.cpp -o CMakeFiles/DiagramEditor.dir/DiagramEditor_autogen/mocs_compilation.cpp.s
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug/DiagramEditor_autogen/mocs_compilation.cpp -o CMakeFiles/DiagramEditor.dir/DiagramEditor_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/DiagramEditor.dir/arrow.cpp.o: CMakeFiles/DiagramEditor.dir/flags.make
 CMakeFiles/DiagramEditor.dir/arrow.cpp.o: ../arrow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DiagramEditor.dir/arrow.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DiagramEditor.dir/arrow.cpp.o -c /home/rhys/scripts/CircuitTesterPlans/DiagramEditor/arrow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DiagramEditor.dir/arrow.cpp.o"
+	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DiagramEditor.dir/arrow.cpp.o -c /home/rhys/scripts/CircuitTesterTests/DiagramEditor/arrow.cpp
 
 CMakeFiles/DiagramEditor.dir/arrow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DiagramEditor.dir/arrow.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/CircuitTesterPlans/DiagramEditor/arrow.cpp > CMakeFiles/DiagramEditor.dir/arrow.cpp.i
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/CircuitTesterTests/DiagramEditor/arrow.cpp > CMakeFiles/DiagramEditor.dir/arrow.cpp.i
 
 CMakeFiles/DiagramEditor.dir/arrow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DiagramEditor.dir/arrow.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/CircuitTesterPlans/DiagramEditor/arrow.cpp -o CMakeFiles/DiagramEditor.dir/arrow.cpp.s
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/CircuitTesterTests/DiagramEditor/arrow.cpp -o CMakeFiles/DiagramEditor.dir/arrow.cpp.s
 
 CMakeFiles/DiagramEditor.dir/diagramitem.cpp.o: CMakeFiles/DiagramEditor.dir/flags.make
 CMakeFiles/DiagramEditor.dir/diagramitem.cpp.o: ../diagramitem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DiagramEditor.dir/diagramitem.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DiagramEditor.dir/diagramitem.cpp.o -c /home/rhys/scripts/CircuitTesterPlans/DiagramEditor/diagramitem.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DiagramEditor.dir/diagramitem.cpp.o"
+	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DiagramEditor.dir/diagramitem.cpp.o -c /home/rhys/scripts/CircuitTesterTests/DiagramEditor/diagramitem.cpp
 
 CMakeFiles/DiagramEditor.dir/diagramitem.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DiagramEditor.dir/diagramitem.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/CircuitTesterPlans/DiagramEditor/diagramitem.cpp > CMakeFiles/DiagramEditor.dir/diagramitem.cpp.i
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/CircuitTesterTests/DiagramEditor/diagramitem.cpp > CMakeFiles/DiagramEditor.dir/diagramitem.cpp.i
 
 CMakeFiles/DiagramEditor.dir/diagramitem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DiagramEditor.dir/diagramitem.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/CircuitTesterPlans/DiagramEditor/diagramitem.cpp -o CMakeFiles/DiagramEditor.dir/diagramitem.cpp.s
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/CircuitTesterTests/DiagramEditor/diagramitem.cpp -o CMakeFiles/DiagramEditor.dir/diagramitem.cpp.s
 
 CMakeFiles/DiagramEditor.dir/diagramscene.cpp.o: CMakeFiles/DiagramEditor.dir/flags.make
 CMakeFiles/DiagramEditor.dir/diagramscene.cpp.o: ../diagramscene.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DiagramEditor.dir/diagramscene.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DiagramEditor.dir/diagramscene.cpp.o -c /home/rhys/scripts/CircuitTesterPlans/DiagramEditor/diagramscene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DiagramEditor.dir/diagramscene.cpp.o"
+	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DiagramEditor.dir/diagramscene.cpp.o -c /home/rhys/scripts/CircuitTesterTests/DiagramEditor/diagramscene.cpp
 
 CMakeFiles/DiagramEditor.dir/diagramscene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DiagramEditor.dir/diagramscene.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/CircuitTesterPlans/DiagramEditor/diagramscene.cpp > CMakeFiles/DiagramEditor.dir/diagramscene.cpp.i
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/CircuitTesterTests/DiagramEditor/diagramscene.cpp > CMakeFiles/DiagramEditor.dir/diagramscene.cpp.i
 
 CMakeFiles/DiagramEditor.dir/diagramscene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DiagramEditor.dir/diagramscene.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/CircuitTesterPlans/DiagramEditor/diagramscene.cpp -o CMakeFiles/DiagramEditor.dir/diagramscene.cpp.s
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/CircuitTesterTests/DiagramEditor/diagramscene.cpp -o CMakeFiles/DiagramEditor.dir/diagramscene.cpp.s
 
 CMakeFiles/DiagramEditor.dir/diagramtextitem.cpp.o: CMakeFiles/DiagramEditor.dir/flags.make
 CMakeFiles/DiagramEditor.dir/diagramtextitem.cpp.o: ../diagramtextitem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DiagramEditor.dir/diagramtextitem.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DiagramEditor.dir/diagramtextitem.cpp.o -c /home/rhys/scripts/CircuitTesterPlans/DiagramEditor/diagramtextitem.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DiagramEditor.dir/diagramtextitem.cpp.o"
+	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DiagramEditor.dir/diagramtextitem.cpp.o -c /home/rhys/scripts/CircuitTesterTests/DiagramEditor/diagramtextitem.cpp
 
 CMakeFiles/DiagramEditor.dir/diagramtextitem.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DiagramEditor.dir/diagramtextitem.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/CircuitTesterPlans/DiagramEditor/diagramtextitem.cpp > CMakeFiles/DiagramEditor.dir/diagramtextitem.cpp.i
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/CircuitTesterTests/DiagramEditor/diagramtextitem.cpp > CMakeFiles/DiagramEditor.dir/diagramtextitem.cpp.i
 
 CMakeFiles/DiagramEditor.dir/diagramtextitem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DiagramEditor.dir/diagramtextitem.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/CircuitTesterPlans/DiagramEditor/diagramtextitem.cpp -o CMakeFiles/DiagramEditor.dir/diagramtextitem.cpp.s
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/CircuitTesterTests/DiagramEditor/diagramtextitem.cpp -o CMakeFiles/DiagramEditor.dir/diagramtextitem.cpp.s
 
 CMakeFiles/DiagramEditor.dir/main.cpp.o: CMakeFiles/DiagramEditor.dir/flags.make
 CMakeFiles/DiagramEditor.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/DiagramEditor.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DiagramEditor.dir/main.cpp.o -c /home/rhys/scripts/CircuitTesterPlans/DiagramEditor/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/DiagramEditor.dir/main.cpp.o"
+	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DiagramEditor.dir/main.cpp.o -c /home/rhys/scripts/CircuitTesterTests/DiagramEditor/main.cpp
 
 CMakeFiles/DiagramEditor.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DiagramEditor.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/CircuitTesterPlans/DiagramEditor/main.cpp > CMakeFiles/DiagramEditor.dir/main.cpp.i
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/CircuitTesterTests/DiagramEditor/main.cpp > CMakeFiles/DiagramEditor.dir/main.cpp.i
 
 CMakeFiles/DiagramEditor.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DiagramEditor.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/CircuitTesterPlans/DiagramEditor/main.cpp -o CMakeFiles/DiagramEditor.dir/main.cpp.s
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/CircuitTesterTests/DiagramEditor/main.cpp -o CMakeFiles/DiagramEditor.dir/main.cpp.s
 
 CMakeFiles/DiagramEditor.dir/mainwindow.cpp.o: CMakeFiles/DiagramEditor.dir/flags.make
 CMakeFiles/DiagramEditor.dir/mainwindow.cpp.o: ../mainwindow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/DiagramEditor.dir/mainwindow.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DiagramEditor.dir/mainwindow.cpp.o -c /home/rhys/scripts/CircuitTesterPlans/DiagramEditor/mainwindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/DiagramEditor.dir/mainwindow.cpp.o"
+	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DiagramEditor.dir/mainwindow.cpp.o -c /home/rhys/scripts/CircuitTesterTests/DiagramEditor/mainwindow.cpp
 
 CMakeFiles/DiagramEditor.dir/mainwindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DiagramEditor.dir/mainwindow.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/CircuitTesterPlans/DiagramEditor/mainwindow.cpp > CMakeFiles/DiagramEditor.dir/mainwindow.cpp.i
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/CircuitTesterTests/DiagramEditor/mainwindow.cpp > CMakeFiles/DiagramEditor.dir/mainwindow.cpp.i
 
 CMakeFiles/DiagramEditor.dir/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DiagramEditor.dir/mainwindow.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/CircuitTesterPlans/DiagramEditor/mainwindow.cpp -o CMakeFiles/DiagramEditor.dir/mainwindow.cpp.s
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/CircuitTesterTests/DiagramEditor/mainwindow.cpp -o CMakeFiles/DiagramEditor.dir/mainwindow.cpp.s
 
 CMakeFiles/DiagramEditor.dir/DiagramEditor_autogen/EWIEGA46WW/qrc_diagramscene.cpp.o: CMakeFiles/DiagramEditor.dir/flags.make
 CMakeFiles/DiagramEditor.dir/DiagramEditor_autogen/EWIEGA46WW/qrc_diagramscene.cpp.o: DiagramEditor_autogen/EWIEGA46WW/qrc_diagramscene.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/DiagramEditor.dir/DiagramEditor_autogen/EWIEGA46WW/qrc_diagramscene.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DiagramEditor.dir/DiagramEditor_autogen/EWIEGA46WW/qrc_diagramscene.cpp.o -c /home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/DiagramEditor_autogen/EWIEGA46WW/qrc_diagramscene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/DiagramEditor.dir/DiagramEditor_autogen/EWIEGA46WW/qrc_diagramscene.cpp.o"
+	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DiagramEditor.dir/DiagramEditor_autogen/EWIEGA46WW/qrc_diagramscene.cpp.o -c /home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug/DiagramEditor_autogen/EWIEGA46WW/qrc_diagramscene.cpp
 
 CMakeFiles/DiagramEditor.dir/DiagramEditor_autogen/EWIEGA46WW/qrc_diagramscene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DiagramEditor.dir/DiagramEditor_autogen/EWIEGA46WW/qrc_diagramscene.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/DiagramEditor_autogen/EWIEGA46WW/qrc_diagramscene.cpp > CMakeFiles/DiagramEditor.dir/DiagramEditor_autogen/EWIEGA46WW/qrc_diagramscene.cpp.i
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug/DiagramEditor_autogen/EWIEGA46WW/qrc_diagramscene.cpp > CMakeFiles/DiagramEditor.dir/DiagramEditor_autogen/EWIEGA46WW/qrc_diagramscene.cpp.i
 
 CMakeFiles/DiagramEditor.dir/DiagramEditor_autogen/EWIEGA46WW/qrc_diagramscene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DiagramEditor.dir/DiagramEditor_autogen/EWIEGA46WW/qrc_diagramscene.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/DiagramEditor_autogen/EWIEGA46WW/qrc_diagramscene.cpp -o CMakeFiles/DiagramEditor.dir/DiagramEditor_autogen/EWIEGA46WW/qrc_diagramscene.cpp.s
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug/DiagramEditor_autogen/EWIEGA46WW/qrc_diagramscene.cpp -o CMakeFiles/DiagramEditor.dir/DiagramEditor_autogen/EWIEGA46WW/qrc_diagramscene.cpp.s
 
 # Object files for target DiagramEditor
 DiagramEditor_OBJECTS = \
@@ -225,11 +225,11 @@ DiagramEditor: CMakeFiles/DiagramEditor.dir/main.cpp.o
 DiagramEditor: CMakeFiles/DiagramEditor.dir/mainwindow.cpp.o
 DiagramEditor: CMakeFiles/DiagramEditor.dir/DiagramEditor_autogen/EWIEGA46WW/qrc_diagramscene.cpp.o
 DiagramEditor: CMakeFiles/DiagramEditor.dir/build.make
-DiagramEditor: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.14.2
-DiagramEditor: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.14.2
-DiagramEditor: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.14.2
+DiagramEditor: /usr/lib64/libQt5Widgets.so.5.15.2
+DiagramEditor: /usr/lib64/libQt5Gui.so.5.15.2
+DiagramEditor: /usr/lib64/libQt5Core.so.5.15.2
 DiagramEditor: CMakeFiles/DiagramEditor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable DiagramEditor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable DiagramEditor"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DiagramEditor.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -242,6 +242,6 @@ CMakeFiles/DiagramEditor.dir/clean:
 .PHONY : CMakeFiles/DiagramEditor.dir/clean
 
 CMakeFiles/DiagramEditor.dir/depend: DiagramEditor_autogen/EWIEGA46WW/qrc_diagramscene.cpp
-	cd /home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rhys/scripts/CircuitTesterPlans/DiagramEditor /home/rhys/scripts/CircuitTesterPlans/DiagramEditor /home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug /home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug /home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/CMakeFiles/DiagramEditor.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rhys/scripts/CircuitTesterTests/DiagramEditor /home/rhys/scripts/CircuitTesterTests/DiagramEditor /home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug /home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug /home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug/CMakeFiles/DiagramEditor.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/DiagramEditor.dir/depend
 

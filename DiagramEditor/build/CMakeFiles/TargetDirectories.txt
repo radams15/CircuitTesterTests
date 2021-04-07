@@ -1,4 +1,4 @@
-/mnt/files/scripts/CircuitTester/DiagramEditor/build/CMakeFiles/rebuild_cache.dir
-/mnt/files/scripts/CircuitTester/DiagramEditor/build/CMakeFiles/edit_cache.dir
-/mnt/files/scripts/CircuitTester/DiagramEditor/build/CMakeFiles/CircuitTester.dir
-/mnt/files/scripts/CircuitTester/DiagramEditor/build/CMakeFiles/CircuitTester_autogen.dir
+/mnt/files/scripts/CircuitTesterTests/DiagramEditor/build/CMakeFiles/rebuild_cache.dir
+/mnt/files/scripts/CircuitTesterTests/DiagramEditor/build/CMakeFiles/edit_cache.dir
+/mnt/files/scripts/CircuitTesterTests/DiagramEditor/build/CMakeFiles/DiagramEditor.dir
+/mnt/files/scripts/CircuitTesterTests/DiagramEditor/build/CMakeFiles/DiagramEditor_autogen.dir

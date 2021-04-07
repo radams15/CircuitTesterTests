@@ -1,4 +1,4 @@
-/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/CMakeFiles/DiagramEditor.dir
-/home/rhys/scripts/CircuitTesterPlans/DiagramEditor/cmake-build-debug/CMakeFiles/DiagramEditor_autogen.dir
+/home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug/CMakeFiles/DiagramEditor.dir
+/home/rhys/scripts/CircuitTesterTests/DiagramEditor/cmake-build-debug/CMakeFiles/DiagramEditor_autogen.dir

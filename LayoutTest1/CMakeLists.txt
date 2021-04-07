@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(CircuitTester LANGUAGES CXX)
+project(LayoutTest1 LANGUAGES CXX)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
@@ -28,27 +28,25 @@ find_package(QT NAMES Qt5 COMPONENTS Widgets REQUIRED)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets REQUIRED)
 
 if(ANDROID)
-  add_library(CircuitTester_SHARED
-          src/main.cpp
-          src/mainwindow.cpp
-          src/mainwindow.h
-          src/Component.cpp
-
-          src/arrow.cpp
-
-          resources.qrc
+  add_library(LayoutTest1
+          Arrow.cpp Arrow.h
+          SceneItem.cpp SceneItem.h
+          Scene.cpp Scene.h
+          SceneText.cpp SceneText.h
+      main.cpp
+          MainWindow.cpp MainWindow.h
+          layouttest1.qrc
   )
 else()
-  add_executable(CircuitTester
-          src/main.cpp
-          src/mainwindow.cpp
-          src/mainwindow.h
-          src/Component.cpp
-
-          src/arrow.cpp
-
-          resources.qrc
-          src/GraphicsScene.cpp src/GraphicsScene.h src/Components/Resistor.cpp src/Components/Resistor.h)
+  add_executable(LayoutTest1
+          Arrow.cpp Arrow.h
+          SceneItem.cpp SceneItem.h
+          Scene.cpp Scene.h
+          SceneText.cpp SceneText.h
+      main.cpp
+          MainWindow.cpp MainWindow.h
+          layouttest1.qrc
+  )
 endif()
 
-target_link_libraries(CircuitTester PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(LayoutTest1 PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)

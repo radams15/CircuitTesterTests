@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/files/scripts/CircuitTester/DiagramEditor
+# Install script for directory: /mnt/files/scripts/CircuitTesterTests/DiagramEditor
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/files/scripts/CircuitTester/DiagramEditor/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/files/scripts/CircuitTesterTests/DiagramEditor/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
