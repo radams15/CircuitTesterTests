@@ -3,7 +3,3 @@
 //
 
 #include "Resistor.h"
-
-Resistor::Resistor() : ID(1){
-
-}
