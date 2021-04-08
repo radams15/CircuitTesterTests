@@ -5,17 +5,19 @@
 #ifndef LAYOUTTEST1_COMPONENT_H
 #define LAYOUTTEST1_COMPONENT_H
 
+#include <QIcon>
+
 #include "../SceneItem.h"
 
-class Component {// : public SceneItem{
+class Component : public SceneItem{
 protected:
     int ID;
 
-    Component(int id): ID(id){};
+    explicit Component(int id): ID(id), SceneItem(":/images/delete.png"){};
 private:
 
 public:
-
+    inline int getId() { return ID; }
 };
 
 

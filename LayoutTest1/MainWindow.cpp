@@ -5,6 +5,7 @@
 #include "MainWindow.h"
 
 #include <QtWidgets>
+#include <Components/Resistor.h>
 
 const int InsertTextButton = 10;
 
@@ -15,8 +16,10 @@ MainWindow::MainWindow(){
 
     scene = new Scene(itemMenu, this);
     scene->setSceneRect(QRectF(0, 0, 5000, 5000));
+
     connect(scene, &Scene::itemInserted,
             this, &MainWindow::itemInserted);
+
     connect(scene, &Scene::itemSelected,
             this, &MainWindow::itemSelected);
     createToolbars();
@@ -46,8 +49,11 @@ void MainWindow::buttonGroupClicked(QAbstractButton *button){
     if (id == InsertTextButton) {
         scene->setMode(Scene::InsertText);
     } else {
-        scene->setItemType(SceneItem::DiagramType(id));
-        scene->setMode(Scene::InsertItem);
+
+        if(id == (new Resistor)->getId()){
+            scene->setItemType(new Resistor);
+            scene->setMode(Scene::InsertItem);
+        }
     }
 }
 
@@ -80,10 +86,10 @@ void MainWindow::pointerGroupClicked(){
 }
 
 
-void MainWindow::itemInserted(SceneItem *item){
+void MainWindow::itemInserted(Component *c){
     pointerTypeGroup->button(int(Scene::MoveItem))->setChecked(true);
     scene->setMode(Scene::Mode(pointerTypeGroup->checkedId()));
-    buttonGroup->button(int(item->diagramType()))->setChecked(false);
+    buttonGroup->button(c->getId())->setChecked(false);
 }
 
 
@@ -121,10 +127,9 @@ void MainWindow::createToolBox(){
     buttonGroup->setExclusive(false);
     connect(buttonGroup, QOverload<QAbstractButton *>::of(&QButtonGroup::buttonClicked),
             this, &MainWindow::buttonGroupClicked);
+
     QGridLayout *layout = new QGridLayout;
-    layout->addWidget(createCellWidget(tr("Conditional"), SceneItem::Conditional), 0, 0);
-    layout->addWidget(createCellWidget(tr("Process"), SceneItem::Step), 0, 1);
-    layout->addWidget(createCellWidget(tr("Input/Output"), SceneItem::Io), 1, 0);
+    layout->addWidget(createCellWidget<Resistor>(tr("Resistor")), 0, 0);
 
     layout->setRowStretch(3, 10);
     layout->setColumnStretch(2, 10);
@@ -142,7 +147,6 @@ void MainWindow::createToolBox(){
 
 
 void MainWindow::createActions(){
-
     deleteAction = new QAction(QIcon(":/images/delete.png"), tr("&Delete"), this);
     deleteAction->setShortcut(tr("Delete"));
     deleteAction->setStatusTip(tr("Delete item from diagram"));
@@ -203,16 +207,17 @@ void MainWindow::createToolbars(){
 }
 
 
-QWidget *MainWindow::createCellWidget(const QString &text, SceneItem::DiagramType type){
+template<class T>
+QWidget *MainWindow::createCellWidget(const QString &text){
+    T item;
 
-    SceneItem item(type, itemMenu);
-    QIcon icon(item.image());
+    QIcon icon(item.getPixmap());
 
     QToolButton *button = new QToolButton;
     button->setIcon(icon);
     button->setIconSize(QSize(50, 50));
     button->setCheckable(true);
-    buttonGroup->addButton(button, int(type));
+    buttonGroup->addButton(button, item.getId());
 
     QGridLayout *layout = new QGridLayout;
     layout->addWidget(button, 0, 0, Qt::AlignHCenter);

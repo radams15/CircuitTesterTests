@@ -5,6 +5,7 @@
 #include "SceneText.h"
 
 #include <QGraphicsScene>
+#include <Components/Component.h>
 
 
 class Scene : public QGraphicsScene{
@@ -21,11 +22,11 @@ public:
 
 public slots:
     void setMode(Mode mode);
-    void setItemType(SceneItem::DiagramType type);
+    void setItemType(Component* c);
     void editorLostFocus(SceneText *item);
 
 signals:
-    void itemInserted(SceneItem *item);
+    void itemInserted(Component *c);
     void textInserted(QGraphicsTextItem *item);
     void itemSelected(QGraphicsItem *item);
 
@@ -37,7 +38,7 @@ protected:
 private:
     bool isItemChange(int type) const;
 
-    SceneItem::DiagramType myItemType;
+    Component* component;
     QMenu *myItemMenu;
     Mode myMode;
     bool leftButtonDown;

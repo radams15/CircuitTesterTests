@@ -12,7 +12,6 @@ private:
 
 public:
     Resistor() : Component(1) {};
-
 };
 
 

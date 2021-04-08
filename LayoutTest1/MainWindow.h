@@ -23,7 +23,7 @@ private slots:
     void buttonGroupClicked(QAbstractButton *button);
     void deleteItem();
     void pointerGroupClicked();
-    void itemInserted(SceneItem *item);
+    void itemInserted(Component *item);
     void sceneScaleChanged(const QString &scale);
     void itemSelected(QGraphicsItem *item);
     void about();
@@ -33,8 +33,8 @@ private:
     void createActions();
     void createMenus();
     void createToolbars();
-    QWidget *createCellWidget(const QString &text,
-                              SceneItem::DiagramType type);
+
+    template<class T> QWidget *createCellWidget(const QString &text);
 
     Scene *scene;
     QGraphicsView *view;
