@@ -46,7 +46,7 @@ else()
       main.cpp
           MainWindow.cpp MainWindow.h
           layouttest1.qrc
-  )
+          Components/Resistor.cpp Components/Resistor.h Components/Component.cpp Components/Component.h)
 endif()
 
 target_link_libraries(LayoutTest1 PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)

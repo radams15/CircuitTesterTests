@@ -183,6 +183,60 @@ Arrow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LayoutTest1.dir/build.make CMakeFiles/LayoutTest1.dir/Arrow.cpp.s
 .PHONY : Arrow.cpp.s
 
+Components/Component.o: Components/Component.cpp.o
+
+.PHONY : Components/Component.o
+
+# target to build an object file
+Components/Component.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LayoutTest1.dir/build.make CMakeFiles/LayoutTest1.dir/Components/Component.cpp.o
+.PHONY : Components/Component.cpp.o
+
+Components/Component.i: Components/Component.cpp.i
+
+.PHONY : Components/Component.i
+
+# target to preprocess a source file
+Components/Component.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LayoutTest1.dir/build.make CMakeFiles/LayoutTest1.dir/Components/Component.cpp.i
+.PHONY : Components/Component.cpp.i
+
+Components/Component.s: Components/Component.cpp.s
+
+.PHONY : Components/Component.s
+
+# target to generate assembly for a file
+Components/Component.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LayoutTest1.dir/build.make CMakeFiles/LayoutTest1.dir/Components/Component.cpp.s
+.PHONY : Components/Component.cpp.s
+
+Components/Resistor.o: Components/Resistor.cpp.o
+
+.PHONY : Components/Resistor.o
+
+# target to build an object file
+Components/Resistor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LayoutTest1.dir/build.make CMakeFiles/LayoutTest1.dir/Components/Resistor.cpp.o
+.PHONY : Components/Resistor.cpp.o
+
+Components/Resistor.i: Components/Resistor.cpp.i
+
+.PHONY : Components/Resistor.i
+
+# target to preprocess a source file
+Components/Resistor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LayoutTest1.dir/build.make CMakeFiles/LayoutTest1.dir/Components/Resistor.cpp.i
+.PHONY : Components/Resistor.cpp.i
+
+Components/Resistor.s: Components/Resistor.cpp.s
+
+.PHONY : Components/Resistor.s
+
+# target to generate assembly for a file
+Components/Resistor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LayoutTest1.dir/build.make CMakeFiles/LayoutTest1.dir/Components/Resistor.cpp.s
+.PHONY : Components/Resistor.cpp.s
+
 LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.o: LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.cpp.o
 
 .PHONY : LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.o
@@ -385,6 +439,12 @@ help:
 	@echo "... Arrow.o"
 	@echo "... Arrow.i"
 	@echo "... Arrow.s"
+	@echo "... Components/Component.o"
+	@echo "... Components/Component.i"
+	@echo "... Components/Component.s"
+	@echo "... Components/Resistor.o"
+	@echo "... Components/Resistor.i"
+	@echo "... Components/Resistor.s"
 	@echo "... LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.o"
 	@echo "... LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.i"
 	@echo "... LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.s"

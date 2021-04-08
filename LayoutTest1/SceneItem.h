@@ -7,7 +7,7 @@
 class Arrow;
 
 
-class SceneItem : public QGraphicsPolygonItem{
+class SceneItem : public QGraphicsPolygonItem {
 public:
     enum { Type = UserType + 15 };
     enum DiagramType { Step, Conditional, StartEnd, Io };
@@ -17,7 +17,7 @@ public:
     void removeArrow(Arrow *arrow);
     void removeArrows();
     DiagramType diagramType() const { return myDiagramType; }
-    QPolygonF polygon() const { return myPolygon; }
+    QPolygonF getPolygon() const { return myPolygon; }
     void addArrow(Arrow *arrow);
     QPixmap image() const;
     int type() const override { return Type; }

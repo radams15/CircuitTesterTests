@@ -53,13 +53,17 @@ void Arrow::paint(QPainter *painter, const QStyleOptionGraphicsItem *,
  
 
     QLineF centerLine(myStartItem->pos(), myEndItem->pos());
-    QPolygonF endPolygon = myEndItem->polygon();
+    QPolygonF endPolygon = myEndItem->getPolygon();
     QPointF p1 = endPolygon.first() + myEndItem->pos();
     QPointF intersectPoint;
     for (int i = 1; i < endPolygon.count(); ++i) {
         QPointF p2 = endPolygon.at(i) + myEndItem->pos();
         QLineF polyLine = QLineF(p1, p2);
+#if QT_VERSION >= QT_VERSION_CHECK(5, 14, 0) // IntersectionType is deprecated at qt 5.14
+        QLineF::IntersectionType intersectionType = polyLine.intersects(centerLine, &intersectPoint);
+#else
         QLineF::IntersectType intersectionType = polyLine.intersect(centerLine, &intersectPoint);
+#endif
         if (intersectionType == QLineF::BoundedIntersection) {
             break;
         }

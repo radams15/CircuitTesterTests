@@ -11,6 +11,7 @@ SceneItem::SceneItem(DiagramType diagramType, QMenu *contextMenu,
                      QGraphicsItem *parent)
     : QGraphicsPolygonItem(parent), myDiagramType(diagramType)
     , myContextMenu(contextMenu){
+
     QPainterPath path;
     switch (myDiagramType) {
         case StartEnd:
