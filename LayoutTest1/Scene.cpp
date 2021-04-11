@@ -4,18 +4,21 @@
 #include <QGraphicsSceneMouseEvent>
 #include <QTextCursor>
 #include <Components/Resistor.h>
+#include <iostream>
 
 
 Scene::Scene(QMenu *itemMenu, QObject *parent)
     : QGraphicsScene(parent){
+
     myItemMenu = itemMenu;
     myMode = MoveItem;
-    component = new Resistor();
+    component = nullptr;
     line = nullptr;
     textItem = nullptr;
     myItemColor = Qt::white;
     myTextColor = Qt::black;
     myLineColor = Qt::black;
+
 }
 
 
@@ -47,16 +50,17 @@ void Scene::mousePressEvent(QGraphicsSceneMouseEvent *mouseEvent){
 
     switch (myMode) {
         case InsertItem:
-            component->setBrush(myItemColor);
             addItem(component);
             component->setPos(mouseEvent->scenePos());
             emit itemInserted(component);
             break;
- 
+
         case InsertLine:
             line = new QGraphicsLineItem(QLineF(mouseEvent->scenePos(),
                                         mouseEvent->scenePos()));
+
             line->setPen(QPen(myLineColor, 2));
+
             addItem(line);
             break;
  

@@ -6,10 +6,11 @@
 
 #include <QtWidgets>
 #include <Components/Resistor.h>
+#include <iostream>
 
 const int InsertTextButton = 10;
 
-MainWindow::MainWindow(){
+MainWindow::MainWindow() {
     createActions();
     createToolBox();
     createMenus();
@@ -39,18 +40,18 @@ MainWindow::MainWindow(){
 }
 
 
-void MainWindow::buttonGroupClicked(QAbstractButton *button){
+void MainWindow::buttonGroupClicked(QAbstractButton *button) {
     const QList<QAbstractButton *> buttons = buttonGroup->buttons();
     for (QAbstractButton *myButton : buttons) {
         if (myButton != button)
             button->setChecked(false);
     }
     const int id = buttonGroup->id(button);
+
     if (id == InsertTextButton) {
         scene->setMode(Scene::InsertText);
     } else {
-
-        if(id == (new Resistor)->getId()){
+        if(id == Resistor::ID){
             scene->setItemType(new Resistor);
             scene->setMode(Scene::InsertItem);
         }
@@ -59,7 +60,7 @@ void MainWindow::buttonGroupClicked(QAbstractButton *button){
 
 
 
-void MainWindow::deleteItem(){
+void MainWindow::deleteItem() {
     QList<QGraphicsItem *> selectedItems = scene->selectedItems();
     for (QGraphicsItem *item : qAsConst(selectedItems)) {
         if (item->type() == Arrow::Type) {
@@ -81,19 +82,19 @@ void MainWindow::deleteItem(){
 }
 
 
-void MainWindow::pointerGroupClicked(){
+void MainWindow::pointerGroupClicked() {
     scene->setMode(Scene::Mode(pointerTypeGroup->checkedId()));
 }
 
 
-void MainWindow::itemInserted(Component *c){
+void MainWindow::itemInserted(Component *c) {
     pointerTypeGroup->button(int(Scene::MoveItem))->setChecked(true);
     scene->setMode(Scene::Mode(pointerTypeGroup->checkedId()));
     buttonGroup->button(c->getId())->setChecked(false);
 }
 
 
-void MainWindow::sceneScaleChanged(const QString &scale){
+void MainWindow::sceneScaleChanged(const QString &scale) {
     double newScale = scale.left(scale.indexOf(tr("%"))).toDouble() / 100.0;
     QTransform oldMatrix = view->transform();
     view->resetTransform();
@@ -102,7 +103,7 @@ void MainWindow::sceneScaleChanged(const QString &scale){
 }
 
 
-void MainWindow::itemSelected(QGraphicsItem *item){
+void MainWindow::itemSelected(QGraphicsItem *item) {
     SceneText *textItem =
     qgraphicsitem_cast<SceneText *>(item);
 
@@ -115,14 +116,14 @@ void MainWindow::itemSelected(QGraphicsItem *item){
 }
 
 
-void MainWindow::about(){
+void MainWindow::about() {
     QMessageBox::about(this, tr("About Diagram Scene"),
                        tr("The <b>Diagram Scene</b> example shows "
                           "use of the graphics framework."));
 }
 
 
-void MainWindow::createToolBox(){
+void MainWindow::createToolBox() {
     buttonGroup = new QButtonGroup(this);
     buttonGroup->setExclusive(false);
     connect(buttonGroup, QOverload<QAbstractButton *>::of(&QButtonGroup::buttonClicked),
@@ -146,7 +147,7 @@ void MainWindow::createToolBox(){
 }
 
 
-void MainWindow::createActions(){
+void MainWindow::createActions() {
     deleteAction = new QAction(QIcon(":/images/delete.png"), tr("&Delete"), this);
     deleteAction->setShortcut(tr("Delete"));
     deleteAction->setStatusTip(tr("Delete item from diagram"));
@@ -163,7 +164,7 @@ void MainWindow::createActions(){
 }
 
 
-void MainWindow::createMenus(){
+void MainWindow::createMenus() {
     fileMenu = menuBar()->addMenu(tr("&File"));
     fileMenu->addAction(exitAction);
 
@@ -176,7 +177,7 @@ void MainWindow::createMenus(){
 }
 
 
-void MainWindow::createToolbars(){
+void MainWindow::createToolbars() {
     QToolButton *pointerButton = new QToolButton;
     pointerButton->setCheckable(true);
     pointerButton->setChecked(true);
@@ -208,7 +209,7 @@ void MainWindow::createToolbars(){
 
 
 template<class T>
-QWidget *MainWindow::createCellWidget(const QString &text){
+QWidget *MainWindow::createCellWidget(const QString &text) {
     T item;
 
     QIcon icon(item.getPixmap());

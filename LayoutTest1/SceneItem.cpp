@@ -8,9 +8,10 @@
 
 
 SceneItem::SceneItem(QString resourcePath, QGraphicsItem *parent)
-    : QGraphicsPolygonItem(parent){
+    : QGraphicsPixmapItem(parent){
 
     this->pixmap = QPixmap(resourcePath);
+    setPixmap(this->pixmap);
 
     setFlag(QGraphicsItem::ItemIsMovable, true);
     setFlag(QGraphicsItem::ItemIsSelectable, true);

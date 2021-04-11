@@ -11,7 +11,12 @@ class Resistor : public Component {
 private:
 
 public:
-    Resistor() : Component(1) {};
+    enum{
+        ID = 1
+    };
+
+
+    Resistor() : Component(ID, ":/images/delete.png") {};
 };
 
 

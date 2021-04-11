@@ -8,7 +8,7 @@
 class Arrow;
 
 
-class SceneItem : public QGraphicsPolygonItem {
+class SceneItem : public QGraphicsPixmapItem {
 public:
     enum { Type = UserType + 15 };
 

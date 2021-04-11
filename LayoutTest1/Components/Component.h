@@ -6,6 +6,7 @@
 #define LAYOUTTEST1_COMPONENT_H
 
 #include <QIcon>
+#include <utility>
 
 #include "../SceneItem.h"
 
@@ -13,7 +14,7 @@ class Component : public SceneItem{
 protected:
     int ID;
 
-    explicit Component(int id): ID(id), SceneItem(":/images/delete.png"){};
+    explicit Component(int id, QString resourcePath): ID(id), SceneItem(std::move(resourcePath)){};
 private:
 
 public:
