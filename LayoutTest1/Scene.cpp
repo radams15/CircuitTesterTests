@@ -56,8 +56,7 @@ void Scene::mousePressEvent(QGraphicsSceneMouseEvent *mouseEvent){
             break;
 
         case InsertLine:
-            line = new QGraphicsLineItem(QLineF(mouseEvent->scenePos(),
-                                        mouseEvent->scenePos()));
+            line = new QGraphicsLineItem(QLineF(mouseEvent->scenePos(), mouseEvent->scenePos()));
 
             line->setPen(QPen(myLineColor, 2));
 

@@ -16,7 +16,7 @@ public:
     };
 
 
-    Resistor() : Component(ID, ":/images/delete.png") {};
+    Resistor() : Component(ID, ":/res/resistor.txt") {};
 };
 
 

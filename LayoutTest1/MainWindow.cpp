@@ -148,7 +148,7 @@ void MainWindow::createToolBox() {
 
 
 void MainWindow::createActions() {
-    deleteAction = new QAction(QIcon(":/images/delete.png"), tr("&Delete"), this);
+    deleteAction = new QAction(QIcon(":/res/delete.png"), tr("&Delete"), this);
     deleteAction->setShortcut(tr("Delete"));
     deleteAction->setStatusTip(tr("Delete item from diagram"));
     connect(deleteAction, &QAction::triggered, this, &MainWindow::deleteItem);
@@ -181,10 +181,10 @@ void MainWindow::createToolbars() {
     QToolButton *pointerButton = new QToolButton;
     pointerButton->setCheckable(true);
     pointerButton->setChecked(true);
-    pointerButton->setIcon(QIcon(":/images/pointer.png"));
+    pointerButton->setIcon(QIcon(":/res/pointer.png"));
     QToolButton *linePointerButton = new QToolButton;
     linePointerButton->setCheckable(true);
-    linePointerButton->setIcon(QIcon(":/images/linepointer.png"));
+    linePointerButton->setIcon(QIcon(":/res/linepointer.png"));
 
     pointerTypeGroup = new QButtonGroup(this);
     pointerTypeGroup->addButton(pointerButton, int(Scene::MoveItem));

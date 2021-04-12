@@ -8,7 +8,7 @@
 class Arrow;
 
 
-class SceneItem : public QGraphicsPixmapItem {
+class SceneItem : public QGraphicsPolygonItem {
 public:
     enum { Type = UserType + 15 };
 
@@ -23,6 +23,8 @@ public:
     void addArrow(Arrow *arrow);
     int type() const override { return Type; }
 
+    QPixmap image();
+
 protected:
     QVariant itemChange(GraphicsItemChange change, const QVariant &value) override;
     QPixmap pixmap;
@@ -30,6 +32,8 @@ protected:
 private:
     QPolygonF myPolygon;
     QList<Arrow *> arrows;
+
+    void loadPolygon(QString path);
 };
 
 

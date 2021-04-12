@@ -1,9 +1,10 @@
 <!DOCTYPE RCC><RCC version="1.0">
 <qresource>
-    <file>images/pointer.png</file>
-    <file>images/linepointer.png</file>
-    <file>images/delete.png</file>
-    <file>images/linecolor.png</file>
+    <file>res/pointer.png</file>
+    <file>res/linepointer.png</file>
+    <file>res/delete.png</file>
+    <file>res/linecolor.png</file>
+    <file>res/resistor.txt</file>
 </qresource>
 </RCC>
 
