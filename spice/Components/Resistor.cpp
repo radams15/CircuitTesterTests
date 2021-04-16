@@ -5,22 +5,6 @@
 #include "Resistor.h"
 
 
-Resistor::Resistor() {
-    name = "Resistor";
-    id = 1;
-}
+Resistor::Resistor(string high_str, string low_str, double resistance) : Component(RESISTOR, "R", high_str, low_str, resistance) {
 
-
-vector<Component> Resistor::getConnected() {
-    vector<Component> out;
-
-    return out;
-}
-
-info Resistor::input(info i) {
-    return {
-        1,
-        12,
-        0.5
-    };
 }

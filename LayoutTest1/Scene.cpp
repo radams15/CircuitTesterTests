@@ -109,10 +109,7 @@ void Scene::mouseReleaseEvent(QGraphicsSceneMouseEvent *mouseEvent){
         delete line;
  
 
-        if (startItems.count() > 0 && endItems.count() > 0 &&
-            startItems.first()->type() == SceneItem::Type &&
-            endItems.first()->type() == SceneItem::Type &&
-            startItems.first() != endItems.first()) {
+        if (startItems.count() > 0 && endItems.count() > 0 && startItems.first()->type() == SceneItem::Type && endItems.first()->type() == SceneItem::Type &&  startItems.first() != endItems.first()) {
             SceneItem *startItem = qgraphicsitem_cast<SceneItem *>(startItems.first());
             SceneItem *endItem = qgraphicsitem_cast<SceneItem *>(endItems.first());
             Arrow *arrow = new Arrow(startItem, endItem);
@@ -131,10 +128,11 @@ void Scene::mouseReleaseEvent(QGraphicsSceneMouseEvent *mouseEvent){
 
 
 
-bool Scene::isItemChange(int type) const
-{
+bool Scene::isItemChange(int type) const{
     const QList<QGraphicsItem *> items = selectedItems();
-    const auto cb = [type](const QGraphicsItem *item) { return item->type() == type; };
-    return std::find_if(items.begin(), items.end(), cb) != items.end();
+
+    return std::find_if(items.begin(), items.end(), [type](const QGraphicsItem *item) {
+        return item->type() == type;
+    }) != items.end();
 }
 

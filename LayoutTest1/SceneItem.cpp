@@ -11,14 +11,10 @@
 #include <iostream>
 
 
-SceneItem::SceneItem(QString resourcePath, QGraphicsItem *parent)
-    : QGraphicsPolygonItem(parent){
-
-    loadPolygon(resourcePath);
-
-    this->pixmap = image();
-
-    setPolygon(myPolygon);
+SceneItem::SceneItem(QString resourcePath, QGraphicsItem *parent) : QGraphicsPixmapItem(parent){
+    this->pixmap = QPixmap(resourcePath);
+    pixmap = pixmap.scaled(200, 200);
+    setPixmap(this->pixmap);
 
     setFlag(QGraphicsItem::ItemIsMovable, true);
     setFlag(QGraphicsItem::ItemIsSelectable, true);
@@ -57,43 +53,17 @@ QVariant SceneItem::itemChange(GraphicsItemChange change, const QVariant &value)
     return value;
 }
 
-void SceneItem::loadPolygon(QString path) {
-    myPolygon.clear();
+QPointF SceneItem::centerpoint() {
+    double w = pixmap.width();
+    double h = pixmap.height();
 
-    QResource fileRes(path);
+    QPointF p = pos();
 
-    QFile file(fileRes.absoluteFilePath());
+    double x = p.x();
+    double y = p.y();
 
-    if(!file.open(QIODevice::ReadOnly)) {
-        QMessageBox::information(0,"error",file.errorString());
-    }
+    double xc = x + (w/2);
+    double yc = y + (h/2);
 
-    QString content = file.readAll();
-
-
-    for(const QString line : content.split("\n")){
-        QStringList points = line.split(",");
-        if(points.length() != 2) continue;
-
-        QPointF point(points[0].toDouble(), points[1].toDouble());
-
-        myPolygon << point;
-    }
-
-    std::cout << myPolygon.length() << std::endl;
-
-}
-
-
-QPixmap SceneItem::image() {
-    QPixmap p(250, 250);
-    p.fill(Qt::transparent);
-
-    QPainter painter(&p);
-    painter.setPen(QPen(Qt::black, 8));
-    painter.translate(125, 125);
-
-    painter.drawPolyline(myPolygon);
-
-    return p;
+    return {xc, yc};
 }

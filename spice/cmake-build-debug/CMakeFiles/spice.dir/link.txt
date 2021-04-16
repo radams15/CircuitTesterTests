@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/spice.dir/main.cpp.o CMakeFiles/spice.dir/Spice.cpp.o CMakeFiles/spice.dir/Components/Resistor.cpp.o  -o spice 
+/usr/lib64/ccache/c++ -g CMakeFiles/spice.dir/main.cpp.o CMakeFiles/spice.dir/Components/Resistor.cpp.o CMakeFiles/spice.dir/Sim.cpp.o CMakeFiles/spice.dir/NodeHashTable.cpp.o CMakeFiles/spice.dir/Component.cpp.o -o spice 

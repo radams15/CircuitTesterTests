@@ -2,9 +2,7 @@
 <qresource>
     <file>res/pointer.png</file>
     <file>res/linepointer.png</file>
-    <file>res/delete.png</file>
-    <file>res/linecolor.png</file>
-    <file>res/resistor.txt</file>
+    <file>res/resistor.png</file>
 </qresource>
 </RCC>
 

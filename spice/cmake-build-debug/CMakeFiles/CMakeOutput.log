@@ -1,6 +1,6 @@
-The system is: Linux - 5.10.8-arch1-1 - x86_64
+The system is: Linux - 5.11.13-300.fc34.x86_64 - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: /usr/bin/cc 
+Compiler: /usr/lib64/ccache/cc 
 Build flags: 
 Id flags:  
 
@@ -10,10 +10,10 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/rhys/scripts/CircuitTester/spice/cmake-build-debug/CMakeFiles/3.17.5/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/3.19.2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: /usr/bin/c++ 
+Compiler: /usr/lib64/ccache/c++ 
 Build flags: 
 Id flags:  
 
@@ -23,188 +23,176 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/rhys/scripts/CircuitTester/spice/cmake-build-debug/CMakeFiles/3.17.5/CompilerIdCXX/a.out"
-
-Determining if the C compiler works passed with the following output:
-Change Dir: /home/rhys/scripts/CircuitTester/spice/cmake-build-debug/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_8efdd/fast && /usr/bin/make  -f CMakeFiles/cmTC_8efdd.dir/build.make CMakeFiles/cmTC_8efdd.dir/build
-make[1]: Entering directory '/mnt/files/scripts/CircuitTester/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8efdd.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_8efdd.dir/testCCompiler.c.o   -c /home/rhys/scripts/CircuitTester/spice/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_8efdd
-/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.6682.181/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8efdd.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_8efdd.dir/testCCompiler.c.o  -o cmTC_8efdd 
-make[1]: Leaving directory '/mnt/files/scripts/CircuitTester/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
-
-
+The CXX compiler identification is GNU, found in "/home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/3.19.2/CompilerIdCXX/a.out"
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/rhys/scripts/CircuitTester/spice/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_db1cc/fast && /usr/bin/make  -f CMakeFiles/cmTC_db1cc.dir/build.make CMakeFiles/cmTC_db1cc.dir/build
-make[1]: Entering directory '/mnt/files/scripts/CircuitTester/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_db1cc.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc   -v -o CMakeFiles/cmTC_db1cc.dir/CMakeCCompilerABI.c.o   -c /home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.6682.181/bin/cmake/linux/share/cmake-3.17/Modules/CMakeCCompilerABI.c
+Run Build Command(s):/usr/bin/gmake cmTC_d6e87/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d6e87.dir/build.make CMakeFiles/cmTC_d6e87.dir/build
+gmake[1]: Entering directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d6e87.dir/CMakeCCompilerABI.c.o
+/usr/lib64/ccache/cc   -v -o CMakeFiles/cmTC_d6e87.dir/CMakeCCompilerABI.c.o -c /home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/share/cmake-3.19/Modules/CMakeCCompilerABI.c
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
-Target: x86_64-pc-linux-gnu
-Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++,d --with-isl --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-install-libiberty --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-libunwind-exceptions --disable-werror gdc_include_dir=/usr/include/dlang/gdc
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-redhat-linux
+Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,objc,obj-c++,ada,go,d,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-11.0.1-20210405/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux
 Thread model: posix
 Supported LTO compression algorithms: zlib zstd
-gcc version 10.2.0 (GCC) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_db1cc.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/cc1 -quiet -v /home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.6682.181/bin/cmake/linux/share/cmake-3.17/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_db1cc.dir/CMakeCCompilerABI.c.o -version -o /tmp/cciTmFr9.s
-GNU C17 (GCC) version 10.2.0 (x86_64-pc-linux-gnu)
-	compiled by GNU C version 10.2.0, GMP version 6.2.0, MPFR version 4.1.0, MPC version 1.1.0, isl version isl-0.21-GMP
+gcc version 11.0.1 20210405 (Red Hat 11.0.1-0) (GCC) 
+COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-c' '-o' 'CMakeFiles/cmTC_d6e87.dir/CMakeCCompilerABI.c.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d6e87.dir/'
+ /usr/libexec/gcc/x86_64-redhat-linux/11/cc1 -quiet -v /home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/share/cmake-3.19/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_d6e87.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o /tmp/ccTwPWeS.s
+GNU C17 (GCC) version 11.0.1 20210405 (Red Hat 11.0.1-0) (x86_64-redhat-linux)
+	compiled by GNU C version 11.0.1 20210405 (Red Hat 11.0.1-0), GMP version 6.2.0, MPFR version 4.1.0-p9, MPC version 1.2.1, isl version isl-0.18-GMP
 
-warning: GMP header version 6.2.0 differs from library version 6.2.1.
-warning: MPC header version 1.1.0 differs from library version 1.2.1.
+warning: MPFR header version 4.1.0-p9 differs from library version 4.1.0-p11.
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../x86_64-pc-linux-gnu/include"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"
 #include "..." search starts here:
 #include <...> search starts here:
- /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include
+ /usr/lib/gcc/x86_64-redhat-linux/11/include
  /usr/local/include
- /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed
  /usr/include
 End of search list.
-GNU C17 (GCC) version 10.2.0 (x86_64-pc-linux-gnu)
-	compiled by GNU C version 10.2.0, GMP version 6.2.0, MPFR version 4.1.0, MPC version 1.1.0, isl version isl-0.21-GMP
+GNU C17 (GCC) version 11.0.1 20210405 (Red Hat 11.0.1-0) (x86_64-redhat-linux)
+	compiled by GNU C version 11.0.1 20210405 (Red Hat 11.0.1-0), GMP version 6.2.0, MPFR version 4.1.0-p9, MPC version 1.2.1, isl version isl-0.18-GMP
 
-warning: GMP header version 6.2.0 differs from library version 6.2.1.
-warning: MPC header version 1.1.0 differs from library version 1.2.1.
+warning: MPFR header version 4.1.0-p9 differs from library version 4.1.0-p11.
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-Compiler executable checksum: 81412c83e0c3f5014cd5328f9bc3d624
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_db1cc.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
- as -v --64 -o CMakeFiles/cmTC_db1cc.dir/CMakeCCompilerABI.c.o /tmp/cciTmFr9.s
-GNU assembler version 2.35.1 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.35.1
-COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_db1cc.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-Linking C executable cmTC_db1cc
-/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.6682.181/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_db1cc.dir/link.txt --verbose=1
-/usr/bin/cc     -v CMakeFiles/cmTC_db1cc.dir/CMakeCCompilerABI.c.o  -o cmTC_db1cc 
+Compiler executable checksum: aae05e439da8112ec5c7efdab9567656
+COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-c' '-o' 'CMakeFiles/cmTC_d6e87.dir/CMakeCCompilerABI.c.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d6e87.dir/'
+ as -v --64 -o CMakeFiles/cmTC_d6e87.dir/CMakeCCompilerABI.c.o /tmp/ccTwPWeS.s
+GNU assembler version 2.35.1 (x86_64-redhat-linux) using BFD version version 2.35.1-41.fc34
+COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-c' '-o' 'CMakeFiles/cmTC_d6e87.dir/CMakeCCompilerABI.c.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d6e87.dir/CMakeCCompilerABI.c.'
+Linking C executable cmTC_d6e87
+/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d6e87.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc  -v CMakeFiles/cmTC_d6e87.dir/CMakeCCompilerABI.c.o -o cmTC_d6e87 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper
-Target: x86_64-pc-linux-gnu
-Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++,d --with-isl --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-install-libiberty --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-libunwind-exceptions --disable-werror gdc_include_dir=/usr/include/dlang/gdc
+COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-redhat-linux
+Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,objc,obj-c++,ada,go,d,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-11.0.1-20210405/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux
 Thread model: posix
 Supported LTO compression algorithms: zlib zstd
-gcc version 10.2.0 (GCC) 
-COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_db1cc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccE4XUvx.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_db1cc /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../.. CMakeFiles/cmTC_db1cc.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_db1cc' '-mtune=generic' '-march=x86-64'
-make[1]: Leaving directory '/mnt/files/scripts/CircuitTester/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+gcc version 11.0.1 20210405 (Red Hat 11.0.1-0) (GCC) 
+COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d6e87' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_d6e87.'
+ /usr/libexec/gcc/x86_64-redhat-linux/11/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cciRQiAL.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_d6e87 /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../.. CMakeFiles/cmTC_d6e87.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-redhat-linux/11/crtend.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d6e87' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_d6e87.'
+gmake[1]: Leaving directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 
 Parsed C implicit include dir info from above output: rv=done
   found start of include info
   found start of implicit include info
-    add: [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include]
+    add: [/usr/lib/gcc/x86_64-redhat-linux/11/include]
     add: [/usr/local/include]
-    add: [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed]
     add: [/usr/include]
   end of search list found
-  collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include]
+  collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/11/include] ==> [/usr/lib/gcc/x86_64-redhat-linux/11/include]
   collapse include dir [/usr/local/include] ==> [/usr/local/include]
-  collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed]
   collapse include dir [/usr/include] ==> [/usr/include]
-  implicit include dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include;/usr/local/include;/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed;/usr/include]
+  implicit include dirs: [/usr/lib/gcc/x86_64-redhat-linux/11/include;/usr/local/include;/usr/include]
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/rhys/scripts/CircuitTester/spice/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/make cmTC_db1cc/fast && /usr/bin/make  -f CMakeFiles/cmTC_db1cc.dir/build.make CMakeFiles/cmTC_db1cc.dir/build]
-  ignore line: [make[1]: Entering directory '/mnt/files/scripts/CircuitTester/spice/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_db1cc.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_db1cc.dir/CMakeCCompilerABI.c.o   -c /home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.6682.181/bin/cmake/linux/share/cmake-3.17/Modules/CMakeCCompilerABI.c]
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_d6e87/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d6e87.dir/build.make CMakeFiles/cmTC_d6e87.dir/build]
+  ignore line: [gmake[1]: Entering directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_d6e87.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/lib64/ccache/cc   -v -o CMakeFiles/cmTC_d6e87.dir/CMakeCCompilerABI.c.o -c /home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/share/cmake-3.19/Modules/CMakeCCompilerABI.c]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
-  ignore line: [Target: x86_64-pc-linux-gnu]
-  ignore line: [Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c c++ ada fortran go lto objc obj-c++ d --with-isl --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-install-libiberty --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-libunwind-exceptions --disable-werror gdc_include_dir=/usr/include/dlang/gdc]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-redhat-linux]
+  ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran objc obj-c++ ada go d lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-11.0.1-20210405/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux]
   ignore line: [Thread model: posix]
   ignore line: [Supported LTO compression algorithms: zlib zstd]
-  ignore line: [gcc version 10.2.0 (GCC) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_db1cc.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/cc1 -quiet -v /home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.6682.181/bin/cmake/linux/share/cmake-3.17/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_db1cc.dir/CMakeCCompilerABI.c.o -version -o /tmp/cciTmFr9.s]
-  ignore line: [GNU C17 (GCC) version 10.2.0 (x86_64-pc-linux-gnu)]
-  ignore line: [	compiled by GNU C version 10.2.0  GMP version 6.2.0  MPFR version 4.1.0  MPC version 1.1.0  isl version isl-0.21-GMP]
+  ignore line: [gcc version 11.0.1 20210405 (Red Hat 11.0.1-0) (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-c' '-o' 'CMakeFiles/cmTC_d6e87.dir/CMakeCCompilerABI.c.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d6e87.dir/']
+  ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/11/cc1 -quiet -v /home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/share/cmake-3.19/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_d6e87.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o /tmp/ccTwPWeS.s]
+  ignore line: [GNU C17 (GCC) version 11.0.1 20210405 (Red Hat 11.0.1-0) (x86_64-redhat-linux)]
+  ignore line: [	compiled by GNU C version 11.0.1 20210405 (Red Hat 11.0.1-0)  GMP version 6.2.0  MPFR version 4.1.0-p9  MPC version 1.2.1  isl version isl-0.18-GMP]
   ignore line: []
-  ignore line: [warning: GMP header version 6.2.0 differs from library version 6.2.1.]
-  ignore line: [warning: MPC header version 1.1.0 differs from library version 1.2.1.]
+  ignore line: [warning: MPFR header version 4.1.0-p9 differs from library version 4.1.0-p11.]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"]
   ignore line: [#include "..." search starts here:]
   ignore line: [#include <...> search starts here:]
-  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include]
+  ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/include]
   ignore line: [ /usr/local/include]
-  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed]
   ignore line: [ /usr/include]
   ignore line: [End of search list.]
-  ignore line: [GNU C17 (GCC) version 10.2.0 (x86_64-pc-linux-gnu)]
-  ignore line: [	compiled by GNU C version 10.2.0  GMP version 6.2.0  MPFR version 4.1.0  MPC version 1.1.0  isl version isl-0.21-GMP]
+  ignore line: [GNU C17 (GCC) version 11.0.1 20210405 (Red Hat 11.0.1-0) (x86_64-redhat-linux)]
+  ignore line: [	compiled by GNU C version 11.0.1 20210405 (Red Hat 11.0.1-0)  GMP version 6.2.0  MPFR version 4.1.0-p9  MPC version 1.2.1  isl version isl-0.18-GMP]
   ignore line: []
-  ignore line: [warning: GMP header version 6.2.0 differs from library version 6.2.1.]
-  ignore line: [warning: MPC header version 1.1.0 differs from library version 1.2.1.]
+  ignore line: [warning: MPFR header version 4.1.0-p9 differs from library version 4.1.0-p11.]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [Compiler executable checksum: 81412c83e0c3f5014cd5328f9bc3d624]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_db1cc.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_db1cc.dir/CMakeCCompilerABI.c.o /tmp/cciTmFr9.s]
-  ignore line: [GNU assembler version 2.35.1 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.35.1]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_db1cc.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [Linking C executable cmTC_db1cc]
-  ignore line: [/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.6682.181/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_db1cc.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_db1cc.dir/CMakeCCompilerABI.c.o  -o cmTC_db1cc ]
+  ignore line: [Compiler executable checksum: aae05e439da8112ec5c7efdab9567656]
+  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-c' '-o' 'CMakeFiles/cmTC_d6e87.dir/CMakeCCompilerABI.c.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d6e87.dir/']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_d6e87.dir/CMakeCCompilerABI.c.o /tmp/ccTwPWeS.s]
+  ignore line: [GNU assembler version 2.35.1 (x86_64-redhat-linux) using BFD version version 2.35.1-41.fc34]
+  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-c' '-o' 'CMakeFiles/cmTC_d6e87.dir/CMakeCCompilerABI.c.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d6e87.dir/CMakeCCompilerABI.c.']
+  ignore line: [Linking C executable cmTC_d6e87]
+  ignore line: [/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d6e87.dir/link.txt --verbose=1]
+  ignore line: [/usr/lib64/ccache/cc  -v CMakeFiles/cmTC_d6e87.dir/CMakeCCompilerABI.c.o -o cmTC_d6e87 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper]
-  ignore line: [Target: x86_64-pc-linux-gnu]
-  ignore line: [Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c c++ ada fortran go lto objc obj-c++ d --with-isl --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-install-libiberty --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-libunwind-exceptions --disable-werror gdc_include_dir=/usr/include/dlang/gdc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-redhat-linux]
+  ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran objc obj-c++ ada go d lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-11.0.1-20210405/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux]
   ignore line: [Thread model: posix]
   ignore line: [Supported LTO compression algorithms: zlib zstd]
-  ignore line: [gcc version 10.2.0 (GCC) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_db1cc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccE4XUvx.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_db1cc /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../.. CMakeFiles/cmTC_db1cc.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib/crtn.o]
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/collect2] ==> ignore
+  ignore line: [gcc version 11.0.1 20210405 (Red Hat 11.0.1-0) (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d6e87' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_d6e87.']
+  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/11/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cciRQiAL.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_d6e87 /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../.. CMakeFiles/cmTC_d6e87.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-redhat-linux/11/crtend.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o]
+    arg [/usr/libexec/gcc/x86_64-redhat-linux/11/collect2] ==> ignore
     arg [-plugin] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/liblto_plugin.so] ==> ignore
-    arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccE4XUvx.res] ==> ignore
+    arg [/usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cciRQiAL.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [--build-id] ==> ignore
+    arg [--no-add-needed] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
     arg [--hash-style=gnu] ==> ignore
     arg [-m] ==> ignore
     arg [elf_x86_64] ==> ignore
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
-    arg [-pie] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_db1cc] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib/Scrt1.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib/crti.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtbeginS.o] ==> ignore
-    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0]
-    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib]
-    arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../..]
-    arg [CMakeFiles/cmTC_db1cc.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [cmTC_d6e87] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/11] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/11/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../..]
+    arg [CMakeFiles/cmTC_d6e87.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
@@ -216,210 +204,198 @@ Parsed C implicit link information from above output:
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [--pop-state] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtendS.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib/crtn.o] ==> ignore
-  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0]
-  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib] ==> [/usr/lib]
-  collapse library dir [/lib/../lib] ==> [/lib]
-  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../..] ==> [/usr/lib]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/11/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11] ==> [/usr/lib/gcc/x86_64-redhat-linux/11]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64] ==> [/usr/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../..] ==> [/usr/lib]
   implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
-  implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0;/usr/lib;/lib]
+  implicit dirs: [/usr/lib/gcc/x86_64-redhat-linux/11;/usr/lib64;/lib64;/usr/lib]
   implicit fwks: []
 
 
-Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/rhys/scripts/CircuitTester/spice/cmake-build-debug/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_2d847/fast && /usr/bin/make  -f CMakeFiles/cmTC_2d847.dir/build.make CMakeFiles/cmTC_2d847.dir/build
-make[1]: Entering directory '/mnt/files/scripts/CircuitTester/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_2d847.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_2d847.dir/testCXXCompiler.cxx.o -c /home/rhys/scripts/CircuitTester/spice/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_2d847
-/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.6682.181/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2d847.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_2d847.dir/testCXXCompiler.cxx.o  -o cmTC_2d847 
-make[1]: Leaving directory '/mnt/files/scripts/CircuitTester/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
-
-
-
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/rhys/scripts/CircuitTester/spice/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_6f22d/fast && /usr/bin/make  -f CMakeFiles/cmTC_6f22d.dir/build.make CMakeFiles/cmTC_6f22d.dir/build
-make[1]: Entering directory '/mnt/files/scripts/CircuitTester/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_6f22d.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++    -v -o CMakeFiles/cmTC_6f22d.dir/CMakeCXXCompilerABI.cpp.o -c /home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.6682.181/bin/cmake/linux/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp
+Run Build Command(s):/usr/bin/gmake cmTC_abf2f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_abf2f.dir/build.make CMakeFiles/cmTC_abf2f.dir/build
+gmake[1]: Entering directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_abf2f.dir/CMakeCXXCompilerABI.cpp.o
+/usr/lib64/ccache/c++   -v -o CMakeFiles/cmTC_abf2f.dir/CMakeCXXCompilerABI.cpp.o -c /home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/share/cmake-3.19/Modules/CMakeCXXCompilerABI.cpp
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
-Target: x86_64-pc-linux-gnu
-Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++,d --with-isl --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-install-libiberty --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-libunwind-exceptions --disable-werror gdc_include_dir=/usr/include/dlang/gdc
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-redhat-linux
+Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,objc,obj-c++,ada,go,d,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-11.0.1-20210405/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux
 Thread model: posix
 Supported LTO compression algorithms: zlib zstd
-gcc version 10.2.0 (GCC) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6f22d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/cc1plus -quiet -v -D_GNU_SOURCE /home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.6682.181/bin/cmake/linux/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_6f22d.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccc7BDBR.s
-GNU C++14 (GCC) version 10.2.0 (x86_64-pc-linux-gnu)
-	compiled by GNU C version 10.2.0, GMP version 6.2.0, MPFR version 4.1.0, MPC version 1.1.0, isl version isl-0.21-GMP
+gcc version 11.0.1 20210405 (Red Hat 11.0.1-0) (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_60611.dir/CMakeCXXCompilerABI.cpp.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_60611.dir/'
+ /usr/libexec/gcc/x86_64-redhat-linux/11/cc1plus -quiet -v -D_GNU_SOURCE /home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/share/cmake-3.19/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_60611.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccwP1AW7.s
+GNU C++17 (GCC) version 11.0.1 20210405 (Red Hat 11.0.1-0) (x86_64-redhat-linux)
+	compiled by GNU C version 11.0.1 20210405 (Red Hat 11.0.1-0), GMP version 6.2.0, MPFR version 4.1.0-p9, MPC version 1.2.1, isl version isl-0.18-GMP
 
-warning: GMP header version 6.2.0 differs from library version 6.2.1.
-warning: MPC header version 1.1.0 differs from library version 1.2.1.
+warning: MPFR header version 4.1.0-p9 differs from library version 4.1.0-p11.
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../x86_64-pc-linux-gnu/include"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"
 #include "..." search starts here:
 #include <...> search starts here:
- /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0
- /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu
- /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward
- /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include
+ /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11
+ /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux
+ /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward
+ /usr/lib/gcc/x86_64-redhat-linux/11/include
  /usr/local/include
- /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed
  /usr/include
 End of search list.
-GNU C++14 (GCC) version 10.2.0 (x86_64-pc-linux-gnu)
-	compiled by GNU C version 10.2.0, GMP version 6.2.0, MPFR version 4.1.0, MPC version 1.1.0, isl version isl-0.21-GMP
+GNU C++17 (GCC) version 11.0.1 20210405 (Red Hat 11.0.1-0) (x86_64-redhat-linux)
+	compiled by GNU C version 11.0.1 20210405 (Red Hat 11.0.1-0), GMP version 6.2.0, MPFR version 4.1.0-p9, MPC version 1.2.1, isl version isl-0.18-GMP
 
-warning: GMP header version 6.2.0 differs from library version 6.2.1.
-warning: MPC header version 1.1.0 differs from library version 1.2.1.
+warning: MPFR header version 4.1.0-p9 differs from library version 4.1.0-p11.
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-Compiler executable checksum: 281d2a5dec9cafa694fa91c92d7d5e51
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6f22d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- as -v --64 -o CMakeFiles/cmTC_6f22d.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccc7BDBR.s
-GNU assembler version 2.35.1 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.35.1
-COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6f22d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-Linking CXX executable cmTC_6f22d
-/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.6682.181/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6f22d.dir/link.txt --verbose=1
-/usr/bin/c++      -v CMakeFiles/cmTC_6f22d.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_6f22d 
+Compiler executable checksum: 4f3028bfea29b99091114eff5870fb8a
+COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_60611.dir/CMakeCXXCompilerABI.cpp.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_60611.dir/'
+ as -v --64 -o CMakeFiles/cmTC_60611.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccwP1AW7.s
+GNU assembler version 2.35.1 (x86_64-redhat-linux) using BFD version version 2.35.1-41.fc34
+COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_60611.dir/CMakeCXXCompilerABI.cpp.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_60611.dir/CMakeCXXCompilerABI.cpp.'
+Linking CXX executable cmTC_abf2f
+/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_abf2f.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++  -v CMakeFiles/cmTC_abf2f.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_abf2f 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper
-Target: x86_64-pc-linux-gnu
-Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++,d --with-isl --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-install-libiberty --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-libunwind-exceptions --disable-werror gdc_include_dir=/usr/include/dlang/gdc
+COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-redhat-linux
+Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,objc,obj-c++,ada,go,d,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-11.0.1-20210405/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux
 Thread model: posix
 Supported LTO compression algorithms: zlib zstd
-gcc version 10.2.0 (GCC) 
-COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6f22d' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cce95w5l.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_6f22d /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../.. CMakeFiles/cmTC_6f22d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6f22d' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-make[1]: Leaving directory '/mnt/files/scripts/CircuitTester/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+gcc version 11.0.1 20210405 (Red Hat 11.0.1-0) (GCC) 
+COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_abf2f' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_abf2f.'
+ /usr/libexec/gcc/x86_64-redhat-linux/11/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccYeTlFz.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_abf2f /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../.. CMakeFiles/cmTC_abf2f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/11/crtend.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_abf2f' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_abf2f.'
+gmake[1]: Leaving directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 
 Parsed CXX implicit include dir info from above output: rv=done
   found start of include info
   found start of implicit include info
-    add: [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0]
-    add: [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu]
-    add: [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward]
-    add: [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include]
+    add: [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11]
+    add: [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux]
+    add: [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward]
+    add: [/usr/lib/gcc/x86_64-redhat-linux/11/include]
     add: [/usr/local/include]
-    add: [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed]
     add: [/usr/include]
   end of search list found
-  collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0] ==> [/usr/include/c++/10.2.0]
-  collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu] ==> [/usr/include/c++/10.2.0/x86_64-pc-linux-gnu]
-  collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward] ==> [/usr/include/c++/10.2.0/backward]
-  collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include]
+  collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11] ==> [/usr/include/c++/11]
+  collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux] ==> [/usr/include/c++/11/x86_64-redhat-linux]
+  collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward] ==> [/usr/include/c++/11/backward]
+  collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/11/include] ==> [/usr/lib/gcc/x86_64-redhat-linux/11/include]
   collapse include dir [/usr/local/include] ==> [/usr/local/include]
-  collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed]
   collapse include dir [/usr/include] ==> [/usr/include]
-  implicit include dirs: [/usr/include/c++/10.2.0;/usr/include/c++/10.2.0/x86_64-pc-linux-gnu;/usr/include/c++/10.2.0/backward;/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include;/usr/local/include;/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed;/usr/include]
+  implicit include dirs: [/usr/include/c++/11;/usr/include/c++/11/x86_64-redhat-linux;/usr/include/c++/11/backward;/usr/lib/gcc/x86_64-redhat-linux/11/include;/usr/local/include;/usr/include]
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/rhys/scripts/CircuitTester/spice/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/make cmTC_6f22d/fast && /usr/bin/make  -f CMakeFiles/cmTC_6f22d.dir/build.make CMakeFiles/cmTC_6f22d.dir/build]
-  ignore line: [make[1]: Entering directory '/mnt/files/scripts/CircuitTester/spice/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_6f22d.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++    -v -o CMakeFiles/cmTC_6f22d.dir/CMakeCXXCompilerABI.cpp.o -c /home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.6682.181/bin/cmake/linux/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_abf2f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_abf2f.dir/build.make CMakeFiles/cmTC_abf2f.dir/build]
+  ignore line: [gmake[1]: Entering directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_abf2f.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/lib64/ccache/c++   -v -o CMakeFiles/cmTC_abf2f.dir/CMakeCXXCompilerABI.cpp.o -c /home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/share/cmake-3.19/Modules/CMakeCXXCompilerABI.cpp]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
-  ignore line: [Target: x86_64-pc-linux-gnu]
-  ignore line: [Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c c++ ada fortran go lto objc obj-c++ d --with-isl --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-install-libiberty --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-libunwind-exceptions --disable-werror gdc_include_dir=/usr/include/dlang/gdc]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-redhat-linux]
+  ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran objc obj-c++ ada go d lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-11.0.1-20210405/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux]
   ignore line: [Thread model: posix]
   ignore line: [Supported LTO compression algorithms: zlib zstd]
-  ignore line: [gcc version 10.2.0 (GCC) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6f22d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/cc1plus -quiet -v -D_GNU_SOURCE /home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.6682.181/bin/cmake/linux/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_6f22d.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccc7BDBR.s]
-  ignore line: [GNU C++14 (GCC) version 10.2.0 (x86_64-pc-linux-gnu)]
-  ignore line: [	compiled by GNU C version 10.2.0  GMP version 6.2.0  MPFR version 4.1.0  MPC version 1.1.0  isl version isl-0.21-GMP]
+  ignore line: [gcc version 11.0.1 20210405 (Red Hat 11.0.1-0) (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_60611.dir/CMakeCXXCompilerABI.cpp.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_60611.dir/']
+  ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/11/cc1plus -quiet -v -D_GNU_SOURCE /home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/share/cmake-3.19/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_60611.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccwP1AW7.s]
+  ignore line: [GNU C++17 (GCC) version 11.0.1 20210405 (Red Hat 11.0.1-0) (x86_64-redhat-linux)]
+  ignore line: [	compiled by GNU C version 11.0.1 20210405 (Red Hat 11.0.1-0)  GMP version 6.2.0  MPFR version 4.1.0-p9  MPC version 1.2.1  isl version isl-0.18-GMP]
   ignore line: []
-  ignore line: [warning: GMP header version 6.2.0 differs from library version 6.2.1.]
-  ignore line: [warning: MPC header version 1.1.0 differs from library version 1.2.1.]
+  ignore line: [warning: MPFR header version 4.1.0-p9 differs from library version 4.1.0-p11.]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"]
   ignore line: [#include "..." search starts here:]
   ignore line: [#include <...> search starts here:]
-  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0]
-  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu]
-  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward]
-  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include]
+  ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11]
+  ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux]
+  ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward]
+  ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/include]
   ignore line: [ /usr/local/include]
-  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed]
   ignore line: [ /usr/include]
   ignore line: [End of search list.]
-  ignore line: [GNU C++14 (GCC) version 10.2.0 (x86_64-pc-linux-gnu)]
-  ignore line: [	compiled by GNU C version 10.2.0  GMP version 6.2.0  MPFR version 4.1.0  MPC version 1.1.0  isl version isl-0.21-GMP]
+  ignore line: [GNU C++17 (GCC) version 11.0.1 20210405 (Red Hat 11.0.1-0) (x86_64-redhat-linux)]
+  ignore line: [	compiled by GNU C version 11.0.1 20210405 (Red Hat 11.0.1-0)  GMP version 6.2.0  MPFR version 4.1.0-p9  MPC version 1.2.1  isl version isl-0.18-GMP]
   ignore line: []
-  ignore line: [warning: GMP header version 6.2.0 differs from library version 6.2.1.]
-  ignore line: [warning: MPC header version 1.1.0 differs from library version 1.2.1.]
+  ignore line: [warning: MPFR header version 4.1.0-p9 differs from library version 4.1.0-p11.]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [Compiler executable checksum: 281d2a5dec9cafa694fa91c92d7d5e51]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6f22d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_6f22d.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccc7BDBR.s]
-  ignore line: [GNU assembler version 2.35.1 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.35.1]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6f22d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [Linking CXX executable cmTC_6f22d]
-  ignore line: [/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.6682.181/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6f22d.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTC_6f22d.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_6f22d ]
+  ignore line: [Compiler executable checksum: 4f3028bfea29b99091114eff5870fb8a]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_60611.dir/CMakeCXXCompilerABI.cpp.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_60611.dir/']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_60611.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccwP1AW7.s]
+  ignore line: [GNU assembler version 2.35.1 (x86_64-redhat-linux) using BFD version version 2.35.1-41.fc34]
+  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_60611.dir/CMakeCXXCompilerABI.cpp.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_60611.dir/CMakeCXXCompilerABI.cpp.']
+  ignore line: [Linking CXX executable cmTC_abf2f]
+  ignore line: [/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_abf2f.dir/link.txt --verbose=1]
+  ignore line: [/usr/lib64/ccache/c++  -v CMakeFiles/cmTC_abf2f.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_abf2f ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper]
-  ignore line: [Target: x86_64-pc-linux-gnu]
-  ignore line: [Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c c++ ada fortran go lto objc obj-c++ d --with-isl --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-install-libiberty --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-libunwind-exceptions --disable-werror gdc_include_dir=/usr/include/dlang/gdc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-redhat-linux]
+  ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran objc obj-c++ ada go d lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-11.0.1-20210405/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux]
   ignore line: [Thread model: posix]
   ignore line: [Supported LTO compression algorithms: zlib zstd]
-  ignore line: [gcc version 10.2.0 (GCC) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6f22d' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cce95w5l.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_6f22d /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../.. CMakeFiles/cmTC_6f22d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib/crtn.o]
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/collect2] ==> ignore
+  ignore line: [gcc version 11.0.1 20210405 (Red Hat 11.0.1-0) (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_abf2f' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_abf2f.']
+  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/11/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccYeTlFz.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_abf2f /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../.. CMakeFiles/cmTC_abf2f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/11/crtend.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o]
+    arg [/usr/libexec/gcc/x86_64-redhat-linux/11/collect2] ==> ignore
     arg [-plugin] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/liblto_plugin.so] ==> ignore
-    arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cce95w5l.res] ==> ignore
+    arg [/usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccYeTlFz.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [--build-id] ==> ignore
+    arg [--no-add-needed] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
     arg [--hash-style=gnu] ==> ignore
     arg [-m] ==> ignore
     arg [elf_x86_64] ==> ignore
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
-    arg [-pie] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_6f22d] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib/Scrt1.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib/crti.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtbeginS.o] ==> ignore
-    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0]
-    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib]
-    arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../..]
-    arg [CMakeFiles/cmTC_6f22d.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [cmTC_abf2f] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/11] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/11/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../..]
+    arg [CMakeFiles/cmTC_abf2f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -427,15 +403,467 @@ Parsed CXX implicit link information from above output:
     arg [-lc] ==> lib [c]
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtendS.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib/crtn.o] ==> ignore
-  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0]
-  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib] ==> [/usr/lib]
-  collapse library dir [/lib/../lib] ==> [/lib]
-  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../..] ==> [/usr/lib]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/11/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11] ==> [/usr/lib/gcc/x86_64-redhat-linux/11]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64] ==> [/usr/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../..] ==> [/usr/lib]
   implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
-  implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0;/usr/lib;/lib]
+  implicit dirs: [/usr/lib/gcc/x86_64-redhat-linux/11;/usr/lib64;/lib64;/usr/lib]
   implicit fwks: []
 
 
+Performing C++ SOURCE FILE Test EIGEN_COMPILER_SUPPORT_CPP11 succeeded with the following output:
+Change Dir: /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_5e222/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5e222.dir/build.make CMakeFiles/cmTC_5e222.dir/build
+gmake[1]: Entering directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5e222.dir/src.cxx.o
+/usr/lib64/ccache/c++ -DEIGEN_COMPILER_SUPPORT_CPP11  -std=c++11 -o CMakeFiles/cmTC_5e222.dir/src.cxx.o -c /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_5e222
+/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e222.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++ -rdynamic CMakeFiles/cmTC_5e222.dir/src.cxx.o -o cmTC_5e222 
+gmake[1]: Leaving directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 succeeded with the following output:
+Change Dir: /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_dc158/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_dc158.dir/build.make CMakeFiles/cmTC_dc158.dir/build
+gmake[1]: Entering directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_dc158.dir/src.cxx.o
+/usr/lib64/ccache/c++ -DCOMPILER_SUPPORT_std=cpp03  -std=c++03 -o CMakeFiles/cmTC_dc158.dir/src.cxx.o -c /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_dc158
+/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dc158.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++ -rdynamic CMakeFiles/cmTC_dc158.dir/src.cxx.o -o cmTC_dc158 
+gmake[1]: Leaving directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test standard_math_library_linked_to_automatically succeeded with the following output:
+Change Dir: /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_95c9f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_95c9f.dir/build.make CMakeFiles/cmTC_95c9f.dir/build
+gmake[1]: Entering directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_95c9f.dir/src.cxx.o
+/usr/lib64/ccache/c++ -Dstandard_math_library_linked_to_automatically  -std=c++03  -o CMakeFiles/cmTC_95c9f.dir/src.cxx.o -c /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_95c9f
+/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_95c9f.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++  -std=c++03  -rdynamic CMakeFiles/cmTC_95c9f.dir/src.cxx.o -o cmTC_95c9f 
+gmake[1]: Leaving directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include<cmath>
+int main(int argc, char **){
+  return int(std::sin(double(argc)) + std::log(double(argc)));
+}
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_WERROR succeeded with the following output:
+Change Dir: /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_54b91/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_54b91.dir/build.make CMakeFiles/cmTC_54b91.dir/build
+gmake[1]: Entering directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_54b91.dir/src.cxx.o
+/usr/lib64/ccache/c++ -DCOMPILER_SUPPORT_WERROR  -std=c++03    -Werror -o CMakeFiles/cmTC_54b91.dir/src.cxx.o -c /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_54b91
+/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_54b91.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++  -std=c++03  -rdynamic CMakeFiles/cmTC_54b91.dir/src.cxx.o -o cmTC_54b91 
+gmake[1]: Leaving directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_pedantic succeeded with the following output:
+Change Dir: /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_baeb8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_baeb8.dir/build.make CMakeFiles/cmTC_baeb8.dir/build
+gmake[1]: Entering directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_baeb8.dir/src.cxx.o
+/usr/lib64/ccache/c++ -DCOMPILER_SUPPORT_pedantic  -std=c++03 -Werror   -pedantic -o CMakeFiles/cmTC_baeb8.dir/src.cxx.o -c /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_baeb8
+/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_baeb8.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++  -std=c++03 -Werror -rdynamic CMakeFiles/cmTC_baeb8.dir/src.cxx.o -o cmTC_baeb8 
+gmake[1]: Leaving directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wall succeeded with the following output:
+Change Dir: /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_e9388/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e9388.dir/build.make CMakeFiles/cmTC_e9388.dir/build
+gmake[1]: Entering directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e9388.dir/src.cxx.o
+/usr/lib64/ccache/c++ -DCOMPILER_SUPPORT_Wall  -std=c++03 -pedantic -Werror   -Wall -o CMakeFiles/cmTC_e9388.dir/src.cxx.o -c /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_e9388
+/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e9388.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++  -std=c++03 -pedantic -Werror -rdynamic CMakeFiles/cmTC_e9388.dir/src.cxx.o -o cmTC_e9388 
+gmake[1]: Leaving directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wextra succeeded with the following output:
+Change Dir: /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_22dc8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_22dc8.dir/build.make CMakeFiles/cmTC_22dc8.dir/build
+gmake[1]: Entering directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_22dc8.dir/src.cxx.o
+/usr/lib64/ccache/c++ -DCOMPILER_SUPPORT_Wextra  -std=c++03 -pedantic -Wall -Werror   -Wextra -o CMakeFiles/cmTC_22dc8.dir/src.cxx.o -c /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_22dc8
+/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_22dc8.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++  -std=c++03 -pedantic -Wall -Werror -rdynamic CMakeFiles/cmTC_22dc8.dir/src.cxx.o -o cmTC_22dc8 
+gmake[1]: Leaving directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wundef succeeded with the following output:
+Change Dir: /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_c2e30/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c2e30.dir/build.make CMakeFiles/cmTC_c2e30.dir/build
+gmake[1]: Entering directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c2e30.dir/src.cxx.o
+/usr/lib64/ccache/c++ -DCOMPILER_SUPPORT_Wundef  -std=c++03 -pedantic -Wall -Wextra -Werror   -Wundef -o CMakeFiles/cmTC_c2e30.dir/src.cxx.o -c /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_c2e30
+/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2e30.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++  -std=c++03 -pedantic -Wall -Wextra -Werror -rdynamic CMakeFiles/cmTC_c2e30.dir/src.cxx.o -o cmTC_c2e30 
+gmake[1]: Leaving directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wcastalign succeeded with the following output:
+Change Dir: /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_420d1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_420d1.dir/build.make CMakeFiles/cmTC_420d1.dir/build
+gmake[1]: Entering directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_420d1.dir/src.cxx.o
+/usr/lib64/ccache/c++ -DCOMPILER_SUPPORT_Wcastalign  -std=c++03 -pedantic -Wall -Wextra -Wundef -Werror   -Wcast-align -o CMakeFiles/cmTC_420d1.dir/src.cxx.o -c /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_420d1
+/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_420d1.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Werror -rdynamic CMakeFiles/cmTC_420d1.dir/src.cxx.o -o cmTC_420d1 
+gmake[1]: Leaving directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wcharsubscripts succeeded with the following output:
+Change Dir: /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_2c8e1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2c8e1.dir/build.make CMakeFiles/cmTC_2c8e1.dir/build
+gmake[1]: Entering directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2c8e1.dir/src.cxx.o
+/usr/lib64/ccache/c++ -DCOMPILER_SUPPORT_Wcharsubscripts  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Werror   -Wchar-subscripts -o CMakeFiles/cmTC_2c8e1.dir/src.cxx.o -c /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_2c8e1
+/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2c8e1.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Werror -rdynamic CMakeFiles/cmTC_2c8e1.dir/src.cxx.o -o cmTC_2c8e1 
+gmake[1]: Leaving directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wnonvirtualdtor succeeded with the following output:
+Change Dir: /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_9ee89/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9ee89.dir/build.make CMakeFiles/cmTC_9ee89.dir/build
+gmake[1]: Entering directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9ee89.dir/src.cxx.o
+/usr/lib64/ccache/c++ -DCOMPILER_SUPPORT_Wnonvirtualdtor  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Werror   -Wnon-virtual-dtor -o CMakeFiles/cmTC_9ee89.dir/src.cxx.o -c /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_9ee89
+/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9ee89.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Werror -rdynamic CMakeFiles/cmTC_9ee89.dir/src.cxx.o -o cmTC_9ee89 
+gmake[1]: Leaving directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wunusedlocaltypedefs succeeded with the following output:
+Change Dir: /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_1982b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1982b.dir/build.make CMakeFiles/cmTC_1982b.dir/build
+gmake[1]: Entering directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1982b.dir/src.cxx.o
+/usr/lib64/ccache/c++ -DCOMPILER_SUPPORT_Wunusedlocaltypedefs  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Werror   -Wunused-local-typedefs -o CMakeFiles/cmTC_1982b.dir/src.cxx.o -c /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_1982b
+/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1982b.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Werror -rdynamic CMakeFiles/cmTC_1982b.dir/src.cxx.o -o cmTC_1982b 
+gmake[1]: Leaving directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wpointerarith succeeded with the following output:
+Change Dir: /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_1e09d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1e09d.dir/build.make CMakeFiles/cmTC_1e09d.dir/build
+gmake[1]: Entering directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1e09d.dir/src.cxx.o
+/usr/lib64/ccache/c++ -DCOMPILER_SUPPORT_Wpointerarith  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Werror   -Wpointer-arith -o CMakeFiles/cmTC_1e09d.dir/src.cxx.o -c /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_1e09d
+/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1e09d.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Werror -rdynamic CMakeFiles/cmTC_1e09d.dir/src.cxx.o -o cmTC_1e09d 
+gmake[1]: Leaving directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wwritestrings succeeded with the following output:
+Change Dir: /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_ad319/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ad319.dir/build.make CMakeFiles/cmTC_ad319.dir/build
+gmake[1]: Entering directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ad319.dir/src.cxx.o
+/usr/lib64/ccache/c++ -DCOMPILER_SUPPORT_Wwritestrings  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Werror   -Wwrite-strings -o CMakeFiles/cmTC_ad319.dir/src.cxx.o -c /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_ad319
+/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad319.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Werror -rdynamic CMakeFiles/cmTC_ad319.dir/src.cxx.o -o cmTC_ad319 
+gmake[1]: Leaving directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wformatsecurity succeeded with the following output:
+Change Dir: /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_d7eae/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d7eae.dir/build.make CMakeFiles/cmTC_d7eae.dir/build
+gmake[1]: Entering directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d7eae.dir/src.cxx.o
+/usr/lib64/ccache/c++ -DCOMPILER_SUPPORT_Wformatsecurity  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Werror   -Wformat-security -o CMakeFiles/cmTC_d7eae.dir/src.cxx.o -c /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_d7eae
+/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d7eae.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Werror -rdynamic CMakeFiles/cmTC_d7eae.dir/src.cxx.o -o cmTC_d7eae 
+gmake[1]: Leaving directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wlogicalop succeeded with the following output:
+Change Dir: /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_2dced/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2dced.dir/build.make CMakeFiles/cmTC_2dced.dir/build
+gmake[1]: Entering directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2dced.dir/src.cxx.o
+/usr/lib64/ccache/c++ -DCOMPILER_SUPPORT_Wlogicalop  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Werror   -Wlogical-op -o CMakeFiles/cmTC_2dced.dir/src.cxx.o -c /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_2dced
+/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2dced.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Werror -rdynamic CMakeFiles/cmTC_2dced.dir/src.cxx.o -o cmTC_2dced 
+gmake[1]: Leaving directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wenumconversion succeeded with the following output:
+Change Dir: /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_5b99d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5b99d.dir/build.make CMakeFiles/cmTC_5b99d.dir/build
+gmake[1]: Entering directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5b99d.dir/src.cxx.o
+/usr/lib64/ccache/c++ -DCOMPILER_SUPPORT_Wenumconversion  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Werror   -Wenum-conversion -o CMakeFiles/cmTC_5b99d.dir/src.cxx.o -c /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_5b99d
+/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5b99d.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Werror -rdynamic CMakeFiles/cmTC_5b99d.dir/src.cxx.o -o cmTC_5b99d 
+gmake[1]: Leaving directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wdoublepromotion succeeded with the following output:
+Change Dir: /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_14819/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_14819.dir/build.make CMakeFiles/cmTC_14819.dir/build
+gmake[1]: Entering directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_14819.dir/src.cxx.o
+/usr/lib64/ccache/c++ -DCOMPILER_SUPPORT_Wdoublepromotion  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Werror   -Wdouble-promotion -o CMakeFiles/cmTC_14819.dir/src.cxx.o -c /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_14819
+/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_14819.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Werror -rdynamic CMakeFiles/cmTC_14819.dir/src.cxx.o -o cmTC_14819 
+gmake[1]: Leaving directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wnopsabi succeeded with the following output:
+Change Dir: /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_bc5e6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_bc5e6.dir/build.make CMakeFiles/cmTC_bc5e6.dir/build
+gmake[1]: Entering directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bc5e6.dir/src.cxx.o
+/usr/lib64/ccache/c++ -DCOMPILER_SUPPORT_Wnopsabi  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wdouble-promotion -Werror   -Wno-psabi -o CMakeFiles/cmTC_bc5e6.dir/src.cxx.o -c /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_bc5e6
+/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bc5e6.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wdouble-promotion -Werror -rdynamic CMakeFiles/cmTC_bc5e6.dir/src.cxx.o -o cmTC_bc5e6 
+gmake[1]: Leaving directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wnovariadicmacros succeeded with the following output:
+Change Dir: /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_9bf1b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9bf1b.dir/build.make CMakeFiles/cmTC_9bf1b.dir/build
+gmake[1]: Entering directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9bf1b.dir/src.cxx.o
+/usr/lib64/ccache/c++ -DCOMPILER_SUPPORT_Wnovariadicmacros  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wdouble-promotion -Wno-psabi -Werror   -Wno-variadic-macros -o CMakeFiles/cmTC_9bf1b.dir/src.cxx.o -c /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_9bf1b
+/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9bf1b.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wdouble-promotion -Wno-psabi -Werror -rdynamic CMakeFiles/cmTC_9bf1b.dir/src.cxx.o -o cmTC_9bf1b 
+gmake[1]: Leaving directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wnolonglong succeeded with the following output:
+Change Dir: /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_bf53f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_bf53f.dir/build.make CMakeFiles/cmTC_bf53f.dir/build
+gmake[1]: Entering directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bf53f.dir/src.cxx.o
+/usr/lib64/ccache/c++ -DCOMPILER_SUPPORT_Wnolonglong  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Werror   -Wno-long-long -o CMakeFiles/cmTC_bf53f.dir/src.cxx.o -c /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_bf53f
+/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bf53f.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Werror -rdynamic CMakeFiles/cmTC_bf53f.dir/src.cxx.o -o cmTC_bf53f 
+gmake[1]: Leaving directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_fnochecknew succeeded with the following output:
+Change Dir: /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_3f4e8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3f4e8.dir/build.make CMakeFiles/cmTC_3f4e8.dir/build
+gmake[1]: Entering directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3f4e8.dir/src.cxx.o
+/usr/lib64/ccache/c++ -DCOMPILER_SUPPORT_fnochecknew  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -Werror   -fno-check-new -o CMakeFiles/cmTC_3f4e8.dir/src.cxx.o -c /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_3f4e8
+/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3f4e8.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -Werror -rdynamic CMakeFiles/cmTC_3f4e8.dir/src.cxx.o -o cmTC_3f4e8 
+gmake[1]: Leaving directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_fnocommon succeeded with the following output:
+Change Dir: /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_22c9f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_22c9f.dir/build.make CMakeFiles/cmTC_22c9f.dir/build
+gmake[1]: Entering directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_22c9f.dir/src.cxx.o
+/usr/lib64/ccache/c++ -DCOMPILER_SUPPORT_fnocommon  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -Werror   -fno-common -o CMakeFiles/cmTC_22c9f.dir/src.cxx.o -c /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_22c9f
+/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_22c9f.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -Werror -rdynamic CMakeFiles/cmTC_22c9f.dir/src.cxx.o -o cmTC_22c9f 
+gmake[1]: Leaving directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_fstrictaliasing succeeded with the following output:
+Change Dir: /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_54ea2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_54ea2.dir/build.make CMakeFiles/cmTC_54ea2.dir/build
+gmake[1]: Entering directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_54ea2.dir/src.cxx.o
+/usr/lib64/ccache/c++ -DCOMPILER_SUPPORT_fstrictaliasing  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -Werror   -fstrict-aliasing -o CMakeFiles/cmTC_54ea2.dir/src.cxx.o -c /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_54ea2
+/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_54ea2.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -Werror -rdynamic CMakeFiles/cmTC_54ea2.dir/src.cxx.o -o cmTC_54ea2 
+gmake[1]: Leaving directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_ansi succeeded with the following output:
+Change Dir: /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_63d6b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_63d6b.dir/build.make CMakeFiles/cmTC_63d6b.dir/build
+gmake[1]: Entering directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_63d6b.dir/src.cxx.o
+/usr/lib64/ccache/c++ -DCOMPILER_SUPPORT_ansi  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Werror   -ansi -o CMakeFiles/cmTC_63d6b.dir/src.cxx.o -c /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_63d6b
+/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_63d6b.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Werror -rdynamic CMakeFiles/cmTC_63d6b.dir/src.cxx.o -o cmTC_63d6b 
+gmake[1]: Leaving directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_OPENMP succeeded with the following output:
+Change Dir: /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_eafd8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_eafd8.dir/build.make CMakeFiles/cmTC_eafd8.dir/build
+gmake[1]: Entering directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_eafd8.dir/src.cxx.o
+/usr/lib64/ccache/c++ -DCOMPILER_SUPPORT_OPENMP  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -ansi    -fopenmp -o CMakeFiles/cmTC_eafd8.dir/src.cxx.o -c /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_eafd8
+/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eafd8.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -ansi  -rdynamic CMakeFiles/cmTC_eafd8.dir/src.cxx.o -o cmTC_eafd8 
+gmake[1]: Leaving directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_7577d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7577d.dir/build.make CMakeFiles/cmTC_7577d.dir/build
+gmake[1]: Entering directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7577d.dir/CheckIncludeFile.c.o
+/usr/lib64/ccache/cc    -o CMakeFiles/cmTC_7577d.dir/CheckIncludeFile.c.o -c /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_7577d
+/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7577d.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc -rdynamic CMakeFiles/cmTC_7577d.dir/CheckIncludeFile.c.o -o cmTC_7577d 
+gmake[1]: Leaving directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_5efde/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5efde.dir/build.make CMakeFiles/cmTC_5efde.dir/build
+gmake[1]: Entering directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5efde.dir/CheckFunctionExists.c.o
+/usr/lib64/ccache/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_5efde.dir/CheckFunctionExists.c.o -c /home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/share/cmake-3.19/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5efde
+/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5efde.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_5efde.dir/CheckFunctionExists.c.o -o cmTC_5efde  -lpthread 
+gmake[1]: Leaving directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_FASTMATH succeeded with the following output:
+Change Dir: /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_c692d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c692d.dir/build.make CMakeFiles/cmTC_c692d.dir/build
+gmake[1]: Entering directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c692d.dir/src.cxx.o
+/usr/lib64/ccache/c++ -DCOMPILER_SUPPORT_FASTMATH  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -ansi    -ffast-math -o CMakeFiles/cmTC_c692d.dir/src.cxx.o -c /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_c692d
+/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c692d.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -ansi  -rdynamic CMakeFiles/cmTC_c692d.dir/src.cxx.o -o cmTC_c692d 
+gmake[1]: Leaving directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 succeeded with the following output:
+Change Dir: /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_a712b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a712b.dir/build.make CMakeFiles/cmTC_a712b.dir/build
+gmake[1]: Entering directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a712b.dir/src.cxx.o
+/usr/lib64/ccache/c++ -DCOMPILER_SUPPORT_std=cpp03  -std=c++03 -o CMakeFiles/cmTC_a712b.dir/src.cxx.o -c /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_a712b
+/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a712b.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++ -rdynamic CMakeFiles/cmTC_a712b.dir/src.cxx.o -o cmTC_a712b 
+gmake[1]: Leaving directory '/mnt/files/scripts/CircuitTesterTests/spice/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }

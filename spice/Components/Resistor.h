@@ -7,15 +7,13 @@
 
 
 #include "../Component.h"
+#include "../Components.h"
 
 class Resistor : public Component{
 protected:
 
 public:
-    Resistor();
-
-    vector<Component> getConnected() override;
-    info input(info i) override;
+    Resistor(string high_str, string low_str, double resistance);
 };
 
 

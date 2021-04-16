@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/spice.dir/Component.cpp.o"
   "CMakeFiles/spice.dir/Components/Resistor.cpp.o"
-  "CMakeFiles/spice.dir/Spice.cpp.o"
+  "CMakeFiles/spice.dir/NodeHashTable.cpp.o"
+  "CMakeFiles/spice.dir/Sim.cpp.o"
   "CMakeFiles/spice.dir/main.cpp.o"
   "spice"
   "spice.pdb"

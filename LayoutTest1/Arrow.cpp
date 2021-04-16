@@ -40,51 +40,20 @@ void Arrow::updatePosition(){
 
 
 
-void Arrow::paint(QPainter *painter, const QStyleOptionGraphicsItem *,
-                  QWidget *){
-    if (myStartItem->collidesWithItem(myEndItem))
+void Arrow::paint(QPainter *painter, const QStyleOptionGraphicsItem *, QWidget *){
+    if (myStartItem->collidesWithItem(myEndItem)) {
         return;
+    }
 
     QPen myPen = pen();
     myPen.setColor(myColor);
-    qreal arrowSize = 20;
     painter->setPen(myPen);
     painter->setBrush(myColor);
- 
 
-    QLineF centerLine(myStartItem->pos(), myEndItem->pos());
-    QPolygonF endPolygon = myEndItem->getPolygon();
-    QPointF p1 = endPolygon.first() + myEndItem->pos();
-    QPointF intersectPoint;
-    for (int i = 1; i < endPolygon.count(); ++i) {
-        QPointF p2 = endPolygon.at(i) + myEndItem->pos();
-        QLineF polyLine = QLineF(p1, p2);
-#if QT_VERSION >= QT_VERSION_CHECK(5, 14, 0) // IntersectionType is deprecated at qt 5.14
-        QLineF::IntersectionType intersectionType = polyLine.intersects(centerLine, &intersectPoint);
-#else
-        QLineF::IntersectType intersectionType = polyLine.intersect(centerLine, &intersectPoint);
-#endif
-        if (intersectionType == QLineF::BoundedIntersection) {
-            break;
-        }
-        p1 = p2;
-    }
-
-    setLine(QLineF(intersectPoint, myStartItem->pos()));
- 
-
-    double angle = std::atan2(-line().dy(), line().dx());
-
-    QPointF arrowP1 = line().p1() + QPointF(sin(angle + M_PI / 3) * arrowSize,
-                                    cos(angle + M_PI / 3) * arrowSize);
-    QPointF arrowP2 = line().p1() + QPointF(sin(angle + M_PI - M_PI / 3) * arrowSize,
-                                    cos(angle + M_PI - M_PI / 3) * arrowSize);
-
-    arrowHead.clear();
-    arrowHead << line().p1() << arrowP1 << arrowP2;
+    setLine(QLineF(myEndItem->centerpoint(), myStartItem->centerpoint()));
  
     painter->drawLine(line());
-    painter->drawPolygon(arrowHead);
+    //painter->drawPolygon(arrowHead);
 
     if (isSelected()) {
         painter->setPen(QPen(myColor, 1, Qt::DashLine));

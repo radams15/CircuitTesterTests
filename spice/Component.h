@@ -7,27 +7,32 @@
 
 #include <string>
 #include <vector>
-
-struct info{
-    float current;
-    float voltage;
-    float resistance;
-};
+#include <sstream>
+#include "Components.h"
 
 using namespace std;
 
 class Component{
 protected:
-    string name;
-    int id;
+
 
 public:
-    inline string getName(){
-        return name;
-    };
+    string name;
+    Components id;
 
-    virtual vector<Component> getConnected() = 0;
-    virtual info input(info i) = 0;
+    string high_str;
+    string low_str;
+
+    long high = -1;
+    long low = -1;
+
+    double value;
+
+    Component(Components id, string name, string high_str, string low_str, double value);
+
+    string getName();
+
+    string str();
 };
 
 #endif //SPICE_COMPONENT_H

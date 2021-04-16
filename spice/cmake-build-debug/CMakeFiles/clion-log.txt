@@ -1,4 +1,4 @@
-/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.6682.181/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/rhys/scripts/CircuitTester/spice
+/home/rhys/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/rhys/scripts/CircuitTesterTests/spice
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/rhys/scripts/CircuitTester/spice/cmake-build-debug
+-- Build files have been written to: /home/rhys/scripts/CircuitTesterTests/spice/cmake-build-debug

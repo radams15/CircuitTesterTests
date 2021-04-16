@@ -3,8 +3,7 @@
 
 #include <QGraphicsLineItem>
 
-class SceneItem;
-
+#include "SceneItem.h"
 
 class Arrow : public QGraphicsLineItem{
 public:
