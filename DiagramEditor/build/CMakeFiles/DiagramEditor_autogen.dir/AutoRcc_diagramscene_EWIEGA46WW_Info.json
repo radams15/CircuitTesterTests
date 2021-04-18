@@ -1,0 +1,36 @@
+{
+	"BUILD_DIR" : "/mnt/files/scripts/CircuitTesterTests/DiagramEditor/build/DiagramEditor_autogen",
+	"CMAKE_BINARY_DIR" : "/mnt/files/scripts/CircuitTesterTests/DiagramEditor/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/mnt/files/scripts/CircuitTesterTests/DiagramEditor/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/mnt/files/scripts/CircuitTesterTests/DiagramEditor",
+	"CMAKE_SOURCE_DIR" : "/mnt/files/scripts/CircuitTesterTests/DiagramEditor",
+	"INCLUDE_DIR" : "/mnt/files/scripts/CircuitTesterTests/DiagramEditor/build/DiagramEditor_autogen/include",
+	"INPUTS" : 
+	[
+		"/mnt/files/scripts/CircuitTesterTests/DiagramEditor/images/italic.png",
+		"/mnt/files/scripts/CircuitTesterTests/DiagramEditor/images/floodfill.png",
+		"/mnt/files/scripts/CircuitTesterTests/DiagramEditor/images/underline.png",
+		"/mnt/files/scripts/CircuitTesterTests/DiagramEditor/images/background2.png",
+		"/mnt/files/scripts/CircuitTesterTests/DiagramEditor/images/textpointer.png",
+		"/mnt/files/scripts/CircuitTesterTests/DiagramEditor/images/sendtoback.png",
+		"/mnt/files/scripts/CircuitTesterTests/DiagramEditor/images/pointer.png",
+		"/mnt/files/scripts/CircuitTesterTests/DiagramEditor/images/background1.png",
+		"/mnt/files/scripts/CircuitTesterTests/DiagramEditor/images/linecolor.png",
+		"/mnt/files/scripts/CircuitTesterTests/DiagramEditor/images/bringtofront.png",
+		"/mnt/files/scripts/CircuitTesterTests/DiagramEditor/images/background4.png",
+		"/mnt/files/scripts/CircuitTesterTests/DiagramEditor/images/delete.png",
+		"/mnt/files/scripts/CircuitTesterTests/DiagramEditor/images/linepointer.png",
+		"/mnt/files/scripts/CircuitTesterTests/DiagramEditor/images/bold.png",
+		"/mnt/files/scripts/CircuitTesterTests/DiagramEditor/images/background3.png"
+	],
+	"LOCK_FILE" : "/mnt/files/scripts/CircuitTesterTests/DiagramEditor/build/CMakeFiles/DiagramEditor_autogen.dir/AutoRcc_diagramscene_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "diagramscene" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_diagramscene.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib64/qt5/bin/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/mnt/files/scripts/CircuitTesterTests/DiagramEditor/build/CMakeFiles/DiagramEditor_autogen.dir/AutoRcc_diagramscene_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/mnt/files/scripts/CircuitTesterTests/DiagramEditor/diagramscene.qrc",
+	"VERBOSITY" : 0
+}

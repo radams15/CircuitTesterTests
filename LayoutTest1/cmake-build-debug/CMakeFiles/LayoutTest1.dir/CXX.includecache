@@ -26,43 +26,11 @@ QList
 QIcon
 -
 
-/home/rhys/scripts/CircuitTesterTests/LayoutTest1/Arrow.cpp
-Arrow.h
-/home/rhys/scripts/CircuitTesterTests/LayoutTest1/Arrow.h
-SceneItem.h
-/home/rhys/scripts/CircuitTesterTests/LayoutTest1/SceneItem.h
-QPainter
--
-QPen
--
-QtMath
--
-
 /home/rhys/scripts/CircuitTesterTests/LayoutTest1/Arrow.h
 QGraphicsLineItem
 -
 SceneItem.h
 /home/rhys/scripts/CircuitTesterTests/LayoutTest1/SceneItem.h
-
-/home/rhys/scripts/CircuitTesterTests/LayoutTest1/Components/Component.cpp
-Component.h
-/home/rhys/scripts/CircuitTesterTests/LayoutTest1/Components/Component.h
-
-/home/rhys/scripts/CircuitTesterTests/LayoutTest1/Components/Component.h
-QIcon
--
-utility
--
-../SceneItem.h
-/home/rhys/scripts/CircuitTesterTests/LayoutTest1/SceneItem.h
-
-/home/rhys/scripts/CircuitTesterTests/LayoutTest1/Components/Resistor.cpp
-Resistor.h
-/home/rhys/scripts/CircuitTesterTests/LayoutTest1/Components/Resistor.h
-
-/home/rhys/scripts/CircuitTesterTests/LayoutTest1/Components/Resistor.h
-Component.h
-/home/rhys/scripts/CircuitTesterTests/LayoutTest1/Components/Component.h
 
 /home/rhys/scripts/CircuitTesterTests/LayoutTest1/MainWindow.cpp
 Arrow.h
@@ -102,20 +70,6 @@ QGraphicsView
 Scene.h
 /home/rhys/scripts/CircuitTesterTests/LayoutTest1/Scene.h
 
-/home/rhys/scripts/CircuitTesterTests/LayoutTest1/Scene.cpp
-Scene.h
-/home/rhys/scripts/CircuitTesterTests/LayoutTest1/Scene.h
-Arrow.h
-/home/rhys/scripts/CircuitTesterTests/LayoutTest1/Arrow.h
-QGraphicsSceneMouseEvent
--
-QTextCursor
--
-Components/Resistor.h
--
-iostream
--
-
 /home/rhys/scripts/CircuitTesterTests/LayoutTest1/Scene.h
 SceneItem.h
 /home/rhys/scripts/CircuitTesterTests/LayoutTest1/SceneItem.h
@@ -126,28 +80,6 @@ QGraphicsScene
 Components/Component.h
 -
 
-/home/rhys/scripts/CircuitTesterTests/LayoutTest1/SceneItem.cpp
-SceneItem.h
-/home/rhys/scripts/CircuitTesterTests/LayoutTest1/SceneItem.h
-Arrow.h
-/home/rhys/scripts/CircuitTesterTests/LayoutTest1/Arrow.h
-QGraphicsScene
--
-QGraphicsSceneContextMenuEvent
--
-QMenu
--
-QPainter
--
-QResource
--
-QFile
--
-QMessageBox
--
-iostream
--
-
 /home/rhys/scripts/CircuitTesterTests/LayoutTest1/SceneItem.h
 QGraphicsPixmapItem
 -
@@ -156,60 +88,8 @@ QList
 QIcon
 -
 
-/home/rhys/scripts/CircuitTesterTests/LayoutTest1/SceneText.cpp
-SceneText.h
-/home/rhys/scripts/CircuitTesterTests/LayoutTest1/SceneText.h
-Scene.h
-/home/rhys/scripts/CircuitTesterTests/LayoutTest1/Scene.h
-
 /home/rhys/scripts/CircuitTesterTests/LayoutTest1/SceneText.h
 QGraphicsTextItem
--
-
-/home/rhys/scripts/CircuitTesterTests/LayoutTest1/cmake-build-debug/LayoutTest1_autogen/EWIEGA46WW/moc_MainWindow.cpp
-memory
--
-../../../MainWindow.h
-/home/rhys/scripts/CircuitTesterTests/LayoutTest1/MainWindow.h
-QtCore/qbytearray.h
--
-QtCore/qmetatype.h
--
-
-/home/rhys/scripts/CircuitTesterTests/LayoutTest1/cmake-build-debug/LayoutTest1_autogen/EWIEGA46WW/moc_Scene.cpp
-memory
--
-../../../Scene.h
-/home/rhys/scripts/CircuitTesterTests/LayoutTest1/Scene.h
-QtCore/qbytearray.h
--
-QtCore/qmetatype.h
--
-
-/home/rhys/scripts/CircuitTesterTests/LayoutTest1/cmake-build-debug/LayoutTest1_autogen/EWIEGA46WW/moc_SceneText.cpp
-memory
--
-../../../SceneText.h
-/home/rhys/scripts/CircuitTesterTests/LayoutTest1/SceneText.h
-QtCore/qbytearray.h
--
-QtCore/qmetatype.h
--
-
-/home/rhys/scripts/CircuitTesterTests/LayoutTest1/cmake-build-debug/LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.cpp
-
-/home/rhys/scripts/CircuitTesterTests/LayoutTest1/cmake-build-debug/LayoutTest1_autogen/mocs_compilation.cpp
-EWIEGA46WW/moc_MainWindow.cpp
-/home/rhys/scripts/CircuitTesterTests/LayoutTest1/cmake-build-debug/LayoutTest1_autogen/EWIEGA46WW/moc_MainWindow.cpp
-EWIEGA46WW/moc_Scene.cpp
-/home/rhys/scripts/CircuitTesterTests/LayoutTest1/cmake-build-debug/LayoutTest1_autogen/EWIEGA46WW/moc_Scene.cpp
-EWIEGA46WW/moc_SceneText.cpp
-/home/rhys/scripts/CircuitTesterTests/LayoutTest1/cmake-build-debug/LayoutTest1_autogen/EWIEGA46WW/moc_SceneText.cpp
-
-/home/rhys/scripts/CircuitTesterTests/LayoutTest1/main.cpp
-MainWindow.h
-/home/rhys/scripts/CircuitTesterTests/LayoutTest1/MainWindow.h
-QApplication
 -
 
 /usr/include/qt5/QtCore/QDeadlineTimer
@@ -219,10 +99,6 @@ qdeadlinetimer.h
 /usr/include/qt5/QtCore/QEvent
 qcoreevent.h
 /usr/include/qt5/QtCore/qcoreevent.h
-
-/usr/include/qt5/QtCore/QFile
-qfile.h
-/usr/include/qt5/QtCore/qfile.h
 
 /usr/include/qt5/QtCore/QList
 qlist.h
@@ -247,10 +123,6 @@ qpoint.h
 /usr/include/qt5/QtCore/QRect
 qrect.h
 /usr/include/qt5/QtCore/qrect.h
-
-/usr/include/qt5/QtCore/QResource
-qresource.h
-/usr/include/qt5/QtCore/qresource.h
 
 /usr/include/qt5/QtCore/QScopedPointer
 qscopedpointer.h
@@ -645,10 +517,6 @@ qtcoreversion.h
 /usr/include/qt5/QtCore/qtcoreversion.h
 
 /usr/include/qt5/QtCore/QtCoreDepends
-
-/usr/include/qt5/QtCore/QtMath
-qmath.h
-/usr/include/qt5/QtCore/qmath.h
 
 /usr/include/qt5/QtCore/qabstractanimation.h
 QtCore/qobject.h
@@ -2318,21 +2186,9 @@ qpaintdevice.h
 qpaintdevicewindow.h
 /usr/include/qt5/QtGui/qpaintdevicewindow.h
 
-/usr/include/qt5/QtGui/QPainter
-qpainter.h
-/usr/include/qt5/QtGui/qpainter.h
-
-/usr/include/qt5/QtGui/QPen
-qpen.h
-/usr/include/qt5/QtGui/qpen.h
-
 /usr/include/qt5/QtGui/QSurfaceFormat
 qsurfaceformat.h
 /usr/include/qt5/QtGui/qsurfaceformat.h
-
-/usr/include/qt5/QtGui/QTextCursor
-qtextcursor.h
-/usr/include/qt5/QtGui/qtextcursor.h
 
 /usr/include/qt5/QtGui/QTransform
 qtransform.h
@@ -3794,10 +3650,6 @@ QtGui/qtguiglobal.h
 qabstractbutton.h
 /usr/include/qt5/QtWidgets/qabstractbutton.h
 
-/usr/include/qt5/QtWidgets/QApplication
-qapplication.h
-/usr/include/qt5/QtWidgets/qapplication.h
-
 /usr/include/qt5/QtWidgets/QComboBox
 qcombobox.h
 /usr/include/qt5/QtWidgets/qcombobox.h
@@ -3822,14 +3674,6 @@ qgraphicsitem.h
 qgraphicsscene.h
 /usr/include/qt5/QtWidgets/qgraphicsscene.h
 
-/usr/include/qt5/QtWidgets/QGraphicsSceneContextMenuEvent
-qgraphicssceneevent.h
-/usr/include/qt5/QtWidgets/qgraphicssceneevent.h
-
-/usr/include/qt5/QtWidgets/QGraphicsSceneMouseEvent
-qgraphicssceneevent.h
-/usr/include/qt5/QtWidgets/qgraphicssceneevent.h
-
 /usr/include/qt5/QtWidgets/QGraphicsTextItem
 qgraphicsitem.h
 /usr/include/qt5/QtWidgets/qgraphicsitem.h
@@ -3845,14 +3689,6 @@ qlayout.h
 /usr/include/qt5/QtWidgets/QMainWindow
 qmainwindow.h
 /usr/include/qt5/QtWidgets/qmainwindow.h
-
-/usr/include/qt5/QtWidgets/QMenu
-qmenu.h
-/usr/include/qt5/QtWidgets/qmenu.h
-
-/usr/include/qt5/QtWidgets/QMessageBox
-qmessagebox.h
-/usr/include/qt5/QtWidgets/qmessagebox.h
 
 /usr/include/qt5/QtWidgets/QScrollerProperties
 qscrollerproperties.h
