@@ -117,9 +117,8 @@ void MainWindow::itemSelected(QGraphicsItem *item) {
 
 
 void MainWindow::about() {
-    QMessageBox::about(this, tr("About Diagram Scene"),
-                       tr("The <b>Diagram Scene</b> example shows "
-                          "use of the graphics framework."));
+    QMessageBox::about(this, tr("About"),
+                       tr("This is the <b>first</b> layout test."));
 }
 
 

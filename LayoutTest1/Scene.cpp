@@ -63,20 +63,6 @@ void Scene::mousePressEvent(QGraphicsSceneMouseEvent *mouseEvent){
             addItem(line);
             break;
  
-        case InsertText:
-            textItem = new SceneText();
-            textItem->setFont(myFont);
-            textItem->setTextInteractionFlags(Qt::TextEditorInteraction);
-            textItem->setZValue(1000.0);
-            connect(textItem, &SceneText::lostFocus,
-                    this, &Scene::editorLostFocus);
-            connect(textItem, &SceneText::selectedChange,
-                    this, &Scene::itemSelected);
-            addItem(textItem);
-            textItem->setDefaultTextColor(myTextColor);
-            textItem->setPos(mouseEvent->scenePos());
-            emit textInserted(textItem);
- 
     default:
         ;
     }
