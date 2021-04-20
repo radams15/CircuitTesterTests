@@ -44,8 +44,7 @@ public:
 
     std::vector<UnknownCurrent*>* getUnknownCurrents();
 
-    template <typename T>
-    int getIndexByEquals(std::vector<T> array, T element);
+    int getIndexByEquals(std::vector<Unknown*>* array, Unknown* element);
 
     MNASolution* solve();
 };

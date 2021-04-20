@@ -2,6 +2,7 @@
 // Created by rhys on 18/04/2021.
 //
 
+#include <iostream>
 #include "MNAElement.h"
 
 MNAElement::MNAElement(int n0, int n1, Component *comp, double value, double currentSolution) {
@@ -23,4 +24,12 @@ bool MNAElement::containsNode(int n) {
 
 int MNAElement::getOppositeNode(int n) {
     return n == n0? n1 : n0;
+}
+
+bool MNAElement::equals(const MNAElement &other) const {
+    if(other.n0 == n0 && other.n1 == n1){
+        return true;
+    }
+
+    return false;
 }

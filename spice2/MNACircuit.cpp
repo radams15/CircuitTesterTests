@@ -179,8 +179,8 @@ std::vector<Equation *>* MNACircuit::getEquations() {
     for(auto r : resistors){
         if(r->value == 0){
             equations->push_back(new Equation(r->value, {
-                    new Term(-1, new UnknownVoltage(r->n0)),
-                    new Term(1, new UnknownVoltage(r->n1))
+                    new Term(1, new UnknownVoltage(r->n0)),
+                    new Term(-1, new UnknownVoltage(r->n1))
             }));
         }
     }
@@ -207,40 +207,43 @@ MNASolution *MNACircuit::solve() {
     std::vector<UnknownCurrent*>* unknownCurrents = getUnknownCurrents();
     auto* unknownVoltages = new std::vector<UnknownVoltage*>;
 
-    auto* unknowns = new std::vector<Unknown*>(unknownCurrents->begin(), unknownCurrents->end());
-    unknowns->insert(unknowns->end(), unknownVoltages->begin(), unknownVoltages->end());
-
     for(auto v : nodes){
         unknownVoltages->push_back(new UnknownVoltage(v));
     }
+
+    auto* unknowns = new std::vector<Unknown*>(unknownCurrents->begin(), unknownCurrents->end());
+
+    unknowns->insert(unknowns->end(), unknownVoltages->begin(), unknownVoltages->end());
+
 
     auto A = Eigen::MatrixXd(equations->size(), getNumVars());
     auto z = Eigen::MatrixXd(equations->size(), 1);
 
     for(int i=0 ; i<equations->size() ; i++){
-        auto e = equations->at(i);
-        e->stamp(i, &A, &z, [this, unknowns](Unknown *u) {
-            return getIndexByEquals<Unknown*>(*unknowns, u);
+        equations->at(i)->stamp(i, &A, &z, [this, unknowns](Unknown* u) {
+            return getIndexByEquals(unknowns, u);
         });
     }
 
-    Eigen::MatrixXd x = A.ldlt().solve(z);
+    std::cout << equations->size() << "\n\n";
+
+
+    /*Eigen::MatrixXd x = A.ldlt().solve(z);
 
     auto* voltageMap = new std::map<int, double>;
 
     for(auto v : *unknownVoltages){
-        auto rhs = x(getIndexByEquals<Unknown*>(*unknowns, v));
+        auto rhs = x(getIndexByEquals(unknowns, v));
 
         std::cout << x.cols() << ", " << x.rows() << "\n";
 
         //voltageMap[v->node] = ;
-    }
+    }*/
 }
 
-template<typename T>
-int MNACircuit::getIndexByEquals(std::vector<T> array, T element) {
-    for(int i=0 ; i<array.size() ; i++){
-        if(array.at(i) == element){
+int MNACircuit::getIndexByEquals(std::vector<Unknown*>* array, Unknown* element) {
+    for(int i=0 ; i<array->size() ; i++){
+        if(array->at(i)->equals(element)){
             return i;
         }
     }

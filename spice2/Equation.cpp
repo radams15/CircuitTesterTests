@@ -2,6 +2,7 @@
 // Created by rhys on 18/04/2021.
 //
 
+#include <iostream>
 #include "Equation.h"
 
 Term::Term(double coefficient, Unknown *variable) {
@@ -15,7 +16,7 @@ std::string Term::str() {
     return prefix + variable->toTermName();
 }
 
-UnknownCurrent::UnknownCurrent(MNAElement *element) {
+UnknownCurrent::UnknownCurrent(MNAElement *element) : Unknown(CURRENT) {
     this->element = element;
 }
 
@@ -24,11 +25,15 @@ std::string UnknownCurrent::toTermName() {
 }
 
 bool UnknownCurrent::equals(Unknown* other) {
-    auto* c = (UnknownCurrent*) other; // yes, it's an unchecked cast. Sue me.
+    if(other->t != Unknown::CURRENT){
+        return false;
+    }
+
+    auto* c = (UnknownCurrent*) other;
     return c->element == element;
 }
 
-UnknownVoltage::UnknownVoltage(int node) {
+UnknownVoltage::UnknownVoltage(int node)  : Unknown(VOLTAGE) {
     this->node = node;
 }
 
@@ -37,7 +42,11 @@ std::string UnknownVoltage::toTermName() {
 }
 
 bool UnknownVoltage::equals(Unknown *other) {
-    auto* c = (UnknownVoltage*) other; // yes, it's another unchecked cast.
+    if(other->t != Unknown::VOLTAGE){
+        return false;
+    }
+
+    auto* c = (UnknownVoltage*) other;
     return c->node == node;
 }
 
@@ -63,4 +72,8 @@ std::string Equation::str() {
     }
 
     return "${"+termList.str()+"} = " + std::to_string(value);
+}
+
+Unknown::Unknown(Type t) {
+    this->t = t;
 }

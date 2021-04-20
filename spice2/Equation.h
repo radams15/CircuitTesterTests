@@ -16,8 +16,17 @@ class Unknown {
 private:
 
 public:
+    enum Type{
+        CURRENT,
+        VOLTAGE
+    };
+
+    Type t;
+
     virtual bool equals(Unknown* other) = 0;
     virtual std::string toTermName() = 0;
+
+    Unknown(Type t);
 };
 
 class UnknownCurrent : public Unknown {

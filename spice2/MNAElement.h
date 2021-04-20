@@ -25,6 +25,8 @@ public:
     bool containsNode(int n);
 
     int getOppositeNode(int n);
+
+    bool equals (const MNAElement& other) const;
 };
 
 
