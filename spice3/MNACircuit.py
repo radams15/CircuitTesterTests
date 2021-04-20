@@ -2,12 +2,12 @@ from typing import Union
 
 import numpy as np
 
-from MNAElement import MNAElement
+from MNAElement import MNAElement, ElementType
 from MNASolution import MNASolution
 
 class UnknownCurrent:
     def __init__(self, element: MNAElement):
-        assert(type(element) == MNAElement)
+        assert(issubclass(type(element), MNAElement))
         self.element = element
 
     def __str__(self):
@@ -70,10 +70,18 @@ def get_index_by_equals(array, element) -> int:
     return -1
 
 class MNACircuit:
-    def __init__(self, batteries, resistors: list[MNAElement], current_sources: list[MNAElement]):
-        self.batteries: list[MNAElement] = batteries
-        self.resistors: list[MNAElement] = resistors
-        self.current_sources: list[MNAElement] = current_sources
+    def __init__(self, elements: list[MNAElement]):
+        self.batteries: list[MNAElement] = []
+        self.resistors: list[MNAElement] = []
+        self.current_sources: list[MNAElement] = []
+
+        for e in elements:
+            if e.type == ElementType.BATTERY:
+                self.batteries.append(e)
+            elif e.type == ElementType.RESISTOR:
+                self.resistors.append(e)
+            elif e.type == ElementType.CURRENT_SOURCE:
+                self.current_sources.append(e)
 
         self.elements = self.batteries + self.resistors + self.current_sources
 
