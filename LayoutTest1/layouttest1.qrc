@@ -3,6 +3,8 @@
     <file>res/pointer.png</file>
     <file>res/linepointer.png</file>
     <file>res/resistor.png</file>
+    <file>res/battery.png</file>
+    <file>res/bulb.png</file>
 </qresource>
 </RCC>
 

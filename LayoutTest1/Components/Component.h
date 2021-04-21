@@ -15,10 +15,14 @@ protected:
     int ID;
 
     explicit Component(int id, QString resourcePath): ID(id), SceneItem(std::move(resourcePath)){};
+
 private:
 
 public:
     inline int getId() { return ID; }
+
+    int rel_x, rel_y;
+
 };
 
 

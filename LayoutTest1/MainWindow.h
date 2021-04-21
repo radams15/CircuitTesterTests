@@ -25,8 +25,8 @@ private slots:
     void pointerGroupClicked();
     void itemInserted(Component *item);
     void sceneScaleChanged(const QString &scale);
-    void itemSelected(QGraphicsItem *item);
     void about();
+    void runSimulation();
 
 private:
     void createToolBox();
@@ -41,26 +41,21 @@ private:
 
     QAction *exitAction;
     QAction *deleteAction;
-
+    QAction *runAction;
     QAction *aboutAction;
 
     QMenu *fileMenu;
     QMenu *itemMenu;
     QMenu *aboutMenu;
+    QMenu *simMenu;
 
     QToolBar *pointerToolbar;
 
     QComboBox *sceneScaleCombo;
-    QComboBox *fontSizeCombo;
-    QFontComboBox *fontCombo;
 
     QToolBox *toolBox;
     QButtonGroup *buttonGroup;
     QButtonGroup *pointerTypeGroup;
-    QButtonGroup *backgroundButtonGroup;
-    QAction *boldAction;
-    QAction *underlineAction;
-    QAction *italicAction;
     QAction *lineAction;
 };
 

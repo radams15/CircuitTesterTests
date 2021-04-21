@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+../Components/Battery.h
+Component.h
+../Components/Component.h
+
 ../Components/Component.h
 QIcon
 -
@@ -48,6 +52,8 @@ QtWidgets
 Components/Resistor.h
 -
 iostream
+-
+Components/Battery.h
 -
 
 /home/rhys/scripts/CircuitTesterTests/LayoutTest1/MainWindow.h

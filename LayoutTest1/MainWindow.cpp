@@ -7,6 +7,7 @@
 #include <QtWidgets>
 #include <Components/Resistor.h>
 #include <iostream>
+#include <Components/Battery.h>
 
 const int InsertTextButton = 10;
 
@@ -21,8 +22,6 @@ MainWindow::MainWindow() {
     connect(scene, &Scene::itemInserted,
             this, &MainWindow::itemInserted);
 
-    connect(scene, &Scene::itemSelected,
-            this, &MainWindow::itemSelected);
     createToolbars();
 
     QHBoxLayout *layout = new QHBoxLayout;
@@ -53,8 +52,14 @@ void MainWindow::buttonGroupClicked(QAbstractButton *button) {
     } else {
         if(id == Resistor::ID){
             scene->setItemType(new Resistor);
-            scene->setMode(Scene::InsertItem);
+        }else if(id == Battery::ID){
+            scene->setItemType(new Battery);
+        }else{
+            return;
         }
+
+        scene->setMode(Scene::InsertItem);
+
     }
 }
 
@@ -103,19 +108,6 @@ void MainWindow::sceneScaleChanged(const QString &scale) {
 }
 
 
-void MainWindow::itemSelected(QGraphicsItem *item) {
-    SceneText *textItem =
-    qgraphicsitem_cast<SceneText *>(item);
-
-    QFont font = textItem->font();
-    fontCombo->setCurrentFont(font);
-    fontSizeCombo->setEditText(QString().setNum(font.pointSize()));
-    boldAction->setChecked(font.weight() == QFont::Bold);
-    italicAction->setChecked(font.italic());
-    underlineAction->setChecked(font.underline());
-}
-
-
 void MainWindow::about() {
     QMessageBox::about(this, tr("About"),
                        tr("This is the <b>first</b> layout test."));
@@ -130,6 +122,7 @@ void MainWindow::createToolBox() {
 
     QGridLayout *layout = new QGridLayout;
     layout->addWidget(createCellWidget<Resistor>(tr("Resistor")), 0, 0);
+    layout->addWidget(createCellWidget<Battery>(tr("Battery")), 0, 1);
 
     layout->setRowStretch(3, 10);
     layout->setColumnStretch(2, 10);
@@ -138,11 +131,10 @@ void MainWindow::createToolBox() {
     itemWidget->setLayout(layout);
 
 
-
     toolBox = new QToolBox;
     toolBox->setSizePolicy(QSizePolicy(QSizePolicy::Maximum, QSizePolicy::Ignored));
     toolBox->setMinimumWidth(itemWidget->sizeHint().width());
-    toolBox->addItem(itemWidget, tr("Basic Flowchart Shapes"));
+    toolBox->addItem(itemWidget, tr("Basic Components"));
 }
 
 
@@ -154,8 +146,13 @@ void MainWindow::createActions() {
 
     exitAction = new QAction(tr("E&xit"), this);
     exitAction->setShortcuts(QKeySequence::Quit);
-    exitAction->setStatusTip(tr("Quit Scenediagram example"));
+    exitAction->setStatusTip(tr("Quit the circuit simulator"));
     connect(exitAction, &QAction::triggered, this, &QWidget::close);
+
+    runAction = new QAction(tr("R&un"), this);
+    runAction->setShortcut(tr("F5"));
+    runAction->setStatusTip(tr("Run the circuit"));
+    connect(runAction, &QAction::triggered, this, &MainWindow::runSimulation);
 
     aboutAction = new QAction(tr("A&bout"), this);
     aboutAction->setShortcut(tr("F1"));
@@ -166,6 +163,9 @@ void MainWindow::createActions() {
 void MainWindow::createMenus() {
     fileMenu = menuBar()->addMenu(tr("&File"));
     fileMenu->addAction(exitAction);
+
+    simMenu = menuBar()->addMenu(tr("&Sim"));
+    simMenu->addAction(runAction);
 
     itemMenu = menuBar()->addMenu(tr("&Item"));
     itemMenu->addAction(deleteAction);
@@ -227,4 +227,33 @@ QWidget *MainWindow::createCellWidget(const QString &text) {
     widget->setLayout(layout);
 
     return widget;
+}
+
+void MainWindow::runSimulation() {
+    Component* si;
+
+    std::vector<Component*> components;
+    for(QGraphicsItem *i : scene->items()){
+        if((si = dynamic_cast<Component*>(i)) != nullptr) { // is a sceneItem
+            components.push_back(si);
+        }
+    }
+
+    int min_x, min_y = INT_MAX;
+
+    for(auto c : components){
+        if(c->pos().x() < min_x){
+            min_x = c->pos().x();
+        }
+        if(c->pos().y() < min_y){
+            min_y = c->pos().y();
+        }
+    }
+
+    for(auto c : components){
+        c->rel_x = c->pos().x()-min_x;
+        c->rel_y = c->pos().y()-min_y;
+
+        std::cout << c->rel_x << ", " << c->rel_y << "\n";
+    }
 }

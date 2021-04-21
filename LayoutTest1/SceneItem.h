@@ -22,9 +22,15 @@ public:
     void addArrow(Arrow *arrow);
     int type() const override { return Type; }
 
+    void mouseReleaseEvent(QGraphicsSceneMouseEvent* event);
+
     QPixmap image(){ return pixmap; }
 
     QPointF centerpoint();
+
+    QList<Arrow *> arrows;
+
+    int n0, n1;
 
 protected:
     QVariant itemChange(GraphicsItemChange change, const QVariant &value) override;
@@ -32,7 +38,6 @@ protected:
 
 private:
     QPolygonF myPolygon;
-    QList<Arrow *> arrows;
 
     void loadPolygon(QString path);
 };

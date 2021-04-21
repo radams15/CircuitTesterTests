@@ -182,6 +182,33 @@ Arrow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LayoutTest1.dir/build.make CMakeFiles/LayoutTest1.dir/Arrow.cpp.s
 .PHONY : Arrow.cpp.s
 
+Components/Battery.o: Components/Battery.cpp.o
+
+.PHONY : Components/Battery.o
+
+# target to build an object file
+Components/Battery.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LayoutTest1.dir/build.make CMakeFiles/LayoutTest1.dir/Components/Battery.cpp.o
+.PHONY : Components/Battery.cpp.o
+
+Components/Battery.i: Components/Battery.cpp.i
+
+.PHONY : Components/Battery.i
+
+# target to preprocess a source file
+Components/Battery.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LayoutTest1.dir/build.make CMakeFiles/LayoutTest1.dir/Components/Battery.cpp.i
+.PHONY : Components/Battery.cpp.i
+
+Components/Battery.s: Components/Battery.cpp.s
+
+.PHONY : Components/Battery.s
+
+# target to generate assembly for a file
+Components/Battery.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LayoutTest1.dir/build.make CMakeFiles/LayoutTest1.dir/Components/Battery.cpp.s
+.PHONY : Components/Battery.cpp.s
+
 Components/Component.o: Components/Component.cpp.o
 
 .PHONY : Components/Component.o
@@ -438,6 +465,9 @@ help:
 	@echo "... Arrow.o"
 	@echo "... Arrow.i"
 	@echo "... Arrow.s"
+	@echo "... Components/Battery.o"
+	@echo "... Components/Battery.i"
+	@echo "... Components/Battery.s"
 	@echo "... Components/Component.o"
 	@echo "... Components/Component.i"
 	@echo "... Components/Component.s"

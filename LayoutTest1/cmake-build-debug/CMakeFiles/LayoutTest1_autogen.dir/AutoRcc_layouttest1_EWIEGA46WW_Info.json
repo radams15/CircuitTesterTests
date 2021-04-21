@@ -7,7 +7,9 @@
 	"INCLUDE_DIR" : "/home/rhys/scripts/CircuitTesterTests/LayoutTest1/cmake-build-debug/LayoutTest1_autogen/include",
 	"INPUTS" : 
 	[
+		"/home/rhys/scripts/CircuitTesterTests/LayoutTest1/res/battery.png",
 		"/home/rhys/scripts/CircuitTesterTests/LayoutTest1/res/pointer.png",
+		"/home/rhys/scripts/CircuitTesterTests/LayoutTest1/res/bulb.png",
 		"/home/rhys/scripts/CircuitTesterTests/LayoutTest1/res/resistor.png",
 		"/home/rhys/scripts/CircuitTesterTests/LayoutTest1/res/linepointer.png"
 	],

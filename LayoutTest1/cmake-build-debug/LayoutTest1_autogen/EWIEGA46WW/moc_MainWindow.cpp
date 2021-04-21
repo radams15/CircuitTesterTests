@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_MainWindow_t {
-    QByteArrayData data[15];
-    char stringdata0[173];
+    QByteArrayData data[14];
+    char stringdata0[159];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -44,17 +44,15 @@ QT_MOC_LITERAL(8, 99, 10), // "Component*"
 QT_MOC_LITERAL(9, 110, 4), // "item"
 QT_MOC_LITERAL(10, 115, 17), // "sceneScaleChanged"
 QT_MOC_LITERAL(11, 133, 5), // "scale"
-QT_MOC_LITERAL(12, 139, 12), // "itemSelected"
-QT_MOC_LITERAL(13, 152, 14), // "QGraphicsItem*"
-QT_MOC_LITERAL(14, 167, 5) // "about"
+QT_MOC_LITERAL(12, 139, 5), // "about"
+QT_MOC_LITERAL(13, 145, 13) // "runSimulation"
 
     },
     "MainWindow\0buttonGroupClicked\0\0"
     "QAbstractButton*\0button\0deleteItem\0"
     "pointerGroupClicked\0itemInserted\0"
     "Component*\0item\0sceneScaleChanged\0"
-    "scale\0itemSelected\0QGraphicsItem*\0"
-    "about"
+    "scale\0about\0runSimulation"
 };
 #undef QT_MOC_LITERAL
 
@@ -77,8 +75,8 @@ static const uint qt_meta_data_MainWindow[] = {
        6,    0,   53,    2, 0x08 /* Private */,
        7,    1,   54,    2, 0x08 /* Private */,
       10,    1,   57,    2, 0x08 /* Private */,
-      12,    1,   60,    2, 0x08 /* Private */,
-      14,    0,   63,    2, 0x08 /* Private */,
+      12,    0,   60,    2, 0x08 /* Private */,
+      13,    0,   61,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void, 0x80000000 | 3,    4,
@@ -86,7 +84,7 @@ static const uint qt_meta_data_MainWindow[] = {
     QMetaType::Void,
     QMetaType::Void, 0x80000000 | 8,    9,
     QMetaType::Void, QMetaType::QString,   11,
-    QMetaType::Void, 0x80000000 | 13,    9,
+    QMetaType::Void,
     QMetaType::Void,
 
        0        // eod
@@ -103,8 +101,8 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 2: _t->pointerGroupClicked(); break;
         case 3: _t->itemInserted((*reinterpret_cast< Component*(*)>(_a[1]))); break;
         case 4: _t->sceneScaleChanged((*reinterpret_cast< const QString(*)>(_a[1]))); break;
-        case 5: _t->itemSelected((*reinterpret_cast< QGraphicsItem*(*)>(_a[1]))); break;
-        case 6: _t->about(); break;
+        case 5: _t->about(); break;
+        case 6: _t->runSimulation(); break;
         default: ;
         }
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
@@ -115,13 +113,6 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
             default: *reinterpret_cast<int*>(_a[0]) = -1; break;
             case 0:
                 *reinterpret_cast<int*>(_a[0]) = qRegisterMetaType< QAbstractButton* >(); break;
-            }
-            break;
-        case 5:
-            switch (*reinterpret_cast<int*>(_a[1])) {
-            default: *reinterpret_cast<int*>(_a[0]) = -1; break;
-            case 0:
-                *reinterpret_cast<int*>(_a[0]) = qRegisterMetaType< QGraphicsItem* >(); break;
             }
             break;
         }

@@ -78,7 +78,9 @@ include CMakeFiles/LayoutTest1.dir/flags.make
 
 LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.cpp: ../layouttest1.qrc
 LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.cpp: CMakeFiles/LayoutTest1_autogen.dir/AutoRcc_layouttest1_EWIEGA46WW_Info.json
+LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.cpp: ../res/battery.png
 LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.cpp: ../res/pointer.png
+LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.cpp: ../res/bulb.png
 LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.cpp: ../res/resistor.png
 LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.cpp: ../res/linepointer.png
 LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.cpp: /usr/lib64/qt5/bin/rcc
@@ -202,9 +204,22 @@ CMakeFiles/LayoutTest1.dir/Components/Component.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LayoutTest1.dir/Components/Component.cpp.s"
 	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/CircuitTesterTests/LayoutTest1/Components/Component.cpp -o CMakeFiles/LayoutTest1.dir/Components/Component.cpp.s
 
+CMakeFiles/LayoutTest1.dir/Components/Battery.cpp.o: CMakeFiles/LayoutTest1.dir/flags.make
+CMakeFiles/LayoutTest1.dir/Components/Battery.cpp.o: ../Components/Battery.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/CircuitTesterTests/LayoutTest1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/LayoutTest1.dir/Components/Battery.cpp.o"
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LayoutTest1.dir/Components/Battery.cpp.o -c /home/rhys/scripts/CircuitTesterTests/LayoutTest1/Components/Battery.cpp
+
+CMakeFiles/LayoutTest1.dir/Components/Battery.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LayoutTest1.dir/Components/Battery.cpp.i"
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/CircuitTesterTests/LayoutTest1/Components/Battery.cpp > CMakeFiles/LayoutTest1.dir/Components/Battery.cpp.i
+
+CMakeFiles/LayoutTest1.dir/Components/Battery.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LayoutTest1.dir/Components/Battery.cpp.s"
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/CircuitTesterTests/LayoutTest1/Components/Battery.cpp -o CMakeFiles/LayoutTest1.dir/Components/Battery.cpp.s
+
 CMakeFiles/LayoutTest1.dir/LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.cpp.o: CMakeFiles/LayoutTest1.dir/flags.make
 CMakeFiles/LayoutTest1.dir/LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.cpp.o: LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/CircuitTesterTests/LayoutTest1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/LayoutTest1.dir/LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/CircuitTesterTests/LayoutTest1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/LayoutTest1.dir/LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.cpp.o"
 	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LayoutTest1.dir/LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.cpp.o -c /home/rhys/scripts/CircuitTesterTests/LayoutTest1/cmake-build-debug/LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.cpp
 
 CMakeFiles/LayoutTest1.dir/LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.cpp.i: cmake_force
@@ -226,6 +241,7 @@ LayoutTest1_OBJECTS = \
 "CMakeFiles/LayoutTest1.dir/MainWindow.cpp.o" \
 "CMakeFiles/LayoutTest1.dir/Components/Resistor.cpp.o" \
 "CMakeFiles/LayoutTest1.dir/Components/Component.cpp.o" \
+"CMakeFiles/LayoutTest1.dir/Components/Battery.cpp.o" \
 "CMakeFiles/LayoutTest1.dir/LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.cpp.o"
 
 # External object files for target LayoutTest1
@@ -240,13 +256,14 @@ LayoutTest1: CMakeFiles/LayoutTest1.dir/main.cpp.o
 LayoutTest1: CMakeFiles/LayoutTest1.dir/MainWindow.cpp.o
 LayoutTest1: CMakeFiles/LayoutTest1.dir/Components/Resistor.cpp.o
 LayoutTest1: CMakeFiles/LayoutTest1.dir/Components/Component.cpp.o
+LayoutTest1: CMakeFiles/LayoutTest1.dir/Components/Battery.cpp.o
 LayoutTest1: CMakeFiles/LayoutTest1.dir/LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.cpp.o
 LayoutTest1: CMakeFiles/LayoutTest1.dir/build.make
 LayoutTest1: /usr/lib64/libQt5Widgets.so.5.15.2
 LayoutTest1: /usr/lib64/libQt5Gui.so.5.15.2
 LayoutTest1: /usr/lib64/libQt5Core.so.5.15.2
 LayoutTest1: CMakeFiles/LayoutTest1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rhys/scripts/CircuitTesterTests/LayoutTest1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable LayoutTest1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rhys/scripts/CircuitTesterTests/LayoutTest1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable LayoutTest1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LayoutTest1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

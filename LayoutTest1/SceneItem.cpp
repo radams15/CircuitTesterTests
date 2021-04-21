@@ -9,6 +9,9 @@
 #include <QFile>
 #include <QMessageBox>
 #include <iostream>
+#include <cmath>
+
+#define GRID_SNAP_STEP 20
 
 
 SceneItem::SceneItem(QString resourcePath, QGraphicsItem *parent) : QGraphicsPixmapItem(parent){
@@ -66,4 +69,20 @@ QPointF SceneItem::centerpoint() {
     double yc = y + (h/2);
 
     return {xc, yc};
+}
+
+void SceneItem::mouseReleaseEvent(QGraphicsSceneMouseEvent* event) {
+    double xx=x();
+    double yy=y();
+
+    if((int)xx / GRID_SNAP_STEP != xx/(float)GRID_SNAP_STEP){
+        xx=5.0*round(xx/5.);
+    }
+
+    if((int)yy / GRID_SNAP_STEP != yy/(float)GRID_SNAP_STEP){
+        yy=(float)GRID_SNAP_STEP*round(yy/(float)GRID_SNAP_STEP);
+    }
+
+    setPos(xx,yy);
+    QGraphicsItem::mouseReleaseEvent(event);
 }

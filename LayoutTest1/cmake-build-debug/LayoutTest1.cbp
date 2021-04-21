@@ -118,6 +118,12 @@
 		<Unit filename="/home/rhys/scripts/CircuitTesterTests/LayoutTest1/Arrow.h">
 			<Option target="LayoutTest1"/>
 		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterTests/LayoutTest1/Components/Battery.cpp">
+			<Option target="LayoutTest1"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/CircuitTesterTests/LayoutTest1/Components/Battery.h">
+			<Option target="LayoutTest1"/>
+		</Unit>
 		<Unit filename="/home/rhys/scripts/CircuitTesterTests/LayoutTest1/Components/Component.cpp">
 			<Option target="LayoutTest1"/>
 		</Unit>

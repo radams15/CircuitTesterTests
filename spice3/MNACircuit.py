@@ -1,66 +1,9 @@
-from typing import Union
-
 import numpy as np
 
 from MNAElement import MNAElement, ElementType
 from MNASolution import MNASolution
-
-class UnknownCurrent:
-    def __init__(self, element: MNAElement):
-        assert(issubclass(type(element), MNAElement))
-        self.element = element
-
-    def __str__(self):
-        return f"{self.element.n0}_{self.element.n1}"
-
-    def __eq__(self, other):
-        assert(type(other) == UnknownCurrent)
-        return self.element == other.element
-
-class UnknownVoltage:
-    def __init__(self, node: int):
-        assert (type(node) == int)
-        self.node = node
-
-    def __str__(self):
-        return f"V{self.node}"
-
-    def __eq__(self, other):
-        assert (type(other) == UnknownVoltage)
-        return self.node == other.node
-
-
-class Term:
-    def __init__(self, coefficient: float, variable: Union[UnknownCurrent,UnknownCurrent]):
-        self.coefficient = coefficient
-        self.variable = variable
-
-    def __str__(self):
-        prefix = "-" if self.coefficient == 0 else ""
-
-        return prefix + str(self.variable)
-
-class Equation:
-    def __init__(self, value: float, terms: list[Term]):
-        self.value = value
-        self.terms = terms
-
-    def stamp(self, row: int, a: np.array, z: np.array, get_index: callable):
-        z[row, 0] = self.value
-
-        for t in self.terms:
-            index = get_index(t.variable)
-            a[row, index] = t.coefficient + a[row, index]
-
-    def __str__(self):
-        term_list = []
-
-        for t in self.terms:
-            term_list.append(str(t))
-
-        result = f"{'+'.join(term_list)}={self.value}"
-
-        return result.replace("\\+\\-", "\\-")
+from Unknowns import UnknownCurrent, UnknownVoltage
+from Equation import Term, Equation
 
 def get_index_by_equals(array, element) -> int:
     for i in range(len(array)):
@@ -126,18 +69,18 @@ class MNACircuit:
         node_terms: list[Term] = []
 
         for b in self.batteries:
-            bside = b.n0 if side == 0 else b.n1
+            b_side = b.n0 if side == 0 else b.n1
 
-            if bside == node:
+            if b_side == node:
                 node_terms.append(Term(sign, UnknownCurrent(b)))
 
         for r in self.resistors:
-            rside = r.n0 if side == 0 else r.n1
+            r_side = r.n0 if side == 0 else r.n1
 
-            if rside == node and r.value == 0:
-                node_terms.append(Term(UnknownCurrent(r)))
+            if r_side == node and r.value == 0:
+                node_terms.append(Term(sign, UnknownCurrent(r)))
 
-            if rside == node and r.value != 0:
+            if r_side == node and r.value != 0:
                 node_terms.append(Term(-sign/r.value, UnknownVoltage(r.n1)))
                 node_terms.append(Term(sign/r.value, UnknownVoltage(r.n0)))
 
@@ -208,8 +151,8 @@ class MNACircuit:
         for r in self.resistors:
             if r.value == 0:
                 equations.append(Equation(r.value, [
-                    Term(1, UnknownVoltage(b.n0)),
-                    Term(-1, UnknownVoltage(b.n1))
+                    Term(1, UnknownVoltage(r.n0)),
+                    Term(-1, UnknownVoltage(r.n1))
                 ]))
 
         return equations
@@ -230,21 +173,20 @@ class MNACircuit:
 
     def solve(self):
         equations = self.get_equations()
-        unknown_currents: list[UnknownCurrent] = self.get_unknown_currents()
-        unknown_voltages: list[UnknownVoltage] = list(map(lambda x: UnknownVoltage(x), self.nodes))
+        unknown_currents = self.get_unknown_currents()
+        unknown_voltages = list(map(lambda comp: UnknownVoltage(comp), self.nodes))
 
-        unknowns = unknown_currents + unknown_voltages
+        unknowns: list = unknown_currents + unknown_voltages
 
         A = np.zeros((len(equations), self.get_num_vars()), dtype=float)
         z = np.zeros((len(equations), 1), dtype=float)
 
         for i in range(len(equations)):
-            equations[i].stamp(i, A, z, lambda x: get_index_by_equals(unknowns, x))
+            equations[i].stamp(i, A, z, lambda comp: get_index_by_equals(unknowns, comp))
 
-        x: np.array = None
         try:
             x = np.linalg.solve(A, z)
-        except:
+        except np.linalg.LinAlgError:
             x = np.zeros((len(equations), 1), dtype=float) # A.n, 1 original
 
         voltage_map = {}
@@ -256,4 +198,4 @@ class MNACircuit:
         for c in unknown_currents:
             c.element.current_solution = x[get_index_by_equals(unknowns, c), 0]
 
-        return MNASolution(voltage_map, list(map(lambda x: x.element, unknown_currents)))
+        return MNASolution(voltage_map, list(map(lambda comp: comp.element, unknown_currents)))

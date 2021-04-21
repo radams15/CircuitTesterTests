@@ -86,6 +86,11 @@
 			"EWIEGA46WW/moc_Arrow.cpp"
 		],
 		[
+			"/home/rhys/scripts/CircuitTesterTests/LayoutTest1/Components/Battery.h",
+			"MU",
+			"XUR7DU7GFW/moc_Battery.cpp"
+		],
+		[
 			"/home/rhys/scripts/CircuitTesterTests/LayoutTest1/Components/Component.h",
 			"MU",
 			"XUR7DU7GFW/moc_Component.cpp"
@@ -168,6 +173,10 @@
 	"SOURCES" : 
 	[
 		[ "/home/rhys/scripts/CircuitTesterTests/LayoutTest1/Arrow.cpp", "MU" ],
+		[
+			"/home/rhys/scripts/CircuitTesterTests/LayoutTest1/Components/Battery.cpp",
+			"MU"
+		],
 		[
 			"/home/rhys/scripts/CircuitTesterTests/LayoutTest1/Components/Component.cpp",
 			"MU"

@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/LayoutTest1_autogen.dir/ParseCache.txt"
   "LayoutTest1_autogen"
   "CMakeFiles/LayoutTest1.dir/Arrow.cpp.o"
+  "CMakeFiles/LayoutTest1.dir/Components/Battery.cpp.o"
   "CMakeFiles/LayoutTest1.dir/Components/Component.cpp.o"
   "CMakeFiles/LayoutTest1.dir/Components/Resistor.cpp.o"
   "CMakeFiles/LayoutTest1.dir/LayoutTest1_autogen/EWIEGA46WW/qrc_layouttest1.cpp.o"
