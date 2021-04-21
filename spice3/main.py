@@ -4,17 +4,23 @@ from Battery import Battery
 from Resistor import Resistor
 
 if __name__ == '__main__':
-    bat = Battery(0, 1, 5)
-    res1 = Resistor(1, 2, 10)
-    res2 = Resistor(2, 0, 10)
+    bat = Battery(0, 1, 9)
+    res1 = Resistor(1, 0, 5)
+    res2 = Resistor(1, 0, 15)
 
-    cir = MNACircuit([bat, res1, res2])
+    comps = [bat, res1, res2]
 
-    voltage_map = {
-        0: 0,
-        1: 5,
-        2: 2.5
-    }
+    cir = MNACircuit(comps)
 
-    real_sol = cir.solve()
-    des_sol = MNASolution(voltage_map, [bat.with_current_solution(5/20)])
+    sol = cir.solve()
+
+    for comp in comps:
+        print(comp, end="")
+        if type(comp) == Resistor:
+            current = sol.get_current_for_resistor(comp)
+            voltage = sol.get_voltage(comp)
+
+            print(f" {current}A {voltage}V")
+        elif type(comp) == Battery:
+            voltage = sol.get_voltage(comp)
+            print(f" {voltage}V")

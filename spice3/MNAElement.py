@@ -23,3 +23,7 @@ class MNAElement:
     def get_opposite_node(self, node_id: int):
         return self.n1 if node_id == self.n0 else self.n0
 
+    def __str__(self):
+        elem_type = f'{self.type}'.split('=')[0].replace("ElementType.", "").title()
+        return f"{elem_type} ({self.n0}=>{self.n1})"
+
