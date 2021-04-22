@@ -1,6 +1,9 @@
-/home/rhys/scripts/CircuitTesterTests/LayoutTest1/cmake-build-debug/LayoutTest1_autogen/EWIEGA46WW/moc_mainwindow.cpp: /home/rhys/scripts/CircuitTesterTests/LayoutTest1/mainwindow.h \
+/home/rhys/scripts/CircuitTesterTests/LayoutTest1/cmake-build-debug/LayoutTest1_autogen/EWIEGA46WW/moc_MainWindow.cpp: /home/rhys/scripts/CircuitTesterTests/LayoutTest1/MainWindow.h \
   /home/rhys/scripts/CircuitTesterTests/LayoutTest1/cmake-build-debug/LayoutTest1_autogen/moc_predefs.h \
-  /mnt/files/scripts/CircuitTesterTests/LayoutTest1/diagramitem.h \
+  /mnt/files/scripts/CircuitTesterTests/LayoutTest1/Components/Component.h \
+  /mnt/files/scripts/CircuitTesterTests/LayoutTest1/Scene.h \
+  /mnt/files/scripts/CircuitTesterTests/LayoutTest1/SceneItem.h \
+  /mnt/files/scripts/CircuitTesterTests/LayoutTest1/SceneText.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/asm/errno.h \
@@ -283,6 +286,7 @@
   /usr/include/qt5/QtCore/qvarlengtharray.h \
   /usr/include/qt5/QtCore/qvector.h \
   /usr/include/qt5/QtCore/qversiontagging.h \
+  /usr/include/qt5/QtGui/QIcon \
   /usr/include/qt5/QtGui/qbrush.h \
   /usr/include/qt5/QtGui/qcolor.h \
   /usr/include/qt5/QtGui/qcursor.h \
@@ -315,6 +319,8 @@
   /usr/include/qt5/QtWidgets/QComboBox \
   /usr/include/qt5/QtWidgets/QFontComboBox \
   /usr/include/qt5/QtWidgets/QGraphicsPixmapItem \
+  /usr/include/qt5/QtWidgets/QGraphicsScene \
+  /usr/include/qt5/QtWidgets/QGraphicsTextItem \
   /usr/include/qt5/QtWidgets/QGraphicsView \
   /usr/include/qt5/QtWidgets/QMainWindow \
   /usr/include/qt5/QtWidgets/QToolBox \

@@ -1,4 +1,4 @@
-/home/rhys/scripts/CircuitTesterTests/LayoutTest1/cmake-build-debug/LayoutTest1_autogen/EWIEGA46WW/moc_diagramtextitem.cpp: /home/rhys/scripts/CircuitTesterTests/LayoutTest1/diagramtextitem.h \
+/home/rhys/scripts/CircuitTesterTests/LayoutTest1/cmake-build-debug/LayoutTest1_autogen/EWIEGA46WW/moc_DiagramTextItem.cpp: /home/rhys/scripts/CircuitTesterTests/LayoutTest1/DiagramTextItem.h \
   /home/rhys/scripts/CircuitTesterTests/LayoutTest1/cmake-build-debug/LayoutTest1_autogen/moc_predefs.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \

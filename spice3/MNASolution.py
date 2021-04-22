@@ -12,13 +12,13 @@ class MNASolution:
 
     def approx_equals(self, solution) -> bool:
         keys = self.node_voltages.keys()
-        other_keys = solution.node_voltages
+        other_keys = solution.node_voltages.keys()
 
         key_difference = [x for x in keys if x not in other_keys]
         assert(len(key_difference) == 0)
 
         for k in keys:
-            if not num_approx_equals(solution.get_node_voltage(k), solution.get_node_voltage(k)):
+            if not num_approx_equals(get_node_voltage(k), solution.get_node_voltage(k)):
                 return False
 
         if not self.has_all_currents(solution):
