@@ -53,7 +53,6 @@ void Arrow::paint(QPainter *painter, const QStyleOptionGraphicsItem *, QWidget *
     setLine(QLineF(myEndItem->centerpoint(), myStartItem->centerpoint()));
  
     painter->drawLine(line());
-    //painter->drawPolygon(arrowHead);
 
     if (isSelected()) {
         painter->setPen(QPen(myColor, 1, Qt::DashLine));

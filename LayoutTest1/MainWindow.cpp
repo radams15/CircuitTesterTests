@@ -230,14 +230,18 @@ QWidget *MainWindow::createCellWidget(const QString &text) {
 }
 
 void MainWindow::runSimulation() {
-    Component* si;
-
     std::vector<Component*> components;
+    std::vector<Arrow*> arrows;
+
     for(QGraphicsItem *i : scene->items()){
-        if((si = dynamic_cast<Component*>(i)) != nullptr) { // is a sceneItem
-            components.push_back(si);
+        if(dynamic_cast<Component*>(i) != nullptr) { // is a Component
+            components.push_back((Component*) i);
+        } else if(dynamic_cast<Arrow*>(i) != nullptr) { // is an Arrow
+            arrows.push_back((Arrow*) i);
         }
     }
+
+    std::cout << arrows.size() << ", " << components.size() << std::endl;
 
     int min_x, min_y = INT_MAX;
 
@@ -250,10 +254,15 @@ void MainWindow::runSimulation() {
         }
     }
 
-    for(auto c : components){
-        c->rel_x = c->pos().x()-min_x;
-        c->rel_y = c->pos().y()-min_y;
+    for(auto a : arrows){
+        int start_x, start_y, end_x, end_y;
 
-        std::cout << c->rel_x << ", " << c->rel_y << "\n";
+        start_x = a->startItem()->x() - min_x;
+        start_y = a->startItem()->y() - min_y;
+
+        end_x = a->endItem()->x() - min_x;
+        end_y = a->endItem()->y() - min_y;
+
+        std::cout << start_x << "," << start_y << " => "  << end_x << "," << end_y << std::endl;
     }
 }
