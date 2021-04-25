@@ -243,25 +243,14 @@ void MainWindow::runSimulation() {
 
     std::cout << arrows.size() << ", " << components.size() << std::endl;
 
-    int min_x, min_y = INT_MAX;
-
-    for(auto c : components){
-        if(c->pos().x() < min_x){
-            min_x = c->pos().x();
-        }
-        if(c->pos().y() < min_y){
-            min_y = c->pos().y();
-        }
-    }
-
     for(auto a : arrows){
         int start_x, start_y, end_x, end_y;
 
-        start_x = a->startItem()->x() - min_x;
-        start_y = a->startItem()->y() - min_y;
+        start_x = a->startItem()->x();
+        start_y = a->startItem()->y();
 
-        end_x = a->endItem()->x() - min_x;
-        end_y = a->endItem()->y() - min_y;
+        end_x = a->endItem()->x();
+        end_y = a->endItem()->y();
 
         std::cout << start_x << "," << start_y << " => "  << end_x << "," << end_y << std::endl;
     }
