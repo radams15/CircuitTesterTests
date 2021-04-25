@@ -30,8 +30,6 @@ public:
 
     QList<Arrow *> arrows;
 
-    int n0, n1;
-
 protected:
     QVariant itemChange(GraphicsItemChange change, const QVariant &value) override;
     QPixmap pixmap;

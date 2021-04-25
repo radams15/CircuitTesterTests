@@ -28,7 +28,11 @@ bool MNASolution::approxEquals(MNASolution otherMnaSolution) {
         }
     }
 
-    if((!hasAllCurrents(otherMnaSolution) || otherMnaSolution.hasAllCurrents(*this))){
+    if((!hasAllCurrents(otherMnaSolution))){
+        return false;
+    }
+
+    if(!otherMnaSolution.hasAllCurrents(*this)) {
         return false;
     }
 

@@ -21,8 +21,6 @@ private:
 public:
     inline int getId() { return ID; }
 
-    int rel_x, rel_y;
-
 };
 
 

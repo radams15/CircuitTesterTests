@@ -5,15 +5,23 @@ from Resistor import Resistor
 from Switch import Switch
 
 if __name__ == '__main__':
-    bat = Battery(0, 1, 9)
-    res1 = Switch(1, 0, closed=False)
-    res2 = Resistor(1, 0, 15)
+    bat1 = Battery(0, 1, -4)
+    bat2 = Battery(1, 2, -4)
+    res = Resistor(2, 0, 2)
 
-    comps = [bat, res1, res2]
+    comps = [bat1, bat2, res]
+    vmap = {
+        0:0,
+        1:-4,
+        2:-8
+    }
 
     cir = MNACircuit(comps)
 
+    desol = MNASolution(vmap, [bat1.with_current_solution(-4), bat2.with_current_solution(-4)])
     sol = cir.solve()
+
+    print(sol.approx_equals(desol))
 
     for comp in comps:
         print(comp, end="")

@@ -14,8 +14,8 @@ MNAElement::MNAElement(int n0, int n1, Component *comp, double value, double cur
     this->currentSolution = currentSolution;
 }
 
-MNAElement MNAElement::withCurrentSolution(double newCurrentSolution) {
-    return {n0, n1, comp, value, newCurrentSolution};
+MNAElement* MNAElement::withCurrentSolution(double newCurrentSolution) {
+    return new MNAElement(n0, n1, comp, value, newCurrentSolution);
 }
 
 bool MNAElement::containsNode(int n) {

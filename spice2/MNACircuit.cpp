@@ -84,7 +84,7 @@ std::vector<Term *>* MNACircuit::getCurrentTerms(int node, int side, int sign) {
     for(auto r : resistors) {
         int rside = side == 0 ? r->n0 : r->n1;
 
-        if (rside == node) {
+        if (rside == node && r->value == 0) {
             out->push_back(new Term(sign, new UnknownCurrent(r)));
         }
 
@@ -196,7 +196,9 @@ std::vector<UnknownCurrent *> *MNACircuit::getUnknownCurrents() {
     }
 
     for(auto r : resistors){
-        out->push_back(new UnknownCurrent(r));
+        if(r->value == 0) {
+            out->push_back(new UnknownCurrent(r));
+        }
     }
 
     return out;
@@ -225,20 +227,26 @@ MNASolution *MNACircuit::solve() {
         });
     }
 
-    std::cout << equations->size() << "\n\n";
-
-
-    /*Eigen::MatrixXd x = A.ldlt().solve(z);
+    Eigen::MatrixXd x = A.fullPivLu().solve(z); // https://eigen.tuxfamily.org/dox/group__TutorialLinearAlgebra.html
 
     auto* voltageMap = new std::map<int, double>;
 
     for(auto v : *unknownVoltages){
         auto rhs = x(getIndexByEquals(unknowns, v));
 
-        std::cout << x.cols() << ", " << x.rows() << "\n";
 
-        //voltageMap[v->node] = ;
-    }*/
+        voltageMap->insert(std::pair<int, double>(v->node, rhs));
+    }
+
+    std::vector<MNAElement*> elems;
+
+    for(auto c : *unknownCurrents){
+        c->element->currentSolution = x(getIndexByEquals(unknowns, c), 0);
+        elems.push_back(c->element);
+
+    }
+
+    return new MNASolution(*voltageMap, elems);
 }
 
 int MNACircuit::getIndexByEquals(std::vector<Unknown*>* array, Unknown* element) {

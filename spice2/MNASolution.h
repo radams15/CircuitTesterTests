@@ -15,7 +15,6 @@ class MNASolution {
 private:
 
     bool numApproxEquals(double a, double b);
-    double getVoltage(MNAElement element);
 
     bool hasAllCurrents(MNASolution mnaSolution);
 
@@ -30,6 +29,7 @@ public:
     bool approxEquals(MNASolution mnaSolution);
 
     double getNodeVoltage(int nodeIndex);
+    double getVoltage(MNAElement element);
 
     double getCurrentForResistor(MNAElement resistor);
 };

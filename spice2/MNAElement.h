@@ -20,7 +20,7 @@ public:
 
     MNAElement(int n0, int n1, Component* comp, double value, double currentSolution=NAN);
 
-    MNAElement withCurrentSolution(double newCurrentSolution);
+    MNAElement* withCurrentSolution(double newCurrentSolution);
 
     bool containsNode(int n);
 

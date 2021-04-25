@@ -18,7 +18,7 @@ class MNASolution:
         assert(len(key_difference) == 0)
 
         for k in keys:
-            if not num_approx_equals(get_node_voltage(k), solution.get_node_voltage(k)):
+            if not num_approx_equals(self.get_node_voltage(k), solution.get_node_voltage(k)):
                 return False
 
         if not self.has_all_currents(solution):
