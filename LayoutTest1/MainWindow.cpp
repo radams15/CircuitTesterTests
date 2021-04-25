@@ -254,9 +254,15 @@ void MainWindow::runSimulation() {
         }
     }
 
-    int node = 0;
-    QList<Arrow*>* as;
-    for(auto c : components){
+    for(auto a : arrows){
+        int start_x, start_y, end_x, end_y;
 
+        start_x = a->startItem()->x() - min_x;
+        start_y = a->startItem()->y() - min_y;
+
+        end_x = a->endItem()->x() - min_x;
+        end_y = a->endItem()->y() - min_y;
+
+        std::cout << start_x << "," << start_y << " => "  << end_x << "," << end_y << std::endl;
     }
 }

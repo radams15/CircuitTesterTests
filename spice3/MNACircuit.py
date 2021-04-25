@@ -187,6 +187,7 @@ class MNACircuit:
         try:
             x = np.linalg.solve(A, z)
         except np.linalg.LinAlgError:
+            print("LinAlgError")
             x = np.zeros((len(equations), 1), dtype=float) # A.n, 1 original
 
         voltage_map = {}
