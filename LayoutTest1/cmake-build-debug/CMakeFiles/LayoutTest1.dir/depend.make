@@ -4,7 +4,6 @@
 CMakeFiles/LayoutTest1.dir/Arrow.cpp.o: ../Arrow.cpp
 CMakeFiles/LayoutTest1.dir/Arrow.cpp.o: ../Arrow.h
 CMakeFiles/LayoutTest1.dir/Arrow.cpp.o: ../SceneItem.h
-CMakeFiles/LayoutTest1.dir/Arrow.cpp.o: /usr/include/qt5/QtCore/QList
 CMakeFiles/LayoutTest1.dir/Arrow.cpp.o: /usr/include/qt5/QtCore/QtMath
 CMakeFiles/LayoutTest1.dir/Arrow.cpp.o: /usr/include/qt5/QtCore/qalgorithms.h
 CMakeFiles/LayoutTest1.dir/Arrow.cpp.o: /usr/include/qt5/QtCore/qarraydata.h
@@ -114,7 +113,6 @@ CMakeFiles/LayoutTest1.dir/Components/Battery.cpp.o: ../Components/Battery.cpp
 CMakeFiles/LayoutTest1.dir/Components/Battery.cpp.o: ../Components/Battery.h
 CMakeFiles/LayoutTest1.dir/Components/Battery.cpp.o: ../Components/Component.h
 CMakeFiles/LayoutTest1.dir/Components/Battery.cpp.o: ../SceneItem.h
-CMakeFiles/LayoutTest1.dir/Components/Battery.cpp.o: /usr/include/qt5/QtCore/QList
 CMakeFiles/LayoutTest1.dir/Components/Battery.cpp.o: /usr/include/qt5/QtCore/qalgorithms.h
 CMakeFiles/LayoutTest1.dir/Components/Battery.cpp.o: /usr/include/qt5/QtCore/qarraydata.h
 CMakeFiles/LayoutTest1.dir/Components/Battery.cpp.o: /usr/include/qt5/QtCore/qatomic.h
@@ -211,7 +209,6 @@ CMakeFiles/LayoutTest1.dir/Components/Battery.cpp.o: /usr/include/qt5/QtWidgets/
 CMakeFiles/LayoutTest1.dir/Components/Component.cpp.o: ../Components/Component.cpp
 CMakeFiles/LayoutTest1.dir/Components/Component.cpp.o: ../Components/Component.h
 CMakeFiles/LayoutTest1.dir/Components/Component.cpp.o: ../SceneItem.h
-CMakeFiles/LayoutTest1.dir/Components/Component.cpp.o: /usr/include/qt5/QtCore/QList
 CMakeFiles/LayoutTest1.dir/Components/Component.cpp.o: /usr/include/qt5/QtCore/qalgorithms.h
 CMakeFiles/LayoutTest1.dir/Components/Component.cpp.o: /usr/include/qt5/QtCore/qarraydata.h
 CMakeFiles/LayoutTest1.dir/Components/Component.cpp.o: /usr/include/qt5/QtCore/qatomic.h
@@ -309,7 +306,6 @@ CMakeFiles/LayoutTest1.dir/Components/Resistor.cpp.o: ../Components/Component.h
 CMakeFiles/LayoutTest1.dir/Components/Resistor.cpp.o: ../Components/Resistor.cpp
 CMakeFiles/LayoutTest1.dir/Components/Resistor.cpp.o: ../Components/Resistor.h
 CMakeFiles/LayoutTest1.dir/Components/Resistor.cpp.o: ../SceneItem.h
-CMakeFiles/LayoutTest1.dir/Components/Resistor.cpp.o: /usr/include/qt5/QtCore/QList
 CMakeFiles/LayoutTest1.dir/Components/Resistor.cpp.o: /usr/include/qt5/QtCore/qalgorithms.h
 CMakeFiles/LayoutTest1.dir/Components/Resistor.cpp.o: /usr/include/qt5/QtCore/qarraydata.h
 CMakeFiles/LayoutTest1.dir/Components/Resistor.cpp.o: /usr/include/qt5/QtCore/qatomic.h
@@ -415,7 +411,6 @@ CMakeFiles/LayoutTest1.dir/LayoutTest1_autogen/mocs_compilation.cpp.o: LayoutTes
 CMakeFiles/LayoutTest1.dir/LayoutTest1_autogen/mocs_compilation.cpp.o: LayoutTest1_autogen/EWIEGA46WW/moc_Scene.cpp
 CMakeFiles/LayoutTest1.dir/LayoutTest1_autogen/mocs_compilation.cpp.o: LayoutTest1_autogen/EWIEGA46WW/moc_SceneText.cpp
 CMakeFiles/LayoutTest1.dir/LayoutTest1_autogen/mocs_compilation.cpp.o: LayoutTest1_autogen/mocs_compilation.cpp
-CMakeFiles/LayoutTest1.dir/LayoutTest1_autogen/mocs_compilation.cpp.o: /usr/include/qt5/QtCore/QList
 CMakeFiles/LayoutTest1.dir/LayoutTest1_autogen/mocs_compilation.cpp.o: /usr/include/qt5/QtCore/qabstractitemmodel.h
 CMakeFiles/LayoutTest1.dir/LayoutTest1_autogen/mocs_compilation.cpp.o: /usr/include/qt5/QtCore/qalgorithms.h
 CMakeFiles/LayoutTest1.dir/LayoutTest1_autogen/mocs_compilation.cpp.o: /usr/include/qt5/QtCore/qarraydata.h
@@ -1061,7 +1056,6 @@ CMakeFiles/LayoutTest1.dir/Scene.cpp.o: ../Scene.cpp
 CMakeFiles/LayoutTest1.dir/Scene.cpp.o: ../Scene.h
 CMakeFiles/LayoutTest1.dir/Scene.cpp.o: ../SceneItem.h
 CMakeFiles/LayoutTest1.dir/Scene.cpp.o: ../SceneText.h
-CMakeFiles/LayoutTest1.dir/Scene.cpp.o: /usr/include/qt5/QtCore/QList
 CMakeFiles/LayoutTest1.dir/Scene.cpp.o: /usr/include/qt5/QtCore/qalgorithms.h
 CMakeFiles/LayoutTest1.dir/Scene.cpp.o: /usr/include/qt5/QtCore/qarraydata.h
 CMakeFiles/LayoutTest1.dir/Scene.cpp.o: /usr/include/qt5/QtCore/qatomic.h
@@ -1172,7 +1166,6 @@ CMakeFiles/LayoutTest1.dir/SceneItem.cpp.o: ../Arrow.h
 CMakeFiles/LayoutTest1.dir/SceneItem.cpp.o: ../SceneItem.cpp
 CMakeFiles/LayoutTest1.dir/SceneItem.cpp.o: ../SceneItem.h
 CMakeFiles/LayoutTest1.dir/SceneItem.cpp.o: /usr/include/qt5/QtCore/QFile
-CMakeFiles/LayoutTest1.dir/SceneItem.cpp.o: /usr/include/qt5/QtCore/QList
 CMakeFiles/LayoutTest1.dir/SceneItem.cpp.o: /usr/include/qt5/QtCore/QResource
 CMakeFiles/LayoutTest1.dir/SceneItem.cpp.o: /usr/include/qt5/QtCore/qalgorithms.h
 CMakeFiles/LayoutTest1.dir/SceneItem.cpp.o: /usr/include/qt5/QtCore/qarraydata.h
@@ -1306,7 +1299,6 @@ CMakeFiles/LayoutTest1.dir/SceneText.cpp.o: ../Scene.h
 CMakeFiles/LayoutTest1.dir/SceneText.cpp.o: ../SceneItem.h
 CMakeFiles/LayoutTest1.dir/SceneText.cpp.o: ../SceneText.cpp
 CMakeFiles/LayoutTest1.dir/SceneText.cpp.o: ../SceneText.h
-CMakeFiles/LayoutTest1.dir/SceneText.cpp.o: /usr/include/qt5/QtCore/QList
 CMakeFiles/LayoutTest1.dir/SceneText.cpp.o: /usr/include/qt5/QtCore/qalgorithms.h
 CMakeFiles/LayoutTest1.dir/SceneText.cpp.o: /usr/include/qt5/QtCore/qarraydata.h
 CMakeFiles/LayoutTest1.dir/SceneText.cpp.o: /usr/include/qt5/QtCore/qatomic.h
@@ -1413,7 +1405,6 @@ CMakeFiles/LayoutTest1.dir/main.cpp.o: ../Scene.h
 CMakeFiles/LayoutTest1.dir/main.cpp.o: ../SceneItem.h
 CMakeFiles/LayoutTest1.dir/main.cpp.o: ../SceneText.h
 CMakeFiles/LayoutTest1.dir/main.cpp.o: ../main.cpp
-CMakeFiles/LayoutTest1.dir/main.cpp.o: /usr/include/qt5/QtCore/QList
 CMakeFiles/LayoutTest1.dir/main.cpp.o: /usr/include/qt5/QtCore/qabstractitemmodel.h
 CMakeFiles/LayoutTest1.dir/main.cpp.o: /usr/include/qt5/QtCore/qalgorithms.h
 CMakeFiles/LayoutTest1.dir/main.cpp.o: /usr/include/qt5/QtCore/qarraydata.h

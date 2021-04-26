@@ -26,7 +26,7 @@ SceneItem::SceneItem(QString resourcePath, QGraphicsItem *parent) : QGraphicsPix
 
 
 void SceneItem::removeArrow(Arrow *arrow){
-    arrows.removeAll(arrow);
+    arrows.erase(std::remove(arrows.begin(), arrows.end(), arrow), arrows.end());
 }
 
 
@@ -44,7 +44,7 @@ void SceneItem::removeArrows(){
 
 
 void SceneItem::addArrow(Arrow *arrow){
-    arrows.append(arrow);
+    arrows.push_back(arrow);
 }
 
 QVariant SceneItem::itemChange(GraphicsItemChange change, const QVariant &value){

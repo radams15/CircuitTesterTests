@@ -2,7 +2,7 @@
 #define DIAGRAMITEM_H
 
 #include <QGraphicsPixmapItem>
-#include <QList>
+#include <vector>
 #include <QIcon>
 
 class Arrow;
@@ -28,7 +28,7 @@ public:
 
     QPointF centerpoint();
 
-    QList<Arrow *> arrows;
+    std::vector<Arrow *> arrows;
 
 protected:
     QVariant itemChange(GraphicsItemChange change, const QVariant &value) override;

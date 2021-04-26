@@ -25,7 +25,7 @@ Component.h
 ../SceneItem.h
 QGraphicsPixmapItem
 -
-QList
+vector
 -
 QIcon
 -
@@ -89,7 +89,7 @@ Components/Component.h
 /home/rhys/scripts/CircuitTesterTests/LayoutTest1/SceneItem.h
 QGraphicsPixmapItem
 -
-QList
+vector
 -
 QIcon
 -

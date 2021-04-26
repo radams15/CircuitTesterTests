@@ -223,7 +223,6 @@
   /usr/include/linux/errno.h \
   /usr/include/locale.h \
   /usr/include/pthread.h \
-  /usr/include/qt5/QtCore/QList \
   /usr/include/qt5/QtCore/qabstractitemmodel.h \
   /usr/include/qt5/QtCore/qalgorithms.h \
   /usr/include/qt5/QtCore/qarraydata.h \

@@ -240,18 +240,4 @@ void MainWindow::runSimulation() {
             arrows.push_back((Arrow*) i);
         }
     }
-
-    std::cout << arrows.size() << ", " << components.size() << std::endl;
-
-    for(auto a : arrows){
-        int start_x, start_y, end_x, end_y;
-
-        start_x = a->startItem()->x();
-        start_y = a->startItem()->y();
-
-        end_x = a->endItem()->x();
-        end_y = a->endItem()->y();
-
-        std::cout << start_x << "," << start_y << " => "  << end_x << "," << end_y << std::endl;
-    }
 }
