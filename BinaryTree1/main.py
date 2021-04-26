@@ -2,6 +2,7 @@ from Component import Component
 from Arrow import Arrow
 
 # https://www.geeksforgeeks.org/iterative-preorder-traversal-of-a-n-ary-tree/
+# https://www.tutorialspoint.com/python_data_structure/python_graphs.htm
 
 bat = Component("Battery")
 res1 = Component("Resistor1")
