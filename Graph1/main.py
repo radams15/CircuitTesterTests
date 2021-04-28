@@ -39,16 +39,19 @@ def find_shortest_path(graph, start, end, path=[]):
 
 
 def iterate(graph, start_node):
-	nodes = set(graph.keys())	
+	nodes = set(graph.keys())	 
 
 	for n in nodes:
 		path = find_shortest_path(graph, start_node, n)
 
-		node_num = len(path)-1
+		n.node = len(path) - 1
 
-		print(n, node_num)
+	for n in sorted(nodes, key=lambda x: x.node):
+		for c in graph[n]:
+			a = Arrow(n, c)
+			n.connections.append(a)
+		print(n, "=>", [x.to for x in n.connections])
+		#print("{}{} connected to {}".format(("\t"*n.node), n.comp_type, [x.comp_type for x in n.connections]))
 
-		
 
 iterate(graph, bat)
-print()
