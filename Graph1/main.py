@@ -18,30 +18,37 @@ graph = {
 }
 
 
+def find_shortest_path(graph, start, end, path=[]):
+    path = path + [start]
+
+    if start == end:
+        return path
+
+    if not start in graph:
+        return None
+
+    shortest = None
+    for node in graph[start]:
+        if node not in path:
+            newpath = find_shortest_path(graph, node, end, path)
+            if newpath:
+                if not shortest or len(newpath) < len(shortest):
+                    shortest = newpath
+    return shortest
 
 
-def bfs(graph, start_node):
-	visited = []
-	queue = []
-	
-	visited.append(start_node)
-	queue.append(start_node)
 
-	i = 0
-	
-	while queue:
-		s = queue.pop(0)
-				
-		print(f"Nodes From {s} (n{i}):")
+def iterate(graph, start_node):
+	nodes = set(graph.keys())	
 
-		for neighbour in graph[s]:
-			i += 1
+	for n in nodes:
+		path = find_shortest_path(graph, start_node, n)
+
+		node_num = len(path)-1
+
+		print(n, node_num)
+
 		
-			print("\t", neighbour)
-			
-			if neighbour not in visited:
-				visited.append(neighbour)
-				queue.append(neighbour)
 
-bfs(graph, bat)
+iterate(graph, bat)
 print()
