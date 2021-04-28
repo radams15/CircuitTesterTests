@@ -18,24 +18,44 @@ graph = {
 }
 
 
-def find_shortest_path(graph, start, end, path=[]):
-    path = path + [start]
-
-    if start == end:
-        return path
-
-    if not start in graph:
-        return None
-
-    shortest = None
-    for node in graph[start]:
-        if node not in path:
-            newpath = find_shortest_path(graph, node, end, path)
-            if newpath:
-                if not shortest or len(newpath) < len(shortest):
-                    shortest = newpath
-    return shortest
-
+def find_shortest_path(graph, start, goal):
+    explored = []
+     
+    # Queue for traversing the
+    # graph in the BFS
+    queue = [[start]]
+     
+    # If the desired node is
+    # reached
+    if start == goal:
+        print("Same Node")
+        return []
+     
+    # Loop to traverse the graph
+    # with the help of the queue
+    while queue:
+        path = queue.pop(0)
+        node = path[-1]
+         
+        # Condition to check if the
+        # current node is not visited
+        if node not in explored:
+            neighbours = graph[node]
+             
+            # Loop to iterate over the
+            # neighbours of the node
+            for neighbour in neighbours:
+                new_path = list(path)
+                new_path.append(neighbour)
+                queue.append(new_path)
+                 
+                # Condition to check if the
+                # neighbour node is the goal
+                if neighbour == goal:
+                    return new_path
+            explored.append(node)
+ 
+    return None
 
 
 def iterate(graph, start_node):
@@ -51,7 +71,6 @@ def iterate(graph, start_node):
 			a = Arrow(n, c)
 			n.connections.append(a)
 		print(n, "=>", [x.to for x in n.connections])
-		#print("{}{} connected to {}".format(("\t"*n.node), n.comp_type, [x.comp_type for x in n.connections]))
 
 
 iterate(graph, bat)

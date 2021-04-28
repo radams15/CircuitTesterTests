@@ -5,4 +5,5 @@ class Component:
 		self.connections = []
 
 	def __repr__(self):
-		return f"{self.comp_type} (n{self.node})"
+		return self.comp_type
+		#return f"{self.comp_type} (n{self.node})"

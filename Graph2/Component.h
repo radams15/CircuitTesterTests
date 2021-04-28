@@ -4,6 +4,8 @@
 #include <string>
 #include <vector>
 
+class Arrow;
+
 class Component{
 private:
 	
@@ -12,7 +14,7 @@ public:
 
 	int node = -1;
 
-	std::vector<Component*>* connections;
+	std::vector<Arrow*> connections;
 
 	Component(std::string comp_type){
 		this->comp_type = comp_type;
