@@ -21,6 +21,10 @@ public:
 	std::string str(){
 		return comp_type + " (n" + std::to_string(node) + ")";
 	}
+	
+	bool equals(Component* c){
+		return this == c;
+	}
 };
 
 #endif
