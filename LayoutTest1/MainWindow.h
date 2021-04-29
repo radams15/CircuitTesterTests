@@ -1,6 +1,9 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include <map>
+#include <vector>
+
 #include "SceneItem.h"
 
 #include <QMainWindow>
@@ -12,6 +15,9 @@
 #include <QGraphicsView>
 
 #include "Scene.h"
+
+typedef std::map<Component*, std::vector<Component*>> Graph;
+typedef std::vector<Component*> Path;
 
 class MainWindow : public QMainWindow{
     Q_OBJECT
@@ -35,6 +41,8 @@ private:
     void createToolbars();
 
     template<class T> QWidget *createCellWidget(const QString &text);
+
+    Path* find_shortest_path(Graph* graph, Component* start, Component* end);
 
     Scene *scene;
     QGraphicsView *view;

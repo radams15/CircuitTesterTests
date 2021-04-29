@@ -10,8 +10,6 @@ class Arrow;
 
 class SceneItem : public QGraphicsPixmapItem {
 public:
-    enum { Type = UserType + 15 };
-
     SceneItem(QString resourcePath, QGraphicsItem *parent = nullptr);
 
     void removeArrow(Arrow *arrow);
@@ -20,7 +18,6 @@ public:
     inline QPixmap getPixmap() { return pixmap; }
 
     void addArrow(Arrow *arrow);
-    int type() const override { return Type; }
 
     void mouseReleaseEvent(QGraphicsSceneMouseEvent* event);
 
@@ -33,6 +30,7 @@ public:
 protected:
     QVariant itemChange(GraphicsItemChange change, const QVariant &value) override;
     QPixmap pixmap;
+    QString resourcePath;
 
 private:
     QPolygonF myPolygon;

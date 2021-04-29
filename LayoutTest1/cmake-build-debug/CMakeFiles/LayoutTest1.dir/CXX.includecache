@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../Components/Battery.h
-Component.h
-../Components/Component.h
-
 ../Components/Component.h
 QIcon
 -
@@ -17,10 +13,6 @@ utility
 -
 ../SceneItem.h
 ../SceneItem.h
-
-../Components/Resistor.h
-Component.h
-../Components/Component.h
 
 ../SceneItem.h
 QGraphicsPixmapItem
@@ -36,7 +28,33 @@ QGraphicsLineItem
 SceneItem.h
 /home/rhys/scripts/CircuitTesterTests/LayoutTest1/SceneItem.h
 
+/home/rhys/scripts/CircuitTesterTests/LayoutTest1/Components/Battery.h
+Component.h
+/home/rhys/scripts/CircuitTesterTests/LayoutTest1/Components/Component.h
+
+/home/rhys/scripts/CircuitTesterTests/LayoutTest1/Components/Component.h
+QIcon
+-
+utility
+-
+../SceneItem.h
+/home/rhys/scripts/CircuitTesterTests/LayoutTest1/SceneItem.h
+
+/home/rhys/scripts/CircuitTesterTests/LayoutTest1/Components/Resistor.h
+Component.h
+/home/rhys/scripts/CircuitTesterTests/LayoutTest1/Components/Component.h
+
 /home/rhys/scripts/CircuitTesterTests/LayoutTest1/MainWindow.cpp
+iostream
+-
+map
+-
+vector
+-
+queue
+-
+algorithm
+-
 Arrow.h
 /home/rhys/scripts/CircuitTesterTests/LayoutTest1/Arrow.h
 SceneItem.h
@@ -47,16 +65,18 @@ SceneText.h
 /home/rhys/scripts/CircuitTesterTests/LayoutTest1/SceneText.h
 MainWindow.h
 /home/rhys/scripts/CircuitTesterTests/LayoutTest1/MainWindow.h
-QtWidgets
--
 Components/Resistor.h
--
-iostream
--
+/home/rhys/scripts/CircuitTesterTests/LayoutTest1/Components/Resistor.h
 Components/Battery.h
+/home/rhys/scripts/CircuitTesterTests/LayoutTest1/Components/Battery.h
+QtWidgets
 -
 
 /home/rhys/scripts/CircuitTesterTests/LayoutTest1/MainWindow.h
+map
+-
+vector
+-
 SceneItem.h
 /home/rhys/scripts/CircuitTesterTests/LayoutTest1/SceneItem.h
 QMainWindow

@@ -15,6 +15,7 @@
 
 
 SceneItem::SceneItem(QString resourcePath, QGraphicsItem *parent) : QGraphicsPixmapItem(parent){
+    this->resourcePath = resourcePath;
     this->pixmap = QPixmap(resourcePath);
     pixmap = pixmap.scaled(200, 200);
     setPixmap(this->pixmap);

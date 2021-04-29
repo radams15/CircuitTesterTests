@@ -1,13 +1,19 @@
+#include <iostream>
+#include <map>
+#include <vector>
+#include <queue>
+#include <algorithm>
+
 #include "Arrow.h"
 #include "SceneItem.h"
 #include "Scene.h"
 #include "SceneText.h"
 #include "MainWindow.h"
 
+#include "Components/Resistor.h"
+#include "Components/Battery.h"
+
 #include <QtWidgets>
-#include <Components/Resistor.h>
-#include <iostream>
-#include <Components/Battery.h>
 
 const int InsertTextButton = 10;
 
@@ -240,4 +246,87 @@ void MainWindow::runSimulation() {
             arrows.push_back((Arrow*) i);
         }
     }
+
+    if(components.size() == 0){
+        return;
+    }
+
+    Graph graph;
+
+    for(auto c : components){
+        std::vector<Component*> connections;
+
+        for(auto a : c->arrows){
+            if(c == a->endItem()){
+                continue;
+            }
+            connections.push_back((Component*) a->endItem());
+        }
+
+        graph[c] = connections;
+    }
+
+    std::cout << graph.size() << std::endl;
+
+
+    auto start_node = components[0];
+
+    for(auto n : graph){
+        auto* path = find_shortest_path(&graph, start_node, n.first);
+
+        n.first->n0 = path->size()-1;
+        n.first->n1 = 0;
+    }
+
+
+    for(auto n : graph){
+        n.first->connections.clear();
+        for(auto c : graph.at(n.first)){
+            n.first->n1 = c->n0;
+        }
+
+        std::cout << n.first->n0 << "(" << n.first->getId() << ") => " << n.first->n1 << std::endl;
+    }
+}
+
+Path *MainWindow::find_shortest_path(Graph *graph, Component *start, Component *end) {
+    std::vector<Component*> explored;
+
+    std::queue<std::vector<Component*>*> q;
+
+    auto v = new std::vector<Component*>;
+    v->push_back(start);
+    q.emplace(v);
+
+    if(start == end){
+        auto out = new Path;
+        out->push_back(end);
+        return out;
+    }
+
+    while(! q.empty()){
+        Path* path = q.front();
+        q.pop();
+
+        Component* node = path->at(path->size()-1);
+
+        if(std::find(explored.begin(), explored.end(), node) == explored.end()){
+            auto neighbors = graph->at(node);
+
+            for(auto neighbor : neighbors){
+                Path* new_path = new Path;
+                std::copy(path->begin(), path->end(), back_inserter(*new_path));
+                new_path->push_back(neighbor);
+                q.emplace(new_path);
+
+                if(neighbor == end){
+                    return new_path;
+                }
+            }
+
+            explored.push_back(node);
+        }
+    }
+
+    return new Path;
 }

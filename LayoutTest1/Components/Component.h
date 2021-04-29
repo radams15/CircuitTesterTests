@@ -21,6 +21,14 @@ private:
 public:
     inline int getId() { return ID; }
 
+    int n0 = -1;
+    int n1 = -1;
+
+    std::vector<Arrow*> connections;
+
+    std::string str();
+
+    bool equals(Component* c);
 };
 
 

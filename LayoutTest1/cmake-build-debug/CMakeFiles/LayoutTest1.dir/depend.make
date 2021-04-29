@@ -556,11 +556,12 @@ CMakeFiles/LayoutTest1.dir/LayoutTest1_autogen/mocs_compilation.cpp.o: /usr/incl
 CMakeFiles/LayoutTest1.dir/LayoutTest1_autogen/mocs_compilation.cpp.o: /usr/include/qt5/QtWidgets/qtwidgetsglobal.h
 CMakeFiles/LayoutTest1.dir/LayoutTest1_autogen/mocs_compilation.cpp.o: /usr/include/qt5/QtWidgets/qwidget.h
 
+CMakeFiles/LayoutTest1.dir/MainWindow.cpp.o: ../Components/Component.h
+CMakeFiles/LayoutTest1.dir/MainWindow.cpp.o: ../SceneItem.h
+CMakeFiles/LayoutTest1.dir/MainWindow.cpp.o: ../Arrow.h
 CMakeFiles/LayoutTest1.dir/MainWindow.cpp.o: ../Components/Battery.h
 CMakeFiles/LayoutTest1.dir/MainWindow.cpp.o: ../Components/Component.h
 CMakeFiles/LayoutTest1.dir/MainWindow.cpp.o: ../Components/Resistor.h
-CMakeFiles/LayoutTest1.dir/MainWindow.cpp.o: ../SceneItem.h
-CMakeFiles/LayoutTest1.dir/MainWindow.cpp.o: ../Arrow.h
 CMakeFiles/LayoutTest1.dir/MainWindow.cpp.o: ../MainWindow.cpp
 CMakeFiles/LayoutTest1.dir/MainWindow.cpp.o: ../MainWindow.h
 CMakeFiles/LayoutTest1.dir/MainWindow.cpp.o: ../Scene.h
