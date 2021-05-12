@@ -28,15 +28,15 @@ class MNACircuit:
 
         self.elements = self.batteries + self.resistors + self.current_sources
 
-        self.node_set = {}
+        self.nodes = []
 
         for e in self.elements:
-            self.node_set[e.n0] = e.n0
-            self.node_set[e.n1] = e.n1
+            self.nodes.append(e.n0)
+            self.nodes.append(e.n1)
 
-        self.node_count = len(self.node_set)
+        self.nodes = list(set(self.nodes))
 
-        self.nodes = self.node_set.values()
+        self.node_count = len(self.nodes)
 
 
     def __str__(self):
@@ -87,7 +87,7 @@ class MNACircuit:
         return node_terms
 
     def get_ref_node_ids(self) -> list[int]:
-        to_visit: list[int] = list(self.node_set.values())
+        to_visit: list[int] = self.nodes.copy()
 
         ref_node_ids: list[int] = []
 
@@ -176,13 +176,27 @@ class MNACircuit:
         unknown_currents = self.get_unknown_currents()
         unknown_voltages = list(map(lambda comp: UnknownVoltage(comp), self.nodes))
 
+        print([str(x) for x in equations])
+        print([str(x) for x in unknown_currents])
+        print([str(x) for x in unknown_voltages])
+
         unknowns: list = unknown_currents + unknown_voltages
+
+        print([str(x) for x in unknowns])
 
         A = np.zeros((len(equations), self.get_num_vars()), dtype=float)
         z = np.zeros((len(equations), 1), dtype=float)
 
-        for i in range(len(equations)):
-            equations[i].stamp(i, A, z, lambda comp: get_index_by_equals(unknowns, comp))
+        for row in range(len(equations)):
+            print("\n\n")
+            print(f"Stamp row {row} with equation {str(equations[row])}")
+            print(A)
+            print(z)
+            print("\n\n")
+            equations[row].stamp(row, A, z, lambda comp: get_index_by_equals(unknowns, comp))
+
+        print("\nFinal:")
+        print(A, "\n\n", z)
 
         try:
             x = np.linalg.solve(A, z)
@@ -190,13 +204,23 @@ class MNACircuit:
             print("LinAlgError")
             x = np.zeros((len(equations), 1), dtype=float) # A.n, 1 original
 
+        print("\nOut:\n")
+        print(x)
+
         voltage_map = {}
 
+        print("\nUnknown Voltages:")
         for v in unknown_voltages:
-            rhs = x[get_index_by_equals(unknowns, v), 0]
-            voltage_map[v.node] = rhs
+            voltage = x[get_index_by_equals(unknowns, v), 0]
+            voltage_map[v.node] = voltage
+            print(v.node, "=>", voltage)
 
+        print("\nUnknown Currents:")
         for c in unknown_currents:
             c.element.current_solution = x[get_index_by_equals(unknowns, c), 0]
+            print(c.element, c.element.current_solution)
+
+        print("\nVoltage map:")
+        print(voltage_map)
 
         return MNASolution(voltage_map, list(map(lambda comp: comp.element, unknown_currents)))

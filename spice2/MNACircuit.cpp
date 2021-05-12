@@ -30,13 +30,20 @@ MNACircuit::MNACircuit(std::vector<MNAElement *> batteries, std::vector<MNAEleme
     for(auto e : elements){
         nodeSet.insert(std::pair<int, int>{e->n0, e->n0});
         nodeSet.insert(std::pair<int, int>{e->n1, e->n1});
+        std::cout << e->n0 << ": " << e->n1 << "\n";
     }
+    std::cout << "\n";
 
     nodeCount = nodeSet.size();
 
     for(auto n : nodeSet){
         nodes.push_back(n.second);
     }
+
+    for(auto n : nodes){
+        std::cout << n << ", ";
+    }
+    std::cout << "\n";
 }
 
 int MNACircuit::getCurrentCount() {
@@ -233,7 +240,6 @@ MNASolution *MNACircuit::solve() {
 
     for(auto v : *unknownVoltages){
         auto rhs = x(getIndexByEquals(unknowns, v));
-
 
         voltageMap->insert(std::pair<int, double>(v->node, rhs));
     }

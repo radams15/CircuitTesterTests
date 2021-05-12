@@ -43,7 +43,11 @@ class MNASolution:
         return False
 
     def get_current_for_resistor(self, resistor: MNAElement):
-        return -self.get_voltage(resistor) / resistor.value
+        v = - self.get_voltage(resistor)
+        r = resistor.value
+        i = v / r
+
+        return i
 
     def get_node_voltage(self, node_index):
         return self.node_voltages[node_index]

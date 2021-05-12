@@ -4,30 +4,21 @@
 #include "MNACircuit.h"
 
 int main() {
-    auto bat1 = new MNAElement(0, 1, nullptr, -4);
-    auto bat2 = new MNAElement(1, 2, nullptr, -4);
-    auto res = new MNAElement(2,0, nullptr, 2);
+    auto bat = new MNAElement(0, 1, nullptr, 9);
+    auto res1 = new MNAElement(1, 2, nullptr, 5);
+    auto res2 = new MNAElement(1, 2, nullptr, 10);
+    auto res3 = new MNAElement(2, 0, nullptr, 7);
 
-    auto cir = new MNACircuit({bat1, bat2}, {res}, {});
-
-    std::map<int, double> vmap = {
-            {0, 0.0},
-            {1, -4.0},
-            {2, -8.0},
-    };
-
-    auto dessol = new MNASolution(vmap, {bat1->withCurrentSolution(-4), bat2->withCurrentSolution(-4)});
-
+    auto cir = new MNACircuit({bat}, {res1, res2, res3}, {});
+    
     auto sol = cir->solve();
 
-    if(sol->approxEquals(*dessol)){
-        std::cout << "Good\n";
-    }else{
-        std::cout << "Bad!\n";
-    }
+    std::cout << bat->currentSolution << " A" << std::endl;
+    std::cout << bat->value << " V" << std::endl << std::endl;
 
-    for(auto v : sol->nodeVoltages){
-        std::cout << v.first << ": " << v.second << std::endl;
+    for(auto c : {res1, res2, res3}){
+        std::cout << sol->getCurrentForResistor(*c) << " A" << std::endl;
+        std::cout << sol->getVoltage(*c) << " V" << std::endl << std::endl;
     }
 
     return 0;

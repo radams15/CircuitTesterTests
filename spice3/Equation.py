@@ -1,5 +1,8 @@
 import numpy as np
 
+from Unknowns import UnknownVoltage
+
+
 class Term:
     def __init__(self, coefficient: float, variable):
         self.coefficient = coefficient
@@ -15,12 +18,13 @@ class Equation:
         self.value = value
         self.terms = terms
 
-    def stamp(self, row: int, a: np.array, z: np.array, get_index: callable):
+    def stamp(self, row: int, A: np.array, z: np.array, get_index: callable):
         z[row, 0] = self.value
 
         for t in self.terms:
             index = get_index(t.variable)
-            a[row, index] = t.coefficient + a[row, index]
+            print("Stamp {} {}".format(type(t.variable), t.variable.node if type(t.variable) == UnknownVoltage else t.variable.element))
+            A[row, index] = t.coefficient + A[row, index]
 
     def __str__(self):
         term_list = []
