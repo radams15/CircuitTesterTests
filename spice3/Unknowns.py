@@ -6,7 +6,7 @@ class UnknownCurrent:
         self.element = element
 
     def __str__(self):
-        return f"{self.element.n0}_{self.element.n1}"
+        return f"I(N{self.element.n0}=>N{self.element.n1})"
 
     def __eq__(self, other):
         assert(type(other) == UnknownCurrent)
@@ -18,7 +18,7 @@ class UnknownVoltage:
         self.node = node
 
     def __str__(self):
-        return f"V{self.node}"
+        return f"V(N{self.node})"
 
     def __eq__(self, other):
         assert (type(other) == UnknownVoltage)

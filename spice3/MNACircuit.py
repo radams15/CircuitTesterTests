@@ -176,13 +176,13 @@ class MNACircuit:
         unknown_currents = self.get_unknown_currents()
         unknown_voltages = list(map(lambda comp: UnknownVoltage(comp), self.nodes))
 
-        print([str(x) for x in equations])
-        print([str(x) for x in unknown_currents])
-        print([str(x) for x in unknown_voltages])
+        print("Equations: ", [str(x) for x in equations])
+        print("Unknown Currents: ", [str(x) for x in unknown_currents])
+        print("Unknown Voltages: ", [str(x) for x in unknown_voltages])
 
         unknowns: list = unknown_currents + unknown_voltages
 
-        print([str(x) for x in unknowns])
+        print("All Unknown Variables: ", [str(x) for x in unknowns])
 
         A = np.zeros((len(equations), self.get_num_vars()), dtype=float)
         z = np.zeros((len(equations), 1), dtype=float)
@@ -190,10 +190,12 @@ class MNACircuit:
         for row in range(len(equations)):
             print("\n\n")
             print(f"Stamp row {row} with equation {str(equations[row])}")
-            print(A)
-            print(z)
-            print("\n\n")
             equations[row].stamp(row, A, z, lambda comp: get_index_by_equals(unknowns, comp))
+
+            print("A", A)
+            print()
+            print("z", z)
+            print("\n\n")
 
         print("\nFinal:")
         print(A, "\n\n", z)

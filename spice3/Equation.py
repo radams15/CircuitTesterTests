@@ -20,11 +20,14 @@ class Equation:
 
     def stamp(self, row: int, A: np.array, z: np.array, get_index: callable):
         z[row, 0] = self.value
+        print("\t Stamp {} onto z at [0, {}]\n".format(self.value, row))
 
         for t in self.terms:
             index = get_index(t.variable)
-            print("Stamp {} {}".format(type(t.variable), t.variable.node if type(t.variable) == UnknownVoltage else t.variable.element))
-            A[row, index] = t.coefficient + A[row, index]
+            rhs = t.coefficient + A[row, index]
+            print("\t\tStamp {} {} onto A:".format(type(t.variable), "Node "+str(t.variable.node) if type(t.variable) == UnknownVoltage else t.variable.element))
+            print("\t\t\tCoordinates = [{}, {}]\n\t\t\tExisting = {}\n\t\t\tAdding = {}\n\t\t\tNew = {}".format(index, row, A[row, index], t.coefficient, rhs), end="\n\n\n")
+            A[row, index] = rhs
 
     def __str__(self):
         term_list = []

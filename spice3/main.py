@@ -1,4 +1,3 @@
-import MNAElement
 from MNACircuit import *
 
 from Battery import Battery
@@ -27,7 +26,7 @@ if __name__ == '__main__':
     print("\n\nSolutions:\n")
 
     for c in comps:
-        print(c)
+        print(c, c.value)
         if c.type == ElementType.RESISTOR:
             print(sol.get_current_for_resistor(c), "A")
         elif c.type == ElementType.BATTERY:

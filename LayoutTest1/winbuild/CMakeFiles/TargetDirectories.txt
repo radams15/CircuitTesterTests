@@ -1,0 +1,4 @@
+/mnt/files/scripts/CircuitTesterTests/LayoutTest1/winbuild/CMakeFiles/rebuild_cache.dir
+/mnt/files/scripts/CircuitTesterTests/LayoutTest1/winbuild/CMakeFiles/edit_cache.dir
+/mnt/files/scripts/CircuitTesterTests/LayoutTest1/winbuild/CMakeFiles/LayoutTest1.dir
+/mnt/files/scripts/CircuitTesterTests/LayoutTest1/winbuild/CMakeFiles/LayoutTest1_autogen.dir
