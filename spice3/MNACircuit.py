@@ -13,7 +13,7 @@ def get_index_by_equals(array, element) -> int:
     return -1
 
 class MNACircuit:
-    def __init__(self, elements: list[MNAElement]):
+    def __init__(self, elements: list):
         self.batteries: list[MNAElement] = []
         self.resistors: list[MNAElement] = []
         self.current_sources: list[MNAElement] = []
@@ -65,8 +65,8 @@ class MNACircuit:
 
         return total
 
-    def get_current_terms(self, node: int, side: int, sign: int) -> list[Term]:
-        node_terms: list[Term] = []
+    def get_current_terms(self, node: int, side: int, sign: int) -> list:
+        node_terms: list = []
 
         for b in self.batteries:
             b_side = b.n0 if side == 0 else b.n1
@@ -86,7 +86,7 @@ class MNACircuit:
 
         return node_terms
 
-    def get_ref_node_ids(self) -> list[int]:
+    def get_ref_node_ids(self) -> list:
         to_visit: list[int] = self.nodes.copy()
 
         ref_node_ids: list[int] = []
@@ -119,12 +119,14 @@ class MNACircuit:
 
         return list(set(visited))
 
-    def get_equations(self) -> list[Equation]:
+    def get_equations(self) -> list:
         equations = []
 
         ref_node_ids = self.get_ref_node_ids()
 
-        for r in ref_node_ids:
+        print(f"Reference nodes: {ref_node_ids}")
+
+        for r in ref_node_ids: # ref nodes together have a voltage of 0
             equations.append(Equation(0, [
                 Term(1, UnknownVoltage(r))
             ]))
@@ -189,12 +191,12 @@ class MNACircuit:
 
         for row in range(len(equations)):
             print("\n\n")
-            print(f"Stamp row {row} with equation {str(equations[row])}")
+            print(f"Stamp row {row} with node {row} equation {str(equations[row])}")
             equations[row].stamp(row, A, z, lambda comp: get_index_by_equals(unknowns, comp))
 
-            print("A", A)
+            print("A = ", A)
             print()
-            print("z", z)
+            print("z = ", z)
             print("\n\n")
 
         print("\nFinal:")

@@ -14,7 +14,7 @@ class Term:
         return prefix + str(self.variable)
 
 class Equation:
-    def __init__(self, value: float, terms: list[Term]):
+    def __init__(self, value: float, terms: list):
         self.value = value
         self.terms = terms
 

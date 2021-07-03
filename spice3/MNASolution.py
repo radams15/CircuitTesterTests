@@ -6,7 +6,7 @@ def num_approx_equals(a, b) -> bool:
     return fabs(a-b) < 1E-6
 
 class MNASolution:
-    def __init__(self, node_voltages: dict, elements: list[MNAElement]):
+    def __init__(self, node_voltages: dict, elements: list):
         self.node_voltages: dict = node_voltages
         self.elements = elements
 

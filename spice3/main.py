@@ -23,6 +23,8 @@ if __name__ == '__main__':
 
     sol = cir.solve()
 
+    exit()
+
     print("\n\nSolutions:\n")
 
     for c in comps:
